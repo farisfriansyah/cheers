@@ -1,0 +1,252 @@
+$font-stack: 'Poppins', sans-serif;
+$font-secondary: 'Roboto', sans-serif;
+$font-handwrite: 'Amatic SC', cursive;
+
+$fore-color: #FFFFFF;
+$base-color: #F7F7F7;
+$darkw-color: #F3F3F3;
+$primary-color: #151515;
+$cheers-light: #D8261C;
+$cheers-dark: #A22523;
+$grey-color : #525252;
+$gray-color : #dddddd;
+$nav-login : rgba(0,0,0,.7);
+
+$cheers-natural-light:#71bf44;
+$cheers-natural-dark:#02b196;
+$cheers-natural-unity:#006a4d;
+$cheers-natural-blue:#1abfdf;
+
+$h3-lg: 30px;
+$h3-sm: 20px;
+
+$wh-burst-size: 30px; 
+$wh-burst-sm: 20px;
+$wh-burst-radius: 3px;
+
+body {
+  font-family: $font-stack;
+  color: $primary-color;
+}
+
+h1 {
+    font-family: $font-stack;
+    color: $primary-color;
+    font-weight: bold;
+}
+
+h2 {
+    font-family: $font-stack;
+    color: $primary-color;
+    font-weight: bold;
+}
+
+h3 {
+    font-family: $font-stack;
+    color: $primary-color;
+    font-size: $h3-lg;
+    font-weight: bold;
+}
+
+h4 {
+    font-family: $font-stack;
+    color: $primary-color;
+    font-weight: bold;
+}
+
+h5 {
+    font-family: $font-stack;
+    color: $primary-color;
+    font-weight: bold;
+}
+
+h6 {
+    font-family: $font-stack;
+    color: $primary-color;
+    font-weight: bold;
+}
+
+p {
+    font-family: $font-secondary;
+    color: $primary-color;
+}
+
+input:focus,
+select:focus,
+button:focus,
+textarea:focus {
+	outline: none;
+}
+
+a {
+    text-decoration: none;
+    color: $cheers-light;
+}
+
+a:hover,
+a:focus {
+	text-decoration: none;
+	outline: none;
+	color: $cheers-dark;
+}
+
+.cheers-separator{
+    border-bottom: 4px solid $cheers-light;
+    opacity: 1;
+    width: 100px;
+}
+
+.cheers-separator-center{
+    border-bottom: 4px solid $cheers-light;
+    opacity: 1;
+    width: 100px;
+    margin: 1rem auto;
+}
+
+.myfullpad {
+    padding: 0px 70px;
+}
+
+.text-left{
+    text-align: left !important;
+}
+
+.text-center{
+    text-align: center !important;
+}
+
+.text-right{
+    text-align: right !important;
+}
+
+.btn {
+    color: $primary-color;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .600rem 2.5rem;
+    border-radius: 100px;
+}
+
+.btn-cheerslight {
+    color: $base-color;
+    background-color: $cheers-light;
+    border: 2px solid $cheers-light;
+    font-size: 16px;
+    &:hover{
+        background-color: $cheers-dark;
+        color: $base-color;
+    }
+}
+
+.mixitup-control-active {
+    color: $base-color !important;
+    background-color: $cheers-light !important;
+    border: 2px solid $cheers-light !important;
+    font-size: 16px !important;
+    &:hover{
+        background-color: $cheers-dark !important;
+        color: $base-color !important;
+    }
+}
+
+.btn-outcheerslight {
+    color: $cheers-light;
+    background-color: transparent;
+    border: 2px solid $cheers-light;
+    &:hover{
+        background-color: $cheers-dark;
+        color: $base-color;
+    }
+}
+
+.btn-outgreylight {
+    color: $darkw-color;
+    background-color: transparent;
+    border: 2px solid $darkw-color;
+    &:hover{
+        background-color: $cheers-dark;
+        color: $base-color;
+    }
+}
+
+.btn-outcheerswhite {
+    color: $base-color;
+    background-color: transparent;
+    border: 2px solid $base-color;
+    &:hover{
+        background-color: $cheers-dark;
+        color: $base-color;
+    }
+}
+
+.btn-link {
+    font-weight: 400;
+    color: $cheers-light;
+    text-decoration: none;
+    &:hover{
+        color: $cheers-dark;
+    }
+}
+
+/* Extra small devices (phones, 576px and down) */
+@media only screen and (max-width: 575.98px) {
+    .myfullpad {
+        padding: 0px 10px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 576px and up) */
+@media only screen and (min-width: 576px) {
+    .myfullpad {
+        padding: 0px 10px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .myfullpad {
+        padding: 0px 10px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .myfullpad {
+        padding: 0px 70px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .myfullpad {
+        padding: 0px 70px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1400px and up) */
+@media only screen and (min-width: 1400px) {
+    .myfullpad {
+        padding: 0px 70px;
+    }
+}
+
+
+@import "navbar";
+
+@import "homepage";
+
+@import "product";
+
+@import "about";
+
+@import "event";
+
+@import "faq";
+
+@import "blog";
+
+@import "contact";
+
+@import "login";
+
+@import "footer";

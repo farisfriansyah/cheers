@@ -1,0 +1,57 @@
+$(document).ready(function() {
+    new Date().getFullYear();
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+
+    $(window).scroll(function() {
+       if($(this).scrollTop() > 100) { 
+		   $('.navbar').addClass('bg-white', 2000, 'fade');
+       } else {
+		   $('.navbar').removeClass('bg-white', 2000, 'fade');
+       }
+    });
+
+    $('#slide-carousel').owlCarousel({
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: false,
+        items: 1,
+        nav: false,
+        loop: true
+    }); 
+});
+
+jQuery(document).ready(function($) {
+    
+    var carousel = $("#owl-Prodcontrol");
+    carousel.owlCarousel({
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: false,
+        loop : true,
+        items : 4,
+        margin:0,
+        nav : false,
+        dots : false,
+    });
+
+    checkClasses();
+    carousel.on('translated.owl.carousel', function(event) {
+        checkClasses();
+    });
+
+    function checkClasses(){
+        var total = $('#owl-Prodcontrol .owl-stage .owl-item.active').length;
+        
+        $('#owl-Prodcontrol .owl-stage .owl-item').removeClass('firstActiveItem');
+        
+        $('#owl-Prodcontrol .owl-stage .owl-item.active').each(function(index){
+            if (index === 0) {
+                // this is the first one
+                $(this).addClass('firstActiveItem');
+            }
+        });
+    }
+
+        
+});
+

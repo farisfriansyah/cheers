@@ -1,0 +1,90 @@
+#cheers-faq{
+    padding: 70px 0px;
+
+    .btns-category{
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+        
+        button{
+            margin-right: 10px;
+            margin-bottom: 15px;
+        }
+    }
+
+    .accordion{
+        .accordion-item{
+            
+            .accordion-button {
+                padding: 1.5rem 1.25rem;
+
+                &:focus {
+                    z-index: 3;
+                    border-color: $cheers-light;
+                    outline: 0;
+                    box-shadow: 0 0 0 0.25rem rgba(216,38,28,.25);
+                }
+    
+                &:not(.collapsed) {
+                    color: $base-color;
+                    background-color: $cheers-light;
+                }
+    
+                &:not(.collapsed)::after {
+                    font-family: "Font Awesome 5 Pro";
+                    background-image: unset;
+                    content: "\f078";
+                    color: $fore-color;
+                    text-align: center;
+                }
+    
+                &::after {
+                    background-image: unset;
+                    font-family: "Font Awesome 5 Pro";
+                    content: "\f078";
+                    text-align: center;
+                }
+            }
+
+            .accordion-collapse{
+                background-color: $base-color;
+
+                .accordion-body{
+                    border-bottom: 2px solid $cheers-light;
+                }
+            }
+        }
+    }
+}
+
+
+/* Extra small devices (phones, 576px and down) */
+@media only screen and (max-width: 575.98px) {
+    #cheers-faq{
+        padding: 70px 0px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 576px and up) */
+@media only screen and (min-width: 576px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1400px and up) */
+@media only screen and (min-width: 1400px) {
+
+}

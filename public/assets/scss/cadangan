@@ -1,0 +1,167 @@
+@media only screen and (min-width: 992px) {
+
+    .cheers-product{
+        padding: 0rem 0;
+    
+        .img-overlay {
+            height: 100vh;
+            width: 100%;
+            
+            .cheers-bg-product {
+                width: 100%;
+                height: 100%;
+                background-position: right 0px center !important; //top
+                opacity: 0.6;
+            }
+        }   
+    
+        .heropro-type{
+            z-index: 1;
+            position: absolute;
+            top: unset; 
+            bottom: 0; 
+    
+            .pro-leftsection{
+                height: 100%;
+                position: initial;
+                display: flex;
+    
+                .bg-imgHero {
+                    background: unset;
+                    top: unset;
+                    align-self: unset;
+                    width: 40%;
+                    padding-top: 10px;
+                    height: min-content;
+                    bottom: 0;
+                    display: flex;
+                    position: absolute;
+                    
+                    .content-left{
+                        display: flex;
+                        width: 100%;
+                        height: max-content;
+                        bottom: -20px;
+
+                        .content-text{
+                            padding: 20px 20px 50px 20px;
+                            width: auto;
+        
+                            h3{
+                                color: $fore-color;
+                                padding: 10px 0px;
+                                font-family: $font-handwrite;
+                                font-weight: 600;
+                            }
+        
+                            p{
+                                color: $base-color;
+                                width: 100%;
+                                font-family: $font-handwrite;
+                                font-size: 23px;
+                            }
+                        }
+
+                        .content-img{
+                            width: 100%;
+                            height: auto;
+                            margin-right: -70px;
+                            align-self: flex-end;
+                            
+                             img{
+                                 height: auto;
+                                 width: auto;
+                             }
+                         }
+                    }
+                }
+            }
+    
+            .pro-rightsection{
+                height: 100vh;
+
+                .content-right{
+                    padding: 0 10px;
+                    bottom: 0;
+                    display: flex;
+                    height: 100%;
+                    align-items: flex-end;
+                    position: relative;
+    
+                    .content-point{
+                        display: flex;
+                        bottom: 0;
+                        position: relative;
+                        flex-direction: column;
+    
+                        .title-product{
+                            position: relative;
+                            h3{
+                                color: $base-color;
+                            }
+            
+                            p{
+                                color: $base-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .card-listproduct{
+            display: flex;
+            flex-wrap: nowrap;
+            position: absolute;
+            z-index: 1;
+            left: unset;
+            bottom: 20px;
+            right: 20px;
+            padding-bottom: 10px;
+            max-width: 645px;
+    
+            .card-cheersproduct{
+                width: 130px;
+                height: 150px;
+    
+                .overlay-card{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 10px;
+                }
+    
+                .textpro-card{
+                    width: 100%;
+                    height: auto;
+
+                    .textpro-left{
+                        
+                        h5{
+                            font-size: 16px;
+                            text-align: left;
+                        }
+                        h6{
+                            font-size: 12px;
+                            display: flex;
+                        }
+                        p{
+                            font-size: 12px;
+                            display: flex;
+                        }
+                    }
+    
+                    .textpro-right{
+                        text-align: right;
+    
+                        img{
+                            margin-left: 5px;
+                            width: auto;
+                            height: 40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

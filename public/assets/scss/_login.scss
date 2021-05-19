@@ -1,0 +1,463 @@
+#cheers-login{
+    padding: 0rem 0;
+    width: 100%;
+    height: 100vh;
+    background-color: $fore-color;
+    background: url("../img/SVG/login_2.svg") no-repeat center;
+    background-size: cover;
+    background-position: left 0px top 0px;
+    padding: 25px 0px;
+
+    .socmed {
+        position: relative;
+        padding: 0px 20px;
+        bottom: 0px;
+        margin: 20px auto;
+        text-align: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+
+        a{
+            margin: 10px 10px;
+            font-size: 14px;
+            font-weight: 600;
+            text-align: center;
+            color: $primary-color;
+            &:hover{
+                color: $cheers-dark;
+            }
+        }
+    }
+
+    .bg-imgHero{
+        display: flex;
+        align-self: center;
+
+        .hero-login{
+            width: 80%;
+            margin: 10px auto 0px auto;
+            padding: 30px 80px;
+
+            img{
+                width: 200px;
+                height: auto;
+                margin-bottom: 20px;
+                display: none;
+            }
+
+            p{
+                text-align: left;
+            }
+            
+            .form-label{
+                margin-bottom: 0px;
+            }
+
+            .intern-link{
+                margin: 20px 0;
+                padding: 0 10px;
+
+                a{
+                    color: $grey-color;
+                }
+            }
+
+            hr{
+                margin: 0 auto;
+                margin-bottom: 30px;
+            }
+
+            .input-subs{
+                width: 100%;
+                height: 40px;
+                font-size: 16px;
+                color: $primary-color;
+                padding: 0 10px;
+                background: transparent;
+                border-radius: 0px;
+                border: none;
+                border-bottom: 2px solid $cheers-dark;
+                margin: 0 auto;
+            }
+    
+            .input-subs::-webkit-input-placeholder {
+                color: $primary-color;
+                opacity: 0.6;
+            }
+            
+            .input-subs::-moz-placeholder {
+                color: $primary-color;
+                opacity: 0.6;
+            }
+            
+            .input-subs:-ms-input-placeholder {
+                color: $primary-color;
+                opacity: 0.6;
+            }
+            
+            .input-subs::-ms-input-placeholder {
+                color: $primary-color;
+                opacity: 0.6;
+            }
+            
+            .input-subs::placeholder {
+                color: $primary-color;
+                opacity: 0.6;
+            }
+
+            .btn-cheerslight{
+                width: 100%;
+                margin: 10px auto;
+                display: block;
+                color: $base-color;
+            }
+        }
+    }
+
+    .img-login{
+        align-self: center;
+        img{
+            width: 74%;
+            height: 74%;
+            object-fit: cover;
+            margin: 0 auto;
+            display: block;
+        }
+    }
+}
+
+#cheers-registration{
+    padding: 0rem 0;
+    width: 100%;
+    height: 100vh;
+    background-color: $fore-color;
+    background: url("../img/SVG/login_2.svg") no-repeat center;
+    background-size: cover;
+    background-position: left 0px top 0px;
+    padding: 25px 0px;
+
+    .socmed {
+        position: relative;
+        padding: 0px 20px;
+        bottom: 0px;
+        margin: 20px auto 0 auto;
+        text-align: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+
+        a{
+            margin: 10px 10px;
+            font-size: 14px;
+            font-weight: 600;
+            text-align: center;
+            color: $primary-color;
+            &:hover{
+                color: $cheers-dark;
+            }
+        }
+    }
+
+    .bg-imgHero{
+        display: flex;
+        align-self: center;
+
+        .hero-login{
+            width: 80%;
+            margin: 10px auto 0px auto;
+            padding: 30px 80px;
+
+            .form-label{
+                margin-bottom: 0px;
+            }
+
+            img{
+                width: 200px;
+                height: auto;
+                margin-bottom: 20px;
+                display: none;
+            }
+
+            p{
+                text-align: left;
+            }
+
+            .intern-link{
+                margin: 20px 0;
+                padding: 0 10px;
+
+                a{
+                    color: $grey-color;
+                }
+            }
+
+            hr{
+                margin: 0 auto;
+                margin-bottom: 30px;
+            }
+
+            .input-subs{
+                width: 100%;
+                height: 40px;
+                font-size: 16px;
+                color: $primary-color;
+                padding: 0 10px;
+                background: transparent;
+                border-radius: 0px;
+                border: none;
+                border-bottom: 2px solid $cheers-dark;
+                margin: 0 auto;
+            }
+    
+            .input-subs::-webkit-input-placeholder {
+                color: $primary-color;
+                opacity: 0.6;
+            }
+            
+            .input-subs::-moz-placeholder {
+                color: $primary-color;
+                opacity: 0.6;
+            }
+            
+            .input-subs:-ms-input-placeholder {
+                color: $primary-color;
+                opacity: 0.6;
+            }
+            
+            .input-subs::-ms-input-placeholder {
+                color: $primary-color;
+                opacity: 0.6;
+            }
+            
+            .input-subs::placeholder {
+                color: $primary-color;
+                opacity: 0.6;
+            }
+
+            .btn-cheerslight{
+                width: 100%;
+                margin: 10px auto;
+                display: block;
+                color: $base-color;
+            }
+        }
+    }
+
+    .img-login{
+        img{
+            width: 74%;
+            height: 74%;
+            object-fit: cover;
+            margin: 0 auto;
+            display: block;
+        }
+    }
+}
+
+/* Extra small devices (phones, 576px and down) */
+@media only screen and (max-width: 575.98px) {
+    #cheers-login {
+        background: none;
+        background-size: cover;
+        background-position: left 0px top 0px;
+
+        .bg-imgHero{
+            .hero-login {
+                width: 100%;
+                margin: 30px auto 0px auto;
+                padding: 30px;
+            }
+
+            img {
+                width: 70%;
+            }
+        }
+
+        .img-login{
+            display: none;
+        }
+
+        .socmed {
+            display: none;
+        }
+    }
+
+    #cheers-registration {
+        background: none;
+        background-size: 180%;
+        background-position: left 0px top 0px;
+
+        .bg-imgHero{
+            .hero-login {
+                width: 100%;
+                margin: 30px auto 0px auto;
+                padding: 30px;
+            }
+
+            img {
+                width: 70%;
+            }
+        }
+
+        .img-login{
+            display: none;
+        }
+
+        .socmed {
+            display: none;
+        }
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 576px and up) */
+@media only screen and (min-width: 576px) {
+
+    #cheers-login {
+        background: none;
+        background-size: 180%;
+        background-position: left 0px top 0px;
+
+        .bg-imgHero{
+            .hero-login {
+                width: 100%;
+                margin: 30px auto 0px auto;
+                padding: 30px;
+            }
+
+            img {
+                width: 70%;
+            }
+        }
+
+        .img-login{
+            display: none;
+        }
+    }
+
+    #cheers-registration {
+        background: none;
+        background-size: 180%;
+        background-position: left 0px top 0px;
+
+        .bg-imgHero{
+            .hero-login {
+                width: 100%;
+                margin: 30px auto 0px auto;
+                padding: 30px;
+            }
+
+            img {
+                width: 70%;
+            }
+        }
+
+        .img-login{
+            display: none;
+        }
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #cheers-login {
+        background-color: $fore-color;
+        background: url("../img/SVG/login_2.svg") no-repeat center;
+        background-size: cover;
+        background-position: left 0px top 0px;
+
+        .bg-imgHero{
+            .hero-login {
+                width: 100%;
+                margin: 30px auto 0px auto;
+                padding: 30px;
+            }
+
+            img {
+                width: 70%;
+            }
+        }
+
+        .bg-imgHero img {
+            width: 70%;
+        }
+
+        .img-login{
+            display: flex;
+        }
+    }
+
+    #cheers-registration {
+        background-color: $fore-color;
+        background: url("../img/SVG/login_2.svg") no-repeat center;
+        background-size: cover;
+        background-position: left 0px top 0px;
+
+        .bg-imgHero{
+            .hero-login {
+                width: 100%;
+                margin: 10px auto 0px auto;
+                padding: 30px;
+            }
+
+            img {
+                width: 70%;
+            }
+        }
+
+        .img-login{
+            display: flex;
+        }
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #cheers-login {
+        background-color: $fore-color;
+        background: url("../img/SVG/login_2.svg") no-repeat center;
+        background-size: cover;
+        background-position: left 0px top 0px;
+
+        .bg-imgHero {
+            .hero-login {
+                width: 80%;
+                margin: 10px auto 0px auto;
+                padding: 30px 80px;
+            }
+        }
+
+        .img-login{
+            display: flex;
+        }
+    }
+
+    #cheers-registration {
+        background-color: $fore-color;
+        background: url("../img/SVG/login_2.svg") no-repeat center;
+        background-size: cover;
+        background-position: left 0px top 0px;
+
+        .bg-imgHero {
+            .hero-login {
+                width: 80%;
+                margin: 10px auto 0px auto;
+                padding: 30px 80px;
+            }
+        }
+
+        .img-login{
+            display: flex;
+        }
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1400px and up) */
+@media only screen and (min-width: 1400px) {
+
+}
