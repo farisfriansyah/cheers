@@ -11,10 +11,14 @@
             <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12">
                 <div class="container">
                     <div class="title-section text-left">
-                        <h3><span style="font-size: 16px; font-weight: 500;">Kenapa</span> <br> Cheers?</h3>
+                        <h3><span style="font-size: 16px; font-weight: 500;">@lang('whycheers.why-WhyST')</span> <br> Cheers?</h3>
                         <hr class="cheers-separator">
-                        <p style="text-indent: 50px;"><span style="color: #D8261C; font-weight: 500;">CHEERS Healthy Drinking Water</span> adalah air minum sehat dan berkualitas, berasal dari sumber mata air alami pegunungan yang terlindungi, diproses secara cermat dengan Sterilisasi Multifiltrasi, Ozonisasi, dan UV Treatment,  untuk memastikan tidak adanya kandungan bakteri di dalamnya. </p> 
-                        <p style="text-indent: 50px;"><span style="color: #D8261C; font-weight: 500;">CHEERS Healthy Drinking Water</span> dikemas secara higienis tanpa kandungan bahan kimia, dan ramah lingkungan. Minumlah Cheers Healthy Drinking Water minimal 8 gelas setiap harinya, nikmati kesegaran dan kealamiannya.</p>
+                        <p style="text-indent: 50px;">
+                            <span style="color: #D8261C; font-weight: 500;">CHEERS Healthy Drinking Water</span> 
+                            @lang('whycheers.why-text1')</p> 
+                        <p style="text-indent: 50px;">
+                            <span style="color: #D8261C; font-weight: 500;">CHEERS Healthy Drinking Water</span> 
+                            @lang('whycheers.why-text2')</p>
                     </div>
                 </div>
             </div>
@@ -25,9 +29,9 @@
 <section id="whycheers-product">
 
     <div class="title-section-ct">
-        <h3>Products</h3>
+        <h3>@lang('whycheers.why-prodtitle')</h3>
         <hr class="cheers-separator-center">
-        <span>Ada dua jenis produk CHEERS Healthy Drinking Water <br> yang bisa menemani aktivitas kamu setiap hari</span>
+        <span>@lang('whycheers.why-prodsubtitle')</span>
     </div>
 
     <div class="row g-0">
@@ -36,9 +40,9 @@
                 <div class="row g-0">
                     <div class="col-6 title-product">
                         <h4>Cheers Alkaline</h4>
-                        <h6 class="text-white">Produk unggulan dengan manfaat kesehatan yang lebih optimal.</h6>
-                        <p>Diproduksi dengan menggunakan teknologi mutakhir Jepang Alpha Ion Alkalizer sehingga menghasilkan air minum dengan pH tinggi (up to 8.5). Membantu menetralkan kondisi pH dalam tubuh sehingga daya tahan tubuh lebih terjaga.</p>
-                        <a href="cheers-alkaline.php" class="link-button"><em>Read more..</em></a>
+                        <h6 class="text-white">@lang('whycheers.why-prodAlkSub')</h6>
+                        <p>@lang('whycheers.why-prodAlkText')</p>
+                        <a href="cheers-alkaline.php" class="link-button"><em>@lang('whycheers.why-prodbtnRM')..</em></a>
                     </div>
                     <div class="col-6 img-product">
                         <img src="{{ asset('public/assets/img/product/cheers-550ml.png')}}">
@@ -52,9 +56,9 @@
                     <div class="col-6 title-product">
                         <div class="">
                             <h4>Cheers Natural</h4>
-                            <h6 class="text-white">Produk air mineral Cheers dengan manfaat mineral yang lebih baik. </h6>
-                            <p>Diproduksi dari sumber air terlindungi dengan mempertahankan manfaat mineral alam yang baik untuk tubuh. Diproses secara higienis tanpa bahan kimia tambahan, menjamin Cheers Natural Spring Water baik untukmu. Healthier, Fresher, Better.</p>
-                            <a href="cheers-natural.php" class="link-button"><em>Read more..</em></a>
+                            <h6 class="text-white">@lang('whycheers.why-prodNatSub')</h6>
+                            <p>@lang('whycheers.why-prodNatText')</p>
+                            <a href="cheers-natural.php" class="link-button"><em>@lang('whycheers.why-prodbtnRM')..</em></a>
                         </div>
                     </div>
                     <div class="col-6 img-product">
@@ -71,9 +75,9 @@
 <section id="cheers-timeline" style="z-index: 2;">
 
     <div class="title-section-ct">
-        <h3><span style="font-weight: 500;">Proses</span> Produksi</h3>
+        <h3><span style="font-weight: 500;">@lang('whycheers.why-prodprocTit1')</span> @lang('whycheers.why-prodprocTit2')</h3>
         <hr class="cheers-separator-center">
-        <span>Seluruh proses produksi dilakukan secara terintegrasi dan higienis, tanpa tersentuh tangan manusia. </span>
+        <span>@lang('whycheers.why-prodprocSub')</span>
     </div>
 
     <div class="timelineImg">
@@ -93,9 +97,9 @@
         <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 order-md-1 align-self-center campaign-info">
             <div class="container">
                 <div class="title-section text-left">
-                    <h3><span style="font-weight: 500;">Sumber </span>Mata Air</h3>
+                    <h3><span style="font-weight: 500;">@lang('whycheers.why-sourceTit1') </span>@lang('whycheers.why-sourceTit2')</h3>
                     <hr class="cheers-separator">
-                    <p>CHEERS Healthy Drinking Water diambil dari sumber mata air alami terlindungi, yang telah melalui seleksi dan penelitian bertahun-tahun oleh para ahli kami, sehingga selalu terjaga kualitas dan kesegarannya. </p>
+                    <p>@lang('whycheers.why-sourceText')</p>
                 </div>
             </div>
         </div>
@@ -112,10 +116,10 @@
             
             <div class="container">
                 <div class="title-section text-left">
-                    <h3><span style="font-weight: 500;">Jaminan </span>Kualitas</h3>
+                    <h3><span style="font-weight: 500;">@lang('whycheers.why-qualityTit1') </span>@lang('whycheers.why-qualityTit2')</h3>
                     <hr class="cheers-separator">
-                    <p>Setiap harinya, para ahli kami bertugas untuk meneliti dan memastikan bahwa setiap tetes air mineral yang diproduksi bebas dari bakteri, jamur, dan bahan-bahan berbahaya lainnya.</p>
-                    <p>Kami juga mengukur tingkat basa (alkali), kejernihan, dan kandungan mineralnya. Ini adalah bagian dari komitmen <strong> Healthy Drinking Water</strong> untuk memberikan jaminan kualitas produk untuk kesehatan konsumen. </p>
+                    <p>@lang('whycheers.why-qualityText1')</p>
+                    <p>@lang('whycheers.why-qualityText2') </p>
                 </div>
             </div>
         </div>
@@ -130,11 +134,11 @@
         <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 order-md-1 align-self-center campaign-info">
             <div class="container">
                 <div class="title-section text-left">
-                    <h3><span style="font-weight: 500;">Jaringan </span>Pemasaran</h3>
+                    <h3><span style="font-weight: 500;">@lang('whycheers.why-marketingTit1') </span>@lang('whycheers.why-marketingTit2')</h3>
                     <hr class="cheers-separator">
-                    <p>Melalui cabang dan agen kami yang tersebar di seluruh nusantara dan mancanegara, CHEERS Healthy Drinking Water didistribusikan hingga ke tangan konsumen. Ini merupakan kebanggan bagi kami, PT Atlantic Biruraya dimana produk kami mendapat pengakuan baik dari dalam maupun dari luar negeri. </p> 
-                    <h5>Armada Distribusi</h5> 
-                    <p>Armada menjadi bagian penting dalam jalur distribusi kami. Ratusan unit armada truk kami setiap harinya bertugas mendistribusikan produk CHEERS Healthy Drinking Water dari pabrik hingga ke tangan konsumen. Kami juga mengoperasikan truk mini karena kepraktisan dan kemudahan menjelajah jalan-jalan sempit.</p>
+                    <p>@lang('whycheers.why-markertingText')</p> 
+                    <h5>@lang('whycheers.why-armadaTit')</h5> 
+                    <p>@lang('whycheers.why-armadaText')</p>
                 </div>
             </div>
         </div>
@@ -146,14 +150,14 @@
     <div class="row g-0">
         <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5 col-sm-12 title-recognition">
             <div class="title-section text-left">
-                <h3>Penghargaan & Pengakuan</h3>
+                <h3>@lang('whycheers.why-rewardTit')</h3>
                 <hr class="cheers-separator">
-                <p>Penghargaan dan pengakuan yang telah diraih antara lain : </p>
+                <p>@lang('whycheers.why-rewardText')</p>
             </div>
         </div>
         <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-12 award">
             <div class="box-compo">
-                <h6>Penghargaan</h6>
+                <h6>@lang('whycheers.why-award')</h6>
                 <div class="img-box mb-3">
                     <img src="{{ asset('public/assets/img/logos/sparklingsurabaya.jpg')}}" class="rounded">
                 </div>
@@ -164,7 +168,7 @@
         </div>
         <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 certificate">
             <div class="box-compo">
-                <h6>Sertifikat</h6>
+                <h6>@lang('whycheers.why-recog')</h6>
 
                 <div class="row g-0">
                     <div class="col-6">
@@ -187,7 +191,7 @@
                 <h6>Membership</h6>
 
                 <div class="d-flex">
-                    <img src="assets/img/logos/aspadin.jpg" class="rounded">
+                    <img src="{{ asset('public/assets/img/logos/aspadin.jpg')}}" class="rounded">
                 </div>
             </div>
         </div>

@@ -272,7 +272,7 @@
                                 <label>FEB</label>
                             </div>
                             <a href="blog-1.php">
-                                <img src="{{ asset('public/{{ asset('public/assets/img/pola-hidup.png')}}')}}" title="" alt="blog-1">
+                                <img src="{{ asset('public/assets/img/pola-hidup.png')}}" title="" alt="blog-1">
                             </a>
                         </div>
                         <div class="blog-info">
@@ -295,7 +295,7 @@
                                 <label>FEB</label>
                             </div>
                             <a href="blog-2.php">
-                                <img src="{{ asset('public/{{ asset('public/assets/img/manfaat.png')}}')}}" title="" alt="blog-2">
+                                <img src="{{ asset('public/assets/img/manfaat.png')}}" title="" alt="blog-2">
                             </a>
                         </div>
                         <div class="blog-info">
@@ -318,7 +318,7 @@
                                 <label>FEB</label>
                             </div>
                             <a href="blog-3.php">
-                                <img src="{{ asset('public/{{ asset('public/assets/img/ginjal-sehat.jpg')}}')}}" title="" alt="blog-3">
+                                <img src="{{ asset('public/assets/img/ginjal-sehat.jpg')}}" title="" alt="blog-3">
                             </a>
                         </div>
                         <div class="blog-info">
