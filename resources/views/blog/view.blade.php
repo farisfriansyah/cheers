@@ -51,7 +51,7 @@
                                     <div class="col-10">
                                         <div class="card-body">
                                             <div class="title-section text-left">
-                                                <a href="blog-1.php"><h5>Pola hidup sehat, rahasia ampuh pencegahan kanker</h5></a>
+                                                <a href="{{ url('/blog/view/1') }}"><h5>Pola hidup sehat, rahasia ampuh pencegahan kanker</h5></a>
                                                 <span class="metablog"><i class="fad fa-calendar-day"></i> 29 Sep 2020 20:00</span> 
                                                 <span class="metablog"><i class="fad fa-user"></i> Admin</span>
                                                 <span class="metablog"><i class="fad fa-hourglass"></i> 3min read</span>
@@ -71,7 +71,7 @@
                                     <div class="col-10">
                                         <div class="card-body">
                                             <div class="title-section text-left">
-                                                <a href="blog-2.php"><h5>5 Manfaat bersepeda bikin hidup lebih sehat</h5></a>
+                                                <a href="{{ url('/blog/view/1') }}"><h5>5 Manfaat bersepeda bikin hidup lebih sehat</h5></a>
                                                 <span class="metablog"><i class="fad fa-calendar-day"></i> 29 Sep 2020 20:00</span> 
                                                 <span class="metablog"><i class="fad fa-user"></i> Admin</span>
                                                 <span class="metablog"><i class="fad fa-hourglass"></i> 3min read</span>
@@ -91,7 +91,7 @@
                                     <div class="col-10">
                                         <div class="card-body">
                                             <div class="title-section text-left">
-                                                <a href="blog-3.php"><h5>5 Rahasia ginjal sehat dan kuat</h5></a>
+                                                <a href="{{ url('/blog/view/1') }}"><h5>5 Rahasia ginjal sehat dan kuat</h5></a>
                                                 <span class="metablog"><i class="fad fa-calendar-day"></i> 29 Sep 2020 20:00</span> 
                                                 <span class="metablog"><i class="fad fa-user"></i> Admin</span>
                                                 <span class="metablog"><i class="fad fa-hourglass"></i> 3min read</span>

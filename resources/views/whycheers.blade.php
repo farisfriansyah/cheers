@@ -42,7 +42,7 @@
                         <h4>Cheers Alkaline</h4>
                         <h6 class="text-white">@lang('whycheers.why-prodAlkSub')</h6>
                         <p>@lang('whycheers.why-prodAlkText')</p>
-                        <a href="cheers-alkaline.php" class="link-button"><em>@lang('whycheers.why-prodbtnRM')..</em></a>
+                        <a href="{{ url('/cheers-alkaline') }}" class="link-button"><em>@lang('whycheers.why-prodbtnRM')..</em></a>
                     </div>
                     <div class="col-6 img-product">
                         <img src="{{ asset('public/assets/img/product/cheers-550ml.png')}}">
@@ -58,7 +58,7 @@
                             <h4>Cheers Natural</h4>
                             <h6 class="text-white">@lang('whycheers.why-prodNatSub')</h6>
                             <p>@lang('whycheers.why-prodNatText')</p>
-                            <a href="cheers-natural.php" class="link-button"><em>@lang('whycheers.why-prodbtnRM')..</em></a>
+                            <a href="{{ url('/cheers-natural') }}" class="link-button"><em>@lang('whycheers.why-prodbtnRM')..</em></a>
                         </div>
                     </div>
                     <div class="col-6 img-product">

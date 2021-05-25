@@ -22,7 +22,7 @@
                             <div class="col-9">
                                 <div class="card-body">
                                     <div class="title-section text-left">
-                                        <a href="event-detail.php"><h5>Cheers Music Weekend</h5></a>
+                                        <a href="{{ url('/event/view/1') }}"><h5>Cheers Music Weekend</h5></a>
                                         <span class="metaeventstd"><i class="fad fa-calendar-day"></i> 29 Sep 2020 20:00</span>
                                         <span class="metaeventstd"><i class="fad fa-map-marker-alt"></i> Lap. Brawijaya</span> 
                                         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua</p>
@@ -42,7 +42,7 @@
                             <div class="col-9">
                                 <div class="card-body">
                                     <div class="title-section text-left">
-                                        <a href="event-detail.php"><h5>Cheers Music Weekend</h5></a>
+                                        <a href="{{ url('/event/view/1') }}"><h5>Cheers Music Weekend</h5></a>
                                         <span class="metaeventstd"><i class="fad fa-calendar-day"></i> 29 Sep 2020 20:00</span> 
                                         <span class="metaeventstd"><i class="fad fa-map-marker-alt"></i> Lap. Brawijaya</span> 
                                         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua</p>
@@ -62,7 +62,7 @@
                             <div class="col-9">
                                 <div class="card-body">
                                     <div class="title-section text-left">
-                                        <a href="event-detail.php"><h5>Cheers Music Weekend</h5></a>
+                                        <a href="{{ url('/event/view/1') }}"><h5>Cheers Music Weekend</h5></a>
                                         <span class="metaeventstd"><i class="fad fa-calendar-day"></i> 29 Sep 2020 20:00</span> 
                                         <span class="metaeventstd"><i class="fad fa-map-marker-alt"></i> Lap. Brawijaya</span> 
                                         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua</p>

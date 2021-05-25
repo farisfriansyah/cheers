@@ -82,17 +82,10 @@
             </div>
             <div class="col-lg-4 offset-lg-2">
                 <div class="row">
-                    <div class="col-lg-4 text-right">
-                        <div>
-                            <a href="{{ route('localization.switch', 'en') }}" class="mr-2">EN</a>
-                            <span class="mr-2">|</span>
-                            <a href="{{ route('localization.switch', 'id') }}">ID</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 text-center">
+                    <div class="col-lg-6 text-center">
                         <a href="#">Terms of use</a>
                     </div>
-                    <div class="col-lg-4 text-center">
+                    <div class="col-lg-6 text-center">
                         <a href="#">Privacy Policy</a>
                     </div>
                 </div>

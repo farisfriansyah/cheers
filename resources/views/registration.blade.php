@@ -27,7 +27,7 @@
                     <p id="divCheckPassword" class="form-text"></p>
 
                     <div class="d-flex justify-content-between intern-link">
-                        <a href="login.php" class="">
+                        <a href="{{ url('/login') }}" class="">
                             Sign In
                         </a>
 

@@ -13,7 +13,7 @@
                 <h3 class="h3-display">Cheers Healthy</h3><h1>Drinking Water</h1>
                 <hr class="cheers-separator">
                 <p class="lead">@lang('welcome.heroSubtitle')</p>
-                <a href="cheers-alkaline.php" class="btn btn-danger btn-cheerslight">@lang('welcome.heroBtn')</a>
+                <a href="{{ url('/cheers-alkaline') }}" class="btn btn-danger btn-cheerslight">@lang('welcome.heroBtn')</a>
             </div>
 
             <div class="socmed">
@@ -39,7 +39,7 @@
                         <h3><span style="font-size: 16px; font-weight: 500;">Why</span> <br> Cheers</h3>
                         <hr class="cheers-separator">
                         <p>@lang('welcome.homeWhycheersSub')</p>
-                        <a href="why-cheers.php" class="btn btn-danger btn-outcheerslight mt-3">@lang('welcome.homeWhycheersBtn')</a>
+                        <a href="{{ url('/whycheers') }}" class="btn btn-danger btn-outcheerslight mt-3">@lang('welcome.homeWhycheersBtn')</a>
                     </div>
                 </div>
             </div>
@@ -137,7 +137,7 @@
                         <h3>Event</h3>
                         <hr class="cheers-separator">
                         <p>@lang('welcome.homeEventSub')</p>
-                        <a href="event.php" class="btn btn-danger btn-outcheerslight">@lang('welcome.homeEventBtnAll')</a>
+                        <a href="{{ url('/event') }}" class="btn btn-danger btn-outcheerslight">@lang('welcome.homeEventBtnAll')</a>
                     </div>
                 </div>
             </div>
@@ -187,7 +187,7 @@
                                     </div>
                                     
                                 </div>
-                                <a href="event-detail.php">
+                                <a href="{{ url('/event/view/1') }}">
                                     <div class="card-footer">
                                         <span>@lang('welcome.homeEventBtnView')</span> 
                                     </div>
@@ -240,7 +240,7 @@
                                     </div>
                                     
                                 </div>
-                                <a href="event-detail.php">
+                                <a href="{{ url('/event/view/1') }}">
                                     <div class="card-footer">
                                         <span>@lang('welcome.homeEventBtnView')</span> 
                                     </div>
@@ -271,12 +271,12 @@
                                 <span>04</span>
                                 <label>FEB</label>
                             </div>
-                            <a href="blog-1.php">
+                            <a href="{{ url('/blog/view/1') }}">
                                 <img src="{{ asset('public/assets/img/pola-hidup.png')}}" title="" alt="blog-1">
                             </a>
                         </div>
                         <div class="blog-info">
-                            <h5><a href="blog-1.php">Pola hidup sehat, rahasia ampuh pencegahan kanker</a></h5>
+                            <h5><a href="{{ url('/blog/view/1') }}">Pola hidup sehat, rahasia ampuh pencegahan kanker</a></h5>
                             <p>Kebiasaan untuk hidup sehat masih saja sulit dilakukan. Hal ini bisa dilihat dari gaya hidup dan pola makan yang semakin tidak terkontrol. Ditambah tingkat polusi yang meningkatkan radikal bebas.</p>
                             <div class="btn-bar">
                                 <a href="blog-1.php" class="px-btn-arrow">
@@ -294,15 +294,15 @@
                                 <span>04</span>
                                 <label>FEB</label>
                             </div>
-                            <a href="blog-2.php">
+                            <a href="{{ url('/blog/view/1') }}">
                                 <img src="{{ asset('public/assets/img/manfaat.png')}}" title="" alt="blog-2">
                             </a>
                         </div>
                         <div class="blog-info">
-                            <h5><a href="blog-2.php">5 Manfaat bersepeda bikin hidup lebih sehat</a></h5>
+                            <h5><a href="{{ url('/blog/view/1') }}">5 Manfaat bersepeda bikin hidup lebih sehat</a></h5>
                             <p>Tubuh yang sehat berawal dari pola hidup sehat pula. Olahraga merupakan salah satu gaya hidup sehat yang harus dilakukan. Saat ini bersepeda menjadi olahraga yang sedang digandrungi. Dibalik animo tinggi masyarakat akan olahraga bersepeda, ternyata manfaatnya pun banyak lho.</p>
                             <div class="btn-bar">
-                                <a href="blog-2.php" class="px-btn-arrow">
+                                <a href="{{ url('/blog/view/1') }}" class="px-btn-arrow">
                                     <span>@lang('welcome.homeBlogCta')</span>
                                     <i class="fad fa-long-arrow-alt-right"></i>
                                 </a>
@@ -317,15 +317,15 @@
                                 <span>04</span>
                                 <label>FEB</label>
                             </div>
-                            <a href="blog-3.php">
+                            <a href="{{ url('/blog/view/1') }}">
                                 <img src="{{ asset('public/assets/img/ginjal-sehat.jpg')}}" title="" alt="blog-3">
                             </a>
                         </div>
                         <div class="blog-info">
-                            <h5><a href="blog-3.php">5 Rahasia ginjal sehat dan kuat</a></h5>
+                            <h5><a href="{{ url('/blog/view/1') }}">5 Rahasia ginjal sehat dan kuat</a></h5>
                             <p>Ginjal adalah salah satu organ vital yang berperan menyaring racun dari dalam tubuh. Oleh karena itu menjaga ginjal tetap sehat adalah keharusan. Namun, tahukah kamu? Menjaga ginjal tetap sehat sebenarnya tidak sulit kok. Yuk coba tips dari Cheers berikut ini.</p>
                             <div class="btn-bar">
-                                <a href="blog-3.php" class="px-btn-arrow">
+                                <a href="{{ url('/blog/view/1') }}" class="px-btn-arrow">
                                     <span>@lang('welcome.homeBlogCta')</span>
                                     <i class="fad fa-long-arrow-alt-right"></i>
                                 </a>

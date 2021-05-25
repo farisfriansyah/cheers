@@ -43,6 +43,12 @@
               <a class="nav-link" href="{{ url('/contact') }}">CONTACT</a>
             </li>
           </ul>
+
+          <div class="d-flex">
+            <a href="{{ route('localization.switch', 'en') }}" style="margin-right: 10px;">EN</a>
+            |
+            <a href="{{ route('localization.switch', 'id') }}" style="margin-left: 10px;">ID</a>
+          </div>
           
           <a href="{{ url('/login') }}" class="btn btn-danger btn-lgn d-flex" type="submit">MEMBERSHIP</a>
         </div>
