@@ -17,10 +17,10 @@
                             <div class="content-left">
                                 <div class="content-text">
                                     <div class="title-cheproduct">
-                                        <h3>Bottle (230 ml)</h3>
+                                        <h3>@lang('cheers-alkaline.alkaline-type_btl') (230 ml)</h3>
                                     </div>
                                     
-                                    <p>Sexy, Healthy, Easy (SHE). Aggota keluarga baru Cheers yang kecil tapi penuh dengan manfaat. Sangat nyaman dibawa. Bisa kamu masukan ke kantong atau tas tanganmu yang kecil. Cocok untuk bekal makan siang anak bahkan bekal makan siangmu. </p>
+                                    <p>@lang('cheers-alkaline.alkaline-desc-230')</p>
                                 </div>
 
                                 <div class="content-img">
@@ -35,7 +35,7 @@
                         <div class="content-point align-self-center">
                             <div class="title-product">
                                 <h3>Cheers Alkaline</h3>
-                                <p>Diproduksi dengan menggunakan teknologi mutakhir Jepang Alpha Ion Alkalizer sehingga menghasilkan air minum dengan pH tinggi (up to 8.5). Membantu menetralkan kondisi pH dalam tubuh sehingga daya tahan tubuh lebih terjaga.  </p>
+                                <p>@lang('cheers-alkaline.alkaline-subtitle')</p>
                             </div>
                         </div>
                     </div>
@@ -55,10 +55,10 @@
                             <div class="content-left">
                                 <div class="content-text">
                                     <div class="title-cheproduct">
-                                        <h3>Bottle (330 ml)</h3>
+                                        <h3>@lang('cheers-alkaline.alkaline-type_btl') (330 ml)</h3>
                                     </div>
                                     
-                                    <p>Cocok untuk menemanimu nongkrong atau menikmati secangkir kopi bersama teman dan kolega. Kandungan pH up to 8,5 di dalamnya membantu meningkatkan daya tahan tubuhmu. Hidup lebih sehat dengan Cheers Alkaline Water</p>
+                                    <p>@lang('cheers-alkaline.alkaline-desc-330')</p>
                                 </div>
 
                                 <div class="content-img">
@@ -73,7 +73,7 @@
                         <div class="content-point align-self-center">
                             <div class="title-product">
                                 <h3>Cheers Alkaline</h3>
-                                <p>Diproduksi dengan menggunakan teknologi mutakhir Jepang Alpha Ion Alkalizer sehingga menghasilkan air minum dengan pH tinggi (up to 8.5). Membantu menetralkan kondisi pH dalam tubuh sehingga daya tahan tubuh lebih terjaga.  </p>
+                                <p>@lang('cheers-alkaline.alkaline-subtitle')</p>
                             </div>
                         </div>
                     </div>
@@ -94,10 +94,10 @@
                             <div class="content-left">
                                 <div class="content-text">
                                     <div class="title-cheproduct">
-                                        <h3>Bottle (550 ml)</h3>
+                                        <h3>@lang('cheers-alkaline.alkaline-type_btl') (550 ml)</h3>
                                     </div>
                                     
-                                    <p>Cocok menemani aktivitasmu setiap hari. Khususnya aktivitas di luar dan olahraga. Sebab, dengan desain botol yang ergonomis Cheers Alkaline Water mudah di bawa kemanapun. Kandungan pH up to 8,5 di dalamnya membantu meningkatkan daya tahan tubuhmu. Hidup lebih sehat dengan Cheers Alkaline Water. </p>
+                                    <p>@lang('cheers-alkaline.alkaline-desc-550')</p>
                                 </div>
 
                                 <div class="content-img">
@@ -112,7 +112,7 @@
                         <div class="content-point align-self-center">
                             <div class="title-product">
                                 <h3>Cheers Alkaline</h3>
-                                <p>Diproduksi dengan menggunakan teknologi mutakhir Jepang Alpha Ion Alkalizer sehingga menghasilkan air minum dengan pH tinggi (up to 8.5). Membantu menetralkan kondisi pH dalam tubuh sehingga daya tahan tubuh lebih terjaga.  </p>
+                                <p>@lang('cheers-alkaline.alkaline-subtitle')</p>
                             </div>
                         </div>
                     </div>
@@ -133,10 +133,10 @@
                             <div class="content-left">
                                 <div class="content-text">
                                     <div class="title-cheproduct">
-                                        <h3>Bottle (1500 ml)</h3>
+                                        <h3>@lang('cheers-alkaline.alkaline-type_btl') (1500 ml)</h3>
                                     </div>
                                     
-                                    <p>Cocok menemani trip liburan kamu bersama keluarga agar tetap terhidrasi. Untuk acara berkumpul bersama keluarga atau sahabat pun sangat cocok. Kandungan pH up to 8,5 di dalamnya membantu meningkatkan daya tahan tubuhmu. Hidup lebih sehat dengan Cheers Alkaline Water. </p>
+                                    <p>@lang('cheers-alkaline.alkaline-desc-1500')</p>
                                 </div>
 
                                 <div class="content-img">
@@ -151,7 +151,7 @@
                         <div class="content-point align-self-center">
                             <div class="title-product">
                                 <h3>Cheers Alkaline</h3>
-                                <p>Diproduksi dengan menggunakan teknologi mutakhir Jepang Alpha Ion Alkalizer sehingga menghasilkan air minum dengan pH tinggi (up to 8.5). Membantu menetralkan kondisi pH dalam tubuh sehingga daya tahan tubuh lebih terjaga.  </p>
+                                <p>@lang('cheers-alkaline.alkaline-subtitle')</p>
                             </div>
                         </div>
                     </div>
@@ -172,10 +172,10 @@
                             <div class="content-left">
                                 <div class="content-text">
                                     <div class="title-cheproduct">
-                                        <h3>Gallon (19.8 L)</h3>
+                                        <h3>@lang('cheers-alkaline.alkaline-type_gln') (19.8 L)</h3>
                                     </div>
                                     
-                                    <p>Cocok untuk kebutuhan harian kamu di rumah atau di kantor. Kandungan pH up to 8,5 di dalamnya membantu meningkatkan daya tahan tubuhmu. Hidup lebih sehat dengan Cheers Alkaline Water. </p>
+                                    <p>@lang('cheers-alkaline.alkaline-desc-19_8')</p>
                                 </div>
 
                                 <div class="content-img">
@@ -190,7 +190,7 @@
                         <div class="content-point align-self-center">
                             <div class="title-product">
                                 <h3>Cheers Alkaline</h3>
-                                <p>Diproduksi dengan menggunakan teknologi mutakhir Jepang Alpha Ion Alkalizer sehingga menghasilkan air minum dengan pH tinggi (up to 8.5). Membantu menetralkan kondisi pH dalam tubuh sehingga daya tahan tubuh lebih terjaga.  </p>
+                                <p>@lang('cheers-alkaline.alkaline-subtitle')</p>
                             </div>
                         </div>
                     </div>
@@ -204,7 +204,7 @@
             <div class="overlay-card"></div>
             <div class="row g-0 textpro-card">
                 <div class="col-7 textpro-left">
-                    <h6>Bottle</h6>
+                    <h6>@lang('cheers-alkaline.alkaline-type_btl')</h6>
                     <h5>230 ml</h5>
                     <p>Cheers Alkaline</p>
                 </div>
@@ -217,7 +217,7 @@
             <div class="overlay-card"></div>
             <div class="row g-0 textpro-card">
                 <div class="col-7 textpro-left">
-                    <h6>Bottle</h6>
+                    <h6>@lang('cheers-alkaline.alkaline-type_btl')</h6>
                     <h5>330 ml</h5>
                     <p>Cheers Alkaline</p>
                 </div>
@@ -232,7 +232,7 @@
         <div class="overlay-card"></div>
             <div class="row g-0 textpro-card">
                 <div class="col-7 textpro-left">
-                    <h6>Bottle</h6>
+                    <h6>@lang('cheers-alkaline.alkaline-type_btl')</h6>
                     <h5>550 ml</h5>
                     <p>Cheers Alkaline</p>
                 </div>
@@ -246,7 +246,7 @@
         <div class="overlay-card"></div>
             <div class="row g-0 textpro-card">
                 <div class="col-7 textpro-left">
-                    <h6>Bottle</h6>
+                    <h6>@lang('cheers-alkaline.alkaline-type_btl')</h6>
                     <h5>1500 ml</h5>
                     <p>Cheers Alkaline</p>
                 </div>
@@ -260,7 +260,7 @@
             <div class="overlay-card"></div>
             <div class="row g-0 textpro-card">
                 <div class="col-7 textpro-left">
-                    <h6>Gallon</h6>
+                    <h6>@lang('cheers-alkaline.alkaline-type_gln')</h6>
                     <h5>19.9 L</h5>
                     <p>Cheers Alkaline</p>
                 </div>
@@ -274,10 +274,9 @@
 
 <section id="why-product" class="why-theproduct why-alkaline">
     <div class="title-section-ct">
-        <h3>Why Alkaline</h3>
+        <h3>@lang('cheers-alkaline.alkaline-whyAlkaline')</h3>
         <hr class="cheers-separator-center">
-        <span>Hidrasi, atau mempertahankan jumlah cairan di dalam tubuh, merupakan hal yang sangat penting. Hal ini bertujuan agar kadar pH dalam tubuh tetap seimbang atau netral. Kelebihan asupan makanan atau minuman yang bersifat asam (kopi, daging, soda, alkohol) akan menyebabkan pH tubuh juga asam. </span>
-        <span>Kondisi tubuh dengan pH terlalu rendah menyebabkan gangguan kesehatan.  Cheers Alkaline Water dengan pH up to 8.5 membantu menetralkan pH tubuh sehingga daya tahan tubuh lebih terjaga.</span>
+        <span>@lang('cheers-alkaline.alkaline-whyText')</span>
     </div>
 
     <div class="container text-center">
