@@ -20,7 +20,7 @@
                     </div>
 
                     <div class="d-flex justify-content-between intern-link">
-                        <a href="registration.php" class="">
+                        <a href="{{ url('/registration') }}" class="">
                             Register
                         </a>
 
