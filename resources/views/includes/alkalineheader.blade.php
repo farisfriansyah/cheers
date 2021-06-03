@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg nav-product fixed-top">
     <div class="container-fluid mynavpad">
       <a class="navbar-brand" href="index.php">
-        <img src="{{ asset('public/assets/img/cheers-logoph.png')}}" alt="">
+        <img src="{{ $baseurl.$head[0]['logo']}}" alt="">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="#navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
         <i class="far fa-bars"></i>

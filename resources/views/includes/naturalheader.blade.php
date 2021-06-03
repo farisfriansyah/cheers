@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg nav-product natural fixed-top">
     <div class="container-fluid mynavpad">
       <a class="navbar-brand" href="index.php">
-        <img src="{{ asset('public/assets/img/cheers-natural.png')}}" alt="">
+        <img src="{{ $baseurl.$head[0]['logo'] }}" alt="">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="#navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
         <i class="far fa-bars"></i>
@@ -21,8 +21,9 @@
               PRODUCT
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" href="{{ url('/cheers-alkaline') }}">Cheers Alkaline</a></li>
-              <li><a class="dropdown-item" href="{{ url('/cheers-natural') }}">Cheers Natural</a></li>
+              @foreach ($products as $pd)
+              <li><a class="dropdown-item" href="{{ url('/'.$pd['url']) }}">{{ $pd['name'] }}</a></li>
+              @endforeach
             </ul>
           </li>
 
