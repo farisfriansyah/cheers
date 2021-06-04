@@ -38,43 +38,14 @@
                             <div class="card blog-card mb-1">
                                 <div class="row g-0">
                                     <div class="col-2">
-<<<<<<< HEAD
                                         <h3 class="number-listblog">0{{ $trd_ }}</h3>
-=======
-                                        <h3 class="number-listblog">01</h3>
                                     </div>
 
                                     <div class="col-10">
                                         <div class="card-body">
                                             <div class="title-section text-left">
-                                                <a href="{{ url('/blog/view/1') }}"><h5>Pola hidup sehat, rahasia ampuh pencegahan kanker</h5></a>
-                                                <span class="metablog"><i class="fad fa-calendar-day"></i> 29 Sep 2020 20:00</span> 
-                                                <span class="metablog"><i class="fad fa-user"></i> Admin</span>
-                                                <span class="metablog"><i class="fad fa-hourglass"></i> 3min read</span>
-                                            </div>
-                                        </div>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card blog-card mb-1">
-                                <div class="row g-0">
-                                    <div class="col-2">
-                                        <h3 class="number-listblog">02</h3>
->>>>>>> f5d4fc0d81a12a6a845fa905768073025058a04e
-                                    </div>
-
-                                    <div class="col-10">
-                                        <div class="card-body">
-                                            <div class="title-section text-left">
-<<<<<<< HEAD
                                                 <a href="{{ url('blog/view/'.$trd['url'].'/'.$trd['id']) }}"><h5>{{ $trd['title_'.$locale] }}</h5></a>
                                                 <span class="metablog"><i class="fad fa-calendar-day"></i> {{ strftime("%d %B %Y", strtotime($trd['created_at'])) }}</span> 
-=======
-                                                <a href="{{ url('/blog/view/1') }}"><h5>5 Manfaat bersepeda bikin hidup lebih sehat</h5></a>
-                                                <span class="metablog"><i class="fad fa-calendar-day"></i> 29 Sep 2020 20:00</span> 
->>>>>>> f5d4fc0d81a12a6a845fa905768073025058a04e
                                                 <span class="metablog"><i class="fad fa-user"></i> Admin</span>
                                                 <span class="metablog"><i class="fad fa-hourglass"></i> {{ $trd['duration'] }}min read</span>
                                             </div>
@@ -83,30 +54,8 @@
                                     </div>
                                 </div>
                             </div>
-<<<<<<< HEAD
                             @php $trd_++; @endphp
                             @endforeach
-=======
-
-                            <div class="card blog-card mb-1">
-                                <div class="row g-0">
-                                    <div class="col-2">
-                                        <h3 class="number-listblog">03</h3>
-                                    </div>
-
-                                    <div class="col-10">
-                                        <div class="card-body">
-                                            <div class="title-section text-left">
-                                                <a href="{{ url('/blog/view/1') }}"><h5>5 Rahasia ginjal sehat dan kuat</h5></a>
-                                                <span class="metablog"><i class="fad fa-calendar-day"></i> 29 Sep 2020 20:00</span> 
-                                                <span class="metablog"><i class="fad fa-user"></i> Admin</span>
-                                                <span class="metablog"><i class="fad fa-hourglass"></i> 3min read</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
->>>>>>> f5d4fc0d81a12a6a845fa905768073025058a04e
                         </div>
                     </div>
                 </div>

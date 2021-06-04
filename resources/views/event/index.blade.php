@@ -23,68 +23,19 @@
                             <div class="col-9">
                                 <div class="card-body">
                                     <div class="title-section text-left">
-<<<<<<< HEAD
                                         <a href="{{ url('event/view/'.$ev['id']) }}"><h5>{{ $ev['name'] }}</h5></a>
                                         <span class="metaeventstd"><i class="fad fa-calendar-day"></i> 
                                             {{ strftime("%d %B %Y", strtotime($ev['startdate'])).' - '.strftime("%d %B %Y", strtotime($ev['enddate'])) }}
                                         </span>
                                         <span class="metaeventstd"><i class="fad fa-map-marker-alt"></i> {{ $ev['lokasi'] }}</span> 
                                         <p>{!! $ev['description'] !!}</p>
-=======
-                                        <a href="{{ url('/event/view/1') }}"><h5>Cheers Music Weekend</h5></a>
-                                        <span class="metaeventstd"><i class="fad fa-calendar-day"></i> 29 Sep 2020 20:00</span>
-                                        <span class="metaeventstd"><i class="fad fa-map-marker-alt"></i> Lap. Brawijaya</span> 
-                                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua</p>
->>>>>>> f5d4fc0d81a12a6a845fa905768073025058a04e
                                     </div>
                                 </div>
                                 
                             </div>
                         </div>
                     </div>
-<<<<<<< HEAD
                     @endforeach
-=======
-
-                    <div class="card eventstd-card mb-1">
-                        <div class="row g-0">
-                            <div class="col-3">
-                                <img src="{{ asset('public/assets/img/637C1448.jpg')}}" class="card-img rounded">
-                            </div>
-
-                            <div class="col-9">
-                                <div class="card-body">
-                                    <div class="title-section text-left">
-                                        <a href="{{ url('/event/view/1') }}"><h5>Cheers Music Weekend</h5></a>
-                                        <span class="metaeventstd"><i class="fad fa-calendar-day"></i> 29 Sep 2020 20:00</span> 
-                                        <span class="metaeventstd"><i class="fad fa-map-marker-alt"></i> Lap. Brawijaya</span> 
-                                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua</p>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card eventstd-card mb-1">
-                        <div class="row g-0">
-                            <div class="col-3">
-                                <img src="{{ asset('public/assets/img/637C1448.jpg')}}" class="card-img rounded">
-                            </div>
-
-                            <div class="col-9">
-                                <div class="card-body">
-                                    <div class="title-section text-left">
-                                        <a href="{{ url('/event/view/1') }}"><h5>Cheers Music Weekend</h5></a>
-                                        <span class="metaeventstd"><i class="fad fa-calendar-day"></i> 29 Sep 2020 20:00</span> 
-                                        <span class="metaeventstd"><i class="fad fa-map-marker-alt"></i> Lap. Brawijaya</span> 
-                                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
->>>>>>> f5d4fc0d81a12a6a845fa905768073025058a04e
                 </div>
             </div>
             </div>
