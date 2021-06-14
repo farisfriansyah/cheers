@@ -99,7 +99,7 @@
                 <div id="eventPromo" class="owl-carousel owl-theme" >
                     <!-- Carousel Event -->
                     @foreach ($data['events'] as $evn)
-                    <div class="card mb-3">
+                    <div class="card mb-3" >
                         <div class="row g-0">
                             <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12">
                                 <img src="{{ $baseurl.$evn['image'] }}"  alt="cheers-musicevent" class="banner-event">
@@ -122,21 +122,22 @@
                                             <span>{{ $evn['lokasi'] }}</span>
                                         </div>
                                     </div>
-                                    <div class="nav-tab">
-                                        <nav>
-                                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                                <a class="nav-item nav-link active" id="nav-overview-tab" data-toggle="tab" href="#nav-overview" role="tab" aria-controls="nav-overview" aria-selected="true">@lang('welcome.homeEventOverview')</a>
-                                                <a class="nav-item nav-link" id="nav-terms-tab" data-toggle="tab" href="#nav-terms" role="tab" aria-controls="nav-terms" aria-selected="false">@lang('welcome.homeEventTnc')</a>
-                                                
-                                            </div>
-                                        </nav>
-                                        <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
-                                            <div class="tab-pane fade show active" id="nav-overview" role="tabpanel" aria-labelledby="nav-overview-tab">
-                                                <p class="card-text">{!! $evn['overview'] !!}</p>
-                                            </div>
-                                            <div class="tab-pane fade" id="nav-terms" role="tabpanel" aria-labelledby="nav-terms-tab">
-                                                <p class="card-text">{!! $evn['tnc'] !!}</p>
-                                            </div>
+                                    
+
+                                    <nav>
+                                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                            <button class="nav-link active" id="nav-overview-tab" data-bs-toggle="tab" data-bs-target="#nav-overview" type="button" role="tab" aria-controls="nav-overview" aria-selected="true">@lang('welcome.homeEventOverview')</button>
+                                            <button class="nav-link" id="nav-terms-tab" data-bs-toggle="tab" data-bs-target="#nav-terms" type="button" role="tab" aria-controls="nav-terms" aria-selected="false">@lang('welcome.homeEventTnc')</button>
+                                        </div>
+                                    </nav>
+                                    <div class="tab-content" id="nav-tabContent">
+                                        <div class="tab-pane fade show active" id="nav-overview" role="tabpanel" aria-labelledby="nav-overview-tab">
+                                            {{-- <p class="card-text">{!! $evn['overview'] !!}</p> --}}
+                                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                        </div>
+                                        <div class="tab-pane fade" id="nav-terms" role="tabpanel" aria-labelledby="nav-terms-tab">
+                                            {{-- <p class="card-text">{!! $evn['tnc'] !!}</p> --}}
+                                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                                         </div>
                                     </div>
                                     
@@ -175,15 +176,15 @@
                                 <span>{{ strftime("%d", strtotime($blg['created_at'])) }}</span>
                                 <label>{{ strftime("%B", strtotime($blg['created_at'])) }}</label>
                             </div>
-                            <a href="blog-1.php">
+                            <a href="{{ url('blog/view/'.$blg['url'].'/'.$blg['id']) }}">
                                 <img src="{{ $baseurl.$blg['image'] }}" title="" alt="{{ $blg['title_'.$locale] }}">
                             </a>
                         </div>
                         <div class="blog-info">
                             <h5><a href="{{ url('blog/view/'.$blg['url'].'/'.$blg['id']) }}">{{ $blg['title_'.$locale] }}</a></h5>
-                            <p>{!!  substr($blg['content_'.$locale], 0, 300).'...' !!}</p>
+                            <p>{!!  substr($blg['content_'.$locale], 0, 140).'...' !!}</p>
                             <div class="btn-bar">
-                                <a href="blog-1.php" class="px-btn-arrow">
+                                <a href="{{ url('blog/view/'.$blg['url'].'/'.$blg['id']) }}" class="px-btn-arrow">
                                     <span>@lang('welcome.homeBlogCta')</span>
                                     <i class="fad fa-long-arrow-alt-right"></i>
                                 </a>

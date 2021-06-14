@@ -56,8 +56,6 @@ $(document).ready(function () {
         carouselBG.trigger('to.owl.carousel', [$(this).index(), 300]);
     });
 
-    var mixer = mixitup('#cheers-faq .accordion .container');
-
     const slider = document.querySelector('.card-listproduct');
     let isDown = false;
     let startX;
@@ -109,7 +107,9 @@ jQuery(document).ready(function ($) {
         autoplayHoverPause: true,
         items: 1,
         nav: true,
-        loop: true,
+        loop: false,
         dots: true
     });
+
+    var mixer = mixitup('#cheers-faq .accordion .container');
 });
