@@ -2,7 +2,6 @@
 
 @section('content')
 
-
 <section id="cheers-blogview" class="blogcomponent">
     <div class="myfullpad">
         <div class="row g-2">
@@ -34,6 +33,7 @@
                     <div class="row g-1">
                         <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
                             @php $trd_=1; @endphp
+                            @foreach ($trending as $trd)
                         
                             <div class="card blog-card mb-1">
                                 <div class="row g-0">
