@@ -319,16 +319,20 @@
                 }
             }
 
-            img{
-                width: 100%;
+            .cardpromo-img{
                 height: 100%;
-                object-fit: cover;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
             }
 
             p{
                 text-overflow: ellipsis;
                 word-wrap: break-word;
                 overflow: hidden;
+                margin-bottom: 0px;
                 text-align: left;
                 display: -webkit-box;
                 line-clamp: 2;
@@ -380,6 +384,7 @@
             .tab-content {
                 .card-text{
                     overflow-y: auto;
+                    padding: 10px;
                     max-height: 150px;
                 }
             }
@@ -396,7 +401,11 @@
                     cursor: pointer;
                 }
             }
-            
+        }
+        .button-vieweve{
+            bottom: 0;
+            position: absolute;
+            width: inherit;
         }
     }
 }

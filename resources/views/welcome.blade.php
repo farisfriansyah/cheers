@@ -73,7 +73,7 @@
                             <div class="col-md-7">
                                 <div class="card-body">
                                     <h6 class="card-title">Promo</h6>
-                                    <p class="card-text">{!! $prm['description'] !!}</p>
+                                    <div class="card-text">{!! $prm['description'] !!}</div>
                                 </div>
                             </div>
                         </div>
@@ -130,15 +130,15 @@
                                     </nav>
                                     <div class="tab-content" id="nav-tabContent">
                                         <div class="tab-pane fade show active" id="nav-overview" role="tabpanel" aria-labelledby="nav-overview-tab">
-                                            <p class="card-text">{!! $evn['overview'] !!}</p>
+                                            <div class="card-text">{!! $evn['overview'] !!}</div>
                                         </div>
                                         <div class="tab-pane fade" id="nav-terms" role="tabpanel" aria-labelledby="nav-terms-tab">
-                                            <p class="card-text">{!! $evn['tnc'] !!}</p>
+                                            <div class="card-text">{!! $evn['tnc'] !!}</div>
                                         </div>
                                     </div>
                                     
                                 </div>
-                                <a href="{{ url('event/view/'.$evn['id']) }}">
+                                <a href="{{ url('event/view/'.$evn['id']) }}" class="button-vieweve">
                                     <div class="card-footer">
                                         <span>@lang('welcome.homeEventBtnView')</span> 
                                     </div>

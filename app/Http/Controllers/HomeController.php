@@ -58,6 +58,7 @@ class HomeController extends Controller
     public function index()
     {   
         $data   = Self::getAPI('home');
+        
         $locale = $this->local;
         return view('welcome', compact('data','locale'));
     }

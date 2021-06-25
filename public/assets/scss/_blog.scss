@@ -125,8 +125,8 @@
                     overflow: hidden;
                     text-align: left;
                     display: -webkit-box;
-                    line-clamp: 2;
-                    -webkit-line-clamp: 2;
+                    line-clamp: 4;
+                    -webkit-line-clamp: 4;
                     -webkit-box-orient: vertical;
                 }
             }
@@ -225,7 +225,7 @@
             margin-top: 20px;
             .bloghead-img{
                 width: 100%;
-                height: 300px;
+                height: auto;
                 object-fit: cover;
                 object-position: top;
             }
