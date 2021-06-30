@@ -98,7 +98,9 @@
                 
                 <div id="eventPromo" class="owl-carousel owl-theme" >
                     <!-- Carousel Event -->
-                    @foreach ($data['events'] as $evn)
+
+                    @forelse ($data['events'] as $evn)
+                    
                     <div class="card mb-3" >
                         <div class="row g-0">
                             <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12">
@@ -146,7 +148,24 @@
                             </div>
                         </div>
                     </div>
-                    @endforeach
+
+                    @empty
+
+                    <div class="card no-event mb-3" >
+                        <div class="row g-0">
+                            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                <img src="{{ asset('public/assets/img/SVG/sche.svg')}}"  alt="cheers-eventevent" class="banner-noevent">
+                            </div>
+                            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 d-flex align-items-center">
+                                <div class="card-body">
+                                    <h6 class="text-muted">No Event Yet</h6>
+                                    <h4 class="card-title">We still don't have any events held.</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    @endforelse
                     <!-- Carousel Event -->
                     
                 </div>
@@ -165,12 +184,12 @@
         <div class="container-fluid">
             <div class="row">
                 @foreach ($data['blogs'] as $blg)
-                <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-12 pt-2 blog-part">
+                <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-12 blog-part">
                     <div class="blog-grid">
                         <div class="blog-img">
                             <div class="date">
                                 <span>{{ strftime("%d", strtotime($blg['created_at'])) }}</span>
-                                <label>{{ strftime("%B", strtotime($blg['created_at'])) }}</label>
+                                <label>{{ strftime("%b", strtotime($blg['created_at'])) }}</label>
                             </div>
                             <a href="{{ url('blog/view/'.$blg['url'].'/'.$blg['id']) }}">
                                 <img src="{{ $baseurl.$blg['image'] }}" title="" alt="{{ $blg['title_'.$locale] }}">

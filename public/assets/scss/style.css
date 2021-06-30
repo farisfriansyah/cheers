@@ -759,7 +759,7 @@ a:focus {
 
 #cheers-blog .blog-part .blog-grid .blog-img img {
   width: 100%;
-  height: 100%;
+  height: 250px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -954,10 +954,16 @@ a:focus {
 
 #cheers-event .event-part .card .banner-event {
   width: 100%;
-  height: 100%;
-  max-height: 379px;
+  height: 380px;
+  max-height: 380px;
   -o-object-fit: cover;
   object-fit: cover;
+}
+
+#cheers-event .event-part .card .banner-noevent {
+  width: 380px;
+  height: 380px;
+  text-align: center;
 }
 
 #cheers-event .event-part .card .agenda-part i {
@@ -1003,6 +1009,16 @@ a:focus {
 #cheers-event .event-part .card .card-footer span {
   color: #F7F7F7;
   cursor: pointer;
+}
+
+#cheers-event .event-part .card.no-event {
+  border: 0px solid rgba(0, 0, 0, 0.125);
+}
+
+#cheers-event .event-part .card.no-event .banner-noevent {
+  width: 380px;
+  height: 380px;
+  text-align: center;
 }
 
 #cheers-event .event-part .button-vieweve {

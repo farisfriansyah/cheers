@@ -34,7 +34,6 @@ Route::get('/cheers-natural', [NaturalController::class,'index']);
 Route::get('/event', [EventController::class,'index']);
 Route::get('/event/view/{idx}', [EventController::class,'view']);
 
-
 Route::group(['prefix' => 'blog'], function(){
     Route::get('/',[BlogController::class,'index']);
     Route::get('/feels-great/',[BlogController::class,'blog_page']);
