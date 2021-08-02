@@ -43,6 +43,10 @@
             }
         }
     }
+    
+    .socmed-m {
+        display: none;
+    }
 
     .bg-imgHero{
         display: flex;
@@ -584,7 +588,39 @@
 
         .socmed {
             display: none;
+        }
 
+        .socmed-m {
+            display: flex;
+            margin: 10px 30px;
+            position: relative;
+            padding: 0px 0px;
+            bottom: 0px;
+
+            a{
+                margin-right: 10px;
+
+                .rounded{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    width: 40px;
+                    height: 40px;
+                    padding: 0px;
+                    text-decoration: none;
+                    text-align: center;
+                    // border: 1px solid $cheers-light;
+                    background: rgba(216,38,28,0.3);
+                    color: $cheers-light;
+                    font-size: 20px;
+                    font-weight: normal;
+                    line-height: 2em;
+                    border-radius: 100px;
+                    -moz-border-radius: 100px;
+                    -webkit-border-radius: 100px;
+                }
+            }
         }
     }
 

@@ -46,7 +46,7 @@
             </li>
           </ul>
 
-          <div class="d-flex">
+          <div class="d-flex multilang">
             <a href="{{ route('localization.switch', 'en') }}" style="margin-right: 10px;">EN</a>
             |
             <a href="{{ route('localization.switch', 'id') }}" style="margin-left: 10px;">ID</a>

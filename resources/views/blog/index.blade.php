@@ -36,6 +36,19 @@
     </div>
 </section>
 
+<section id="cheers-search" class="search-sect">
+    <div class="myfullpad">
+        <div class="row">
+            <form class="" id="">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Search..." aria-label="Search..." aria-describedby="button-addon2">
+                    <button class="btn btn-danger btn-cheerslight" type="button" id="button-addon2" style="border-radius: 0px 10px 10px 0px;">Search</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
 <section id="cheers-bloglist" class="blogcomponent">
     <div class="myfullpad">
         <div class="row g-2">

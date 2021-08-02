@@ -36,7 +36,7 @@
                     <div class="content-right">
                         <div class="content-point align-self-center">
                             <div class="title-product">
-                                <h3>Cheers Alkaline {{ $left['productName'] }}</h3>
+                                <h3>{{ $left['productName'] }}</h3>
                                 <p>{{ $left['subtitle_'.$locale] }}</p>
                             </div>
                         </div>

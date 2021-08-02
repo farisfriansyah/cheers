@@ -8,11 +8,12 @@
             <div class="col-lg-2 internal-link">
                 <h6>Links</h6>
                 <ul >
-                    <li><a href="index.php">Home</a></li>
-                    <li><a href="cheers-alkaline.php">Alkaline</a></li>
-                    <li><a href="cheers-natural.php">Natural</a></li>
-                    <li><a href="why-cheers.php">Why Cheers</a></li>
-                    <li><a href="contact.php">Contact Us</a></li>
+                    <li><a href="{{ url('/') }}">Home</a></li>
+                    @foreach ($products as $pd)
+                    <li><a href="{{ url('/'.$pd['url']) }}">{{ $pd['name'] }}</a></li>
+                    @endforeach
+                    <li><a href="{{ url('/whycheers') }}">Why Cheers</a></li>
+                    <li><a href="{{ url('/contact') }}">Contact Us</a></li>
                 </ul>
                 
             </div>
@@ -20,20 +21,19 @@
             <div class="col-lg-2 internal-link">
                 <h6>Links</h6>
                 <ul >
-                    <li><a href="blog.php">News Update</a></li>
-                    <li><a href="">Events & Promo</a></li>
-                    <li><a href="login.php">Sign In</a></li>
+                    <li><a href="{{ url('/blog') }}">News Update</a></li>
+                    <li><a href="{{ url('/event') }}">Promo & Event</a></li>
+                    <li><a href="{{ url('/login') }}">Sign In</a></li>
                 </ul>
             </div>
 
             <div class="col-lg-2 internal-link">
                 <h6>Support</h6>
                 <ul >
-                    <li><a href="faq.php">FAQ</a></li>
-                    <li><a href="">Career</a></li>
-                    <li><a href="">Tukar Sampah</a></li>
-                    <li><a href="">CSR</a></li>
-                    <li><a href="">What's On</a></li>
+                    <li><a href="{{ url('/faq') }}">FAQ</a></li>
+                    <li><a href="https://recycheers.saycheers.com/">Recycheers</a></li>
+                    {{-- <li><a href="">CSR</a></li>
+                    <li><a href="">What's On</a></li> --}}
                 </ul>
             </div>
 

@@ -22,6 +22,21 @@
                 <a href="https://www.youtube.com/channel/UCRu-4WLrHdPyeKtCsJV7otg">Youtube</a>
                 <a href="https://www.instagram.com/cheerswater/">Instagram</a>
             </div>
+
+            <div class="socmed-m">
+                <a href="https://www.facebook.com/CheersWater/">
+                    <i class="fab rounded fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com/CheersWater">
+                    <i class="fab rounded fa-twitter"></i>
+                </a>
+                <a href="https://www.youtube.com/channel/UCRu-4WLrHdPyeKtCsJV7otg">
+                    <i class="fab rounded fa-youtube"></i>
+                </a>
+                <a href="https://www.instagram.com/cheerswater/">
+                    <i class="fab rounded fa-instagram"></i>
+                </a>
+            </div>
         </div>
         
     </div>

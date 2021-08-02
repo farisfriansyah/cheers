@@ -579,7 +579,11 @@ a:focus {
   .navbar.nav-product .mynavpad .navbar-nav .dropdown .dropdown-menu {
     margin-top: 0;
   }
+  .navbar.nav-product .mynavpad .multilang {
+    margin-left: 10px;
+  }
   .navbar.nav-product .mynavpad .btn-lgn {
+    margin: 30px 0px 20px 0px;
     color: #151515;
     background-color: transparent;
     border: 2px solid #151515;
@@ -598,6 +602,12 @@ a:focus {
   }
   .navbar.nav-default .mynavpad .navbar-toggler i {
     color: #151515;
+  }
+  .navbar.nav-default .mynavpad .multilang {
+    margin-left: 10px;
+  }
+  .navbar.nav-default .mynavpad .btn-lgn {
+    margin: 30px 0px 20px 0px;
   }
 }
 
@@ -652,6 +662,10 @@ a:focus {
 
 #cheers-hero .socmed a:hover {
   color: #A22523;
+}
+
+#cheers-hero .socmed-m {
+  display: none;
 }
 
 #cheers-hero .bg-imgHero {
@@ -1168,6 +1182,43 @@ a:focus {
   }
   #cheers-hero .socmed {
     display: none;
+  }
+  #cheers-hero .socmed-m {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 10px 30px;
+    position: relative;
+    padding: 0px 0px;
+    bottom: 0px;
+  }
+  #cheers-hero .socmed-m a {
+    margin-right: 10px;
+  }
+  #cheers-hero .socmed-m a .rounded {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    padding: 0px;
+    text-decoration: none;
+    text-align: center;
+    background: rgba(216, 38, 28, 0.3);
+    color: #D8261C;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 2em;
+    border-radius: 100px;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
   }
   #cheers-subscribe {
     background-position: center left -200px;

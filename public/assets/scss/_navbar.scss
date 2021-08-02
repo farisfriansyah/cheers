@@ -265,6 +265,7 @@
                 }
             }
         }
+
         .btn-lgn {
             &:hover{
                 background-color: $cheers-natural-dark;
@@ -334,6 +335,7 @@
                 }
             }
         }
+
         .btn-lgn {
             color: $nav-login;
             background-color: transparent;
@@ -356,6 +358,9 @@
             padding: 0px 10px;
         }
     }
+
+
+    
     .navbar.nav-default {
         background-color: $fore-color;
     }
@@ -425,7 +430,13 @@
                     }
                 }
             }
+
+            .multilang{
+                margin-left: 10px;
+            }
+
             .btn-lgn {
+                margin: 30px 0px 20px 0px;
                 color: $primary-color;
                 background-color: transparent;
                 border: 2px solid $primary-color;
@@ -448,6 +459,14 @@
                 i{
                     color: $primary-color;
                 }
+            }
+
+            .multilang{
+                margin-left: 10px;
+            }
+
+            .btn-lgn {
+                margin: 30px 0px 20px 0px;
             }
         }
     }

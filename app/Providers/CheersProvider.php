@@ -26,6 +26,7 @@ class CheersProvider extends ServiceProvider
     {
         View::composer([
             'includes.header',
+            'includes.footer',
             'welcome',
             'cheers-alkaline','cheers-natural',
             'includes.alkalineheader','includes.naturalheader',

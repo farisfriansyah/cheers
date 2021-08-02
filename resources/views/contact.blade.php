@@ -56,7 +56,7 @@
 
                     <div class="d-flex justify-content-between align-items-center">
                         <p class="mb-0">Punya pertanyaan tentang Cheers?</p>
-                        <a href="faq.php" class="btn btn-danger btn-outcheerslight">FAQ</a>
+                        <a href="{{ url('/faq')" class="btn btn-danger btn-outcheerslight">FAQ</a>
                     </div>
                 </div>
             </div>
