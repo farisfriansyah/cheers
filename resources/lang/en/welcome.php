@@ -8,6 +8,8 @@ return [
 'homeWhycheersSub' => '3/4 of human body is water. That is why water is one of the most basic human needs. Lack of water can cause imbalance and in turn can cause many kinds of diseases. Just like the air that we breathe, nature has provide us with water that is natural and healthy. CHEERS helps you quench your thirst for natural and healthy drinking water. Drink a minimum of 1 glass of CHEERS per hour on your waking hours and enjoy the freshness of CHEERS.',
 'homeWhycheersBtn' => 'Learn More',
 
+'homenoeventSub' => 'No Event Yet',
+'homenoeventTit' => "We still don't have any events held.",
 'homeEventSub' => 'Cheers Healthy Drinking Water supports events that invite people to form a healthy lifestyle, care for the environment as well as events that have a positive impact on society. Update also the latest event information on Cheers social media.',
 'homeEventOverview' => 'OVERVIEW',
 'homeEventTnc' => 'TERMS & CONDITION',

@@ -11,19 +11,20 @@
             <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 blog-highlight">
                 <div class="container">
                     <div id="highlight-blog" class="owl-carousel owl-theme">
+                        
 
-                        @foreach ($great->sortByDesc('created_at') as $gr)
+                        @foreach ($great->sortByDesc('created_at') as $gra)
 
                         <div class="title-section text-left">
                             <span style="font-size: 16px; font-weight: 500;">BLOG</span> <br>
-                            <a href="{{ url('blog/view/'.$gr['url'].'/'.$gr['id']) }}"><h3>{{ $gr['title_'.$locale] }}</h3></a>
-                            <span class="metablog"><i class="fad fa-calendar-day"></i> {{ strftime("%d %B %Y", strtotime($gr['created_at'])) }}</span> 
+                            <a href="{{ url('blog/view/'.$gra['url'].'/'.$gra['id']) }}"><h3>{{ $gra['title_'.$locale] }}</h3></a>
+                            <span class="metablog"><i class="fad fa-calendar-day"></i> {{ strftime("%d %B %Y", strtotime($gra['created_at'])) }}</span> 
                             <span class="metablog"><i class="fad fa-user"></i> Admin</span>
-                            <span class="metablog"><i class="fad fa-hourglass"></i> 3min read</span>
+                            <span class="metablog"><i class="fad fa-hourglass"></i> {{ $gra['duration'] }} min read</span>
                             <hr class="cheers-separator">
-                            <div>{!! substr($gr['content_'.$locale], 0, 200).'...' !!}</div> 
+                            <div>{!! substr($gra['content_'.$locale], 0, 200).'...' !!}</div> 
 
-                            <a href="{{ url('blog/view/'.$gr['url'].'/'.$gr['id']) }}">Read More</a>
+                            <a href="{{ url('blog/view/'.$gra['url'].'/'.$gra['id']) }}">Read More</a>
                         </div>
 
                         @endforeach

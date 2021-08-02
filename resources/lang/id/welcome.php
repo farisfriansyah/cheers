@@ -8,6 +8,9 @@ return [
 'homeWhycheersSub' => '3/4 tubuh manusia terdiri dari air. Itulah sebabnya air menjadi salah satu kebutuhan mendasar manusia. Kekurangan asupan air menyebabkan tubuh kehilangan keseimbangan dan menimbulkan berbagai macam penyakit. Seperti halnya udara, air sudah disediakan oleh alam untuk kebaikan manusia. CHEERS memenuhi kebutuhan akan air minum yang sehat dan alami. Minumlah minimal 1 gelas CHEERS setiap jam pada saat terjaga, dan nikmati kesegaran dan kealamiannya.',
 'homeWhycheersBtn' => 'Pelajari Selengkapnya',
 
+
+'homenoeventSub' => 'Belum ada event',
+'homenoeventTit' => "Kami belum ada event saat ini",
 'homeEventSub' => 'Cheers Healthy Drinking Water mendukung event-event yang mengajak masyarakat untuk membentuk gaya hidup sehat, peduli terhadap lingkungan juga event-event yang memberikan pengaruh positif di masyarakat. Update juga informasi event terbaru di media sosial Cheers.',
 'homeEventOverview' => 'Gambaran',
 'homeEventTnc' => 'Syarat Ketentuan',

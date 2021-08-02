@@ -158,8 +158,8 @@
                             </div>
                             <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 d-flex align-items-center">
                                 <div class="card-body">
-                                    <h6 class="text-muted">No Event Yet</h6>
-                                    <h4 class="card-title">We still don't have any events held.</h4>
+                                    <h6 class="text-muted">@lang('welcome.homenoeventSub')</h6>
+                                    <h4 class="card-title">@lang('welcome.homenoeventTit')</h4>
                                 </div>
                             </div>
                         </div>
