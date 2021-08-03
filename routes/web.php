@@ -40,8 +40,8 @@ Route::group(['prefix' => 'blog'], function(){
     Route::get('/story-of-the-week/',[BlogController::class,'blog_page']);
 
     Route::group(['prefix' => 'view'], function(){
-        Route::get('/feels-great/{id}',[BlogController::class,'view']);
-        Route::get('/story-of-the-week/{id}',[BlogController::class,'view']);
+        Route::get('/feels-great/{slug}',[BlogController::class,'view']);
+        Route::get('/story-of-the-week/{slug}',[BlogController::class,'view']);
     });
 });
 

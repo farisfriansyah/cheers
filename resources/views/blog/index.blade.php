@@ -17,14 +17,14 @@
 
                         <div class="title-section text-left">
                             <span style="font-size: 16px; font-weight: 500;">BLOG</span> <br>
-                            <a href="{{ url('blog/view/'.$gra['url'].'/'.$gra['id']) }}"><h3>{{ $gra['title_'.$locale] }}</h3></a>
+                            <a href="{{ url('blog/view/'.$gra['url'].'/'.$gra['slug']) }}"><h3>{{ $gra['title_'.$locale] }}</h3></a>
                             <span class="metablog"><i class="fad fa-calendar-day"></i> {{ strftime("%d %B %Y", strtotime($gra['created_at'])) }}</span> 
                             <span class="metablog"><i class="fad fa-user"></i> Admin</span>
                             <span class="metablog"><i class="fad fa-hourglass"></i> {{ $gra['duration'] }} min read</span>
                             <hr class="cheers-separator">
                             <div>{!! substr($gra['content_'.$locale], 0, 200).'...' !!}</div> 
 
-                            <a href="{{ url('blog/view/'.$gra['url'].'/'.$gra['id']) }}">Read More</a>
+                            <a href="{{ url('blog/view/'.$gra['url'].'/'.$gra['slug']) }}">Read More</a>
                         </div>
 
                         @endforeach
@@ -65,7 +65,7 @@
                             <div class="card-body">
                                 <div class="title-section text-left">
                                     <span style="font-size: 14px; font-weight: 500;">BLOG</span><br>
-                                    <a href="{{ url('blog/view/'.$gr['url'].'/'.$gr['id']) }}"><h5>{{ $gr['title_'.$locale] }}</h5></a>
+                                    <a href="{{ url('blog/view/'.$gr['url'].'/'.$gr['slug']) }}"><h5>{{ $gr['title_'.$locale] }}</h5></a>
                                     <span class="metablog"><i class="fad fa-calendar-day"></i> {{ strftime("%d %B %Y", strtotime($gr['created_at'])) }}</span> 
                                     <span class="metablog"><i class="fad fa-user"></i> Admin</span>
                                     <span class="metablog"><i class="fad fa-hourglass"></i> {{ $gr['duration'] }}min read</span>
@@ -103,7 +103,7 @@
                                     <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-12">
                                         <div class="card-body">
                                             <div class="title-section text-left">
-                                                <a href="{{ url('blog/view/'.$str['url'].'/'.$str['id']) }}"><h5>{{ $str['title_'.$locale] }}</h5></a>
+                                                <a href="{{ url('blog/view/'.$str['url'].'/'.$str['slug']) }}"><h5>{{ $str['title_'.$locale] }}</h5></a>
                                                 <span class="metablog"><i class="fad fa-calendar-day"></i> {{ strftime("%d %B %Y", strtotime($str['created_at'])) }}</span> 
                                                 <span class="metablog"><i class="fad fa-user"></i> Admin</span>
                                                 <span class="metablog"><i class="fad fa-hourglass"></i> {{ $str['duration'] }} min read</span>
@@ -139,7 +139,7 @@
                                     <div class="col-10">
                                         <div class="card-body">
                                             <div class="title-section text-left">
-                                                <a href="{{ url('blog/view/'.$trd['url'].'/'.$trd['id']) }}"><h5>{{ $trd['title_'.$locale] }}</h5></a>
+                                                <a href="{{ url('blog/view/'.$trd['url'].'/'.$trd['slug']) }}"><h5>{{ $trd['title_'.$locale] }}</h5></a>
                                                 <span class="metablog"><i class="fad fa-calendar-day"></i> {{ strftime("%d %B %Y", strtotime($trd['created_at'])) }}</span> 
                                                 <span class="metablog"><i class="fad fa-user"></i> Admin</span>
                                                 <span class="metablog"><i class="fad fa-hourglass"></i> {{ $trd['duration'] }} min read</span>

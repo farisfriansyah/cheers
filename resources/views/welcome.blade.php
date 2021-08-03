@@ -206,15 +206,15 @@
                                 <span>{{ strftime("%d", strtotime($blg['created_at'])) }}</span>
                                 <label>{{ strftime("%b", strtotime($blg['created_at'])) }}</label>
                             </div>
-                            <a href="{{ url('blog/view/'.$blg['url'].'/'.$blg['id']) }}">
+                            <a href="{{ url('blog/view/'.$blg['url'].'/'.$blg['slug']) }}">
                                 <img src="{{ $baseurl.$blg['image'] }}" title="" alt="{{ $blg['title_'.$locale] }}">
                             </a>
                         </div>
                         <div class="blog-info">
-                            <h5><a href="{{ url('blog/view/'.$blg['url'].'/'.$blg['id']) }}">{{ $blg['title_'.$locale] }}</a></h5>
+                            <h5><a href="{{ url('blog/view/'.$blg['url'].'/'.$blg['slug']) }}">{{ $blg['title_'.$locale] }}</a></h5>
                             <p>{!!  substr($blg['content_'.$locale], 0, 140).'...' !!}</p>
                             <div class="btn-bar">
-                                <a href="{{ url('blog/view/'.$blg['url'].'/'.$blg['id']) }}" class="px-btn-arrow">
+                                <a href="{{ url('blog/view/'.$blg['url'].'/'.$blg['slug']) }}" class="px-btn-arrow">
                                     <span>@lang('welcome.homeBlogCta')</span>
                                     <i class="fad fa-long-arrow-alt-right"></i>
                                 </a>

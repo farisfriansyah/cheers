@@ -89,10 +89,10 @@ class BlogController extends Controller
     public function view(Request $req)
     {   
         $uri2 = $req->segment(3);
-        $id   = $req->id;
+        $slug   = $req->slug;
         
         $blogs      = Self::getAPI('blog');  
-        $data       = Self::getAPI('blog/'.$uri2.'/'.$id);
+        $data       = Self::getAPI('blog/'.$uri2.'/'.$slug);
         $trending   = $blogs['trending'];
         $locale     = $this->local;
 

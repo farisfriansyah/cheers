@@ -44,7 +44,7 @@
                                     <div class="col-10">
                                         <div class="card-body">
                                             <div class="title-section text-left">
-                                                <a href="{{ url('blog/view/'.$trd['url'].'/'.$trd['id']) }}"><h5>{{ $trd['title_'.$locale] }}</h5></a>
+                                                <a href="{{ url('blog/view/'.$trd['url'].'/'.$trd['slug']) }}"><h5>{{ $trd['title_'.$locale] }}</h5></a>
                                                 <span class="metablog"><i class="fad fa-calendar-day"></i> {{ strftime("%d %B %Y", strtotime($trd['created_at'])) }}</span> 
                                                 <span class="metablog"><i class="fad fa-user"></i> Admin</span>
                                                 <span class="metablog"><i class="fad fa-hourglass"></i> {{ $trd['duration'] }}min read</span>
