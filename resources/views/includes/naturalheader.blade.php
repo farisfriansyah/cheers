@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg nav-product natural fixed-top">
     <div class="container-fluid mynavpad">
-      <a class="navbar-brand" href="index.php">
+      <a class="navbar-brand" href="{{ url('/') }}">
         <img src="{{ $baseurl.$head[0]['logo'] }}" alt="">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="#navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,7 +51,7 @@
           <a href="{{ route('localization.switch', 'id') }}" style="margin-left: 10px;">ID</a>
         </div>
 
-        <a href="login.php" class="btn btn-danger btn-lgn d-flex " type="submit">MEMBERSHIP</a>
+        <a href="{{ url('/login') }}" class="btn btn-danger btn-lgn d-flex " type="submit">MEMBERSHIP</a>
       </div>
     </div>
   </nav>

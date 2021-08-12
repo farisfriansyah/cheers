@@ -11,9 +11,9 @@ use Artesaos\SEOTools\Facades\SEOMeta;
 use Artesaos\SEOTools\Facades\OpenGraph;
 use Artesaos\SEOTools\Facades\TwitterCard;
 use Artesaos\SEOTools\Facades\JsonLd;
-// OR with multi
+//OR with multi
 use Artesaos\SEOTools\Facades\JsonLdMulti;
-// OR
+//OR
 use Artesaos\SEOTools\Facades\SEOTools;
 
 class BlogController extends Controller
@@ -55,6 +55,23 @@ class BlogController extends Controller
 
         $locale = $this->local;
 
+        $title = 'Blog';
+        $description = 'Cheers Blog';
+
+        SEOMeta::setTitle($title);
+        SEOMeta::setDescription($description);
+        
+        OpenGraph::setTitle($title);
+        OpenGraph::setDescription($description);
+        OpenGraph::setUrl('https://www.saycheers.com/blog/');
+        OpenGraph::addProperty('type', 'articles');
+
+        TwitterCard::setTitle($title);
+        TwitterCard::setSite('@CheersWater');
+
+        JsonLd::setTitle($title);
+        JsonLd::setDescription($description);
+
         return view('blog.index', compact('great','story','trending','locale'));
     }
 
@@ -95,7 +112,33 @@ class BlogController extends Controller
         $data       = Self::getAPI('blog/'.$uri2.'/'.$slug);
         $trending   = $blogs['trending'];
         $locale     = $this->local;
+        $assetURLimg = 'https://admin.mikatasagroup.com/storage/app/public/';
+
+        foreach ($data as $seod) {
+            $title = $seod['title_id'];
+            $description = $seod['content_id'];
+            $img = $seod['image'];
+
+            SEOMeta::setTitle($title);
+            SEOMeta::setDescription($description);
+            
+            OpenGraph::setTitle($title);
+            OpenGraph::setDescription($description);
+            OpenGraph::setUrl('https://www.saycheers.com/blog/'.$uri2.'/'.$slug);
+            OpenGraph::addProperty('type', 'articles');
+            OpenGraph::addImage($assetURLimg.$img);
+
+            TwitterCard::setTitle($title);
+            TwitterCard::setSite('@CheersWater');
+
+            JsonLd::setTitle($title);
+            JsonLd::setDescription($description);
+            JsonLd::addImage($assetURLimg.$img);
+        }
+        
 
         return view('blog.view',compact('data','locale','trending'));
     }
+
+
 }

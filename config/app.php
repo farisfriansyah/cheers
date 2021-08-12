@@ -234,7 +234,7 @@ return [
         'Twitter'       => Artesaos\SEOTools\Facades\TwitterCard::class,
         'JsonLd'        => Artesaos\SEOTools\Facades\JsonLd::class,
         'JsonLdMulti'   => Artesaos\SEOTools\Facades\JsonLdMulti::class,
-        // or
+        //or
         'SEO' => Artesaos\SEOTools\Facades\SEOTools::class,
 
     ],

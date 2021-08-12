@@ -12,7 +12,6 @@
                 <div class="container">
                     <div id="highlight-blog" class="owl-carousel owl-theme">
                         
-
                         @foreach ($great->sortByDesc('created_at') as $gra)
 
                         <div class="title-section text-left">
