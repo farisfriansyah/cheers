@@ -31,7 +31,7 @@ class CheersProvider extends ServiceProvider
             'cheers-alkaline','cheers-natural',
             'includes.alkalineheader','includes.naturalheader',
             'event.index','event.view',
-            'blog.index','blog.view'],
+            'blog.index','blog.view','blog.search'],
             'App\Http\ViewComposers\MenuComposer'
         );
     }

@@ -38,10 +38,11 @@
 <section id="cheers-search" class="search-sect">
     <div class="myfullpad">
         <div class="row">
-            <form class="" id="">
+            <form id="search-form" method="post" action="{{ url('blog/search') }}">
+                @csrf
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Search..." aria-label="Search..." aria-describedby="button-addon2">
-                    <button class="btn btn-danger btn-cheerslight" type="button" id="button-addon2" style="border-radius: 0px 10px 10px 0px;">Search</button>
+                    <input type="text" name="search" class="form-control" placeholder="Search..." aria-label="Search..." aria-describedby="button-addon2">
+                    <button class="btn btn-danger btn-cheerslight" type="submit" id="button-addon2" style="border-radius: 0px 10px 10px 0px;">Search</button>
                 </div>
             </form>
         </div>
@@ -68,7 +69,7 @@
                                     <span class="metablog"><i class="fad fa-calendar-day"></i> {{ strftime("%d %B %Y", strtotime($gr['created_at'])) }}</span> 
                                     <span class="metablog"><i class="fad fa-user"></i> Admin</span>
                                     <span class="metablog"><i class="fad fa-hourglass"></i> {{ $gr['duration'] }}min read</span>
-                                    <div>{!! substr($gr['content_'.$locale], 0, 250).'...' !!}</div> 
+                                    <div class="need-normal">{!! substr($gr['content_'.$locale], 0, 250).'...' !!}</div> 
                                 </div>
                             </div>
                             

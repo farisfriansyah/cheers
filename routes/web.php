@@ -36,6 +36,9 @@ Route::get('/event/view/{idx}', [EventController::class,'view']);
 
 Route::group(['prefix' => 'blog'], function(){
     Route::get('/',[BlogController::class,'index']);
+    Route::post('/search',[BlogController::class,'search']);
+    // Route::get('/search',[BlogController::class,'search']);
+    Route::get('/all/',[BlogController::class,'search']);
     Route::get('/feels-great/',[BlogController::class,'blog_page']);
     Route::get('/story-of-the-week/',[BlogController::class,'blog_page']);
 

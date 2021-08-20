@@ -2895,6 +2895,51 @@ a:focus {
   display: inline-block;
 }
 
+.blogcomponent .blog-card .card-body .title-section #social-links ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.blogcomponent .blog-card .card-body .title-section .need-normal {
+  font-family: "Roboto", sans-serif !important;
+  font-weight: normal !important;
+  font-size: 16px !important;
+  color: #151515 !important;
+}
+
+.blogcomponent .blog-card .card-body .title-section .need-normal h1, .blogcomponent .blog-card .card-body .title-section .need-normal h2, .blogcomponent .blog-card .card-body .title-section .need-normal h3, .blogcomponent .blog-card .card-body .title-section .need-normal h4, .blogcomponent .blog-card .card-body .title-section .need-normal h5, .blogcomponent .blog-card .card-body .title-section .need-normal h6 {
+  font-family: "Roboto", sans-serif !important;
+  font-size: 16px !important;
+  color: #151515;
+}
+
+.blogcomponent .blog-card .card-body .title-section .need-normal p {
+  font-family: "Roboto", sans-serif !important;
+  font-size: 16px !important;
+  color: #151515;
+}
+
+.blogcomponent .blog-card .card-body .title-section .need-normal span {
+  font-family: "Roboto", sans-serif !important;
+  font-size: 16px !important;
+  color: #151515 !important;
+  opacity: 1 !important;
+}
+
+.blogcomponent .blog-card .card-body .title-section .need-normal ul, .blogcomponent .blog-card .card-body .title-section .need-normal ol {
+  font-family: "Roboto", sans-serif !important;
+  font-size: 16px !important;
+}
+
+.blogcomponent .blog-card .card-body .title-section .need-normal strong {
+  font-family: "Roboto", sans-serif !important;
+  font-weight: normal !important;
+  font-size: 16px !important;
+  color: #151515 !important;
+}
+
 .blogcomponent .blog-card .card-body .title-section span {
   font-size: 14px;
   opacity: 0.8;

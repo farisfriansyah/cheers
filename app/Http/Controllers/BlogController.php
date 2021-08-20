@@ -11,6 +11,8 @@ use Artesaos\SEOTools\Facades\SEOMeta;
 use Artesaos\SEOTools\Facades\OpenGraph;
 use Artesaos\SEOTools\Facades\TwitterCard;
 use Artesaos\SEOTools\Facades\JsonLd;
+use Jorenvh\Share\ShareFacade;
+
 //OR with multi
 use Artesaos\SEOTools\Facades\JsonLdMulti;
 //OR
@@ -97,11 +99,48 @@ class BlogController extends Controller
             $great = Self::paginate($blogs['great'],$this->defPage_feelsgreat,1,['path' => $path]);
             $story = Self::paginate($blogs['story'],$this->defPage_storyofWeek,$page,['path' => $path]);
         }
+
         $trending = $blogs['trending'];
         $locale = $this->local;
 
         return view('blog.index', compact('great','story','trending','locale'));
     }
+
+    public function search(Request $req)
+    {      
+        $searchkey = $req->search;
+        $slug = $req->slug;
+        $page = $req->page;
+
+        $blogs = Self::getAPI('blog');
+        $search_blogs = Self::getAPI('search_blog/'.$searchkey);
+
+        // $path = url('blog/search/all/');
+
+        // $search_blogs = Self::paginate($great,$this->defPage_feelsgreat,$page,['path' => $path]);
+
+        $trending = $blogs['trending'];
+        $locale = $this->local;
+
+        return view('blog.search', compact('search_blogs','trending','locale'));
+    }
+
+    // public function search_page(Request $req)
+    // {   
+    //     $searchkey = $req->search;
+    //     $page = $req->page;
+        
+    //     $blogs = Self::getAPI('blog');
+    //     $great = Self::getAPI('search_blog/'.$searchkey);
+    //     $path = url('blog/search/all/');
+
+    //     $search_blogs = Self::paginate($great,$this->defPage_feelsgreat,$page,['path' => $path]);
+
+    //     $trending = $blogs['trending'];
+    //     $locale = $this->local;
+
+    //     return view('blog.index', compact('search_blogs','trending','locale'));
+    // }
 
     public function view(Request $req)
     {   
@@ -117,10 +156,12 @@ class BlogController extends Controller
         foreach ($data as $seod) {
             $title = $seod['title_id'];
             $description = $seod['content_id'];
+            $keyword = $seod['keyword'];
             $img = $seod['image'];
 
             SEOMeta::setTitle($title);
             SEOMeta::setDescription($description);
+            SEOMeta::addKeyword($keyword);
             
             OpenGraph::setTitle($title);
             OpenGraph::setDescription($description);
@@ -134,10 +175,18 @@ class BlogController extends Controller
             JsonLd::setTitle($title);
             JsonLd::setDescription($description);
             JsonLd::addImage($assetURLimg.$img);
+
+            $shareButtons = \Share::page('https://www.saycheers.com/blog/'.$uri2.'/'.$slug, '$title')
+            ->facebook()
+            ->twitter()
+            ->linkedin()
+            ->telegram()
+            ->whatsapp();
         }
+
         
 
-        return view('blog.view',compact('data','locale','trending'));
+        return view('blog.view',compact('data','locale','shareButtons','trending'));
     }
 
 

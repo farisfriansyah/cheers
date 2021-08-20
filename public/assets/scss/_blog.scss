@@ -95,6 +95,50 @@
                     display: inline-block;
                 }
 
+                #social-links{
+                    ul{
+                        list-style-type: none;
+                        display: flex;
+                    }
+                }
+
+                .need-normal{
+                    font-family: $font-secondary !important;
+                    font-weight: normal !important;
+                    font-size: 16px !important;
+                    color: $primary-color !important;
+
+                    h1,h2,h3,h4,h5,h6{
+                        font-family: $font-secondary !important;
+                        font-size: 16px !important;
+                        color: $primary-color;
+                    }
+
+                    p{
+                        font-family: $font-secondary !important;
+                        font-size: 16px !important;
+                        color: $primary-color;
+                    }
+
+                    span{
+                        font-family: $font-secondary !important;
+                        font-size: 16px !important;
+                        color: $primary-color !important;
+                        opacity: 1 !important;
+                    }
+
+                    ul,ol{
+                        font-family: $font-secondary !important;
+                        font-size: 16px !important;
+                    }
+                    strong{
+                        font-family: $font-secondary !important;
+                        font-weight: normal !important;
+                        font-size: 16px !important;
+                        color: $primary-color !important;
+                    }
+                }
+
                 span{
                     font-size: 14px;
                     opacity: 0.8;
