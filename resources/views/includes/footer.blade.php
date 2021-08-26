@@ -83,10 +83,10 @@
             <div class="col-lg-4 offset-lg-2">
                 <div class="row">
                     <div class="col-lg-6 text-center">
-                        <a href="#">Terms of use</a>
+                        {{-- <a href="#">Terms of use</a> --}}
                     </div>
                     <div class="col-lg-6 text-center">
-                        <a href="#">Privacy Policy</a>
+                        {{-- <a href="#">Privacy Policy</a> --}}
                     </div>
                 </div>
             </div>

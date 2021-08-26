@@ -159,24 +159,28 @@ class BlogController extends Controller
             $keyword = $seod['keyword'];
             $img = $seod['image'];
 
+            $testim = $assetURLimg.$img;
+
             SEOMeta::setTitle($title);
             SEOMeta::setDescription($description);
             SEOMeta::addKeyword($keyword);
             
             OpenGraph::setTitle($title);
             OpenGraph::setDescription($description);
-            OpenGraph::setUrl('https://www.saycheers.com/blog/'.$uri2.'/'.$slug);
+            OpenGraph::setUrl('https://www.saycheers.com/blog/view/'.$uri2.'/'.$slug);
             OpenGraph::addProperty('type', 'articles');
-            OpenGraph::addImage($assetURLimg.$img);
+            OpenGraph::addImage($testim);
+            OpenGraph::addImage($testim, ['height' => 300, 'width' => 300]);
 
             TwitterCard::setTitle($title);
+            TwitterCard::setImage($testim);
             TwitterCard::setSite('@CheersWater');
 
             JsonLd::setTitle($title);
             JsonLd::setDescription($description);
-            JsonLd::addImage($assetURLimg.$img);
+            JsonLd::addImage($testim);
 
-            $shareButtons = \Share::page('https://www.saycheers.com/blog/'.$uri2.'/'.$slug, '$title')
+            $shareButtons = \Share::page('https://www.saycheers.com/blog/view/'.$uri2.'/'.$slug,$title)
             ->facebook()
             ->twitter()
             ->linkedin()
@@ -184,10 +188,6 @@ class BlogController extends Controller
             ->whatsapp();
         }
 
-        
-
         return view('blog.view',compact('data','locale','shareButtons','trending'));
     }
-
-
 }

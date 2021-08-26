@@ -11,15 +11,19 @@
                     <div class="title-section text-left">
                         
                         <h3 class="titleof-category">{{ $dt['title_'.$locale] }}</h3>
-                        <div class="d-flex justify-content-between">
-                            <div class="left-info">
+                        <div class="row d-flex justify-content-between">
+                            <div class="col-md-6 left-info">
                                 <span class="metablog"><i class="fad fa-calendar-day"></i> {{ strftime("%d %B %Y", strtotime($dt['created_at'])) }}</span> 
                                 <span class="metablog"><i class="fad fa-user"></i> Admin</span>
                                 <span class="metablog"><i class="fad fa-hourglass"></i> {{ $dt['duration'] }} min read</span>
                             </div>
 
-                            <div class="right-info">
-                                {!! $shareButtons !!}
+                            <div class="col-md-6 right-info">
+                                <div class="d-flex compo float-end align-items-center">
+                                    <span>Share to :</span>
+                                    {!! $shareButtons !!}
+                                </div>
+                                
                             </div>
                         </div>
                     </div>

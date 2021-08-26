@@ -2895,13 +2895,6 @@ a:focus {
   display: inline-block;
 }
 
-.blogcomponent .blog-card .card-body .title-section #social-links ul {
-  list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .blogcomponent .blog-card .card-body .title-section .need-normal {
   font-family: "Roboto", sans-serif !important;
   font-weight: normal !important;
@@ -3049,6 +3042,71 @@ a:focus {
           box-sizing: border-box;
 }
 
+#cheers-blogview .title-section .left-info {
+  margin-bottom: 10px;
+}
+
+#cheers-blogview .title-section .right-info {
+  margin-bottom: 10px;
+}
+
+#cheers-blogview .title-section .right-info .compo {
+  float: right;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#cheers-blogview .title-section .right-info .compo span {
+  margin-bottom: 0px;
+  font-weight: bold;
+}
+
+#cheers-blogview .title-section .right-info .compo #social-links ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
+
+#cheers-blogview .title-section .right-info .compo #social-links ul li {
+  margin-right: 5px;
+}
+
+#cheers-blogview .title-section .right-info .compo #social-links ul li a span {
+  margin: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  padding: 0px;
+  text-decoration: none;
+  text-align: center;
+  background: rgba(216, 38, 28, 0.3);
+  color: #D8261C;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 2em;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+
+#cheers-blogview .title-section .right-info .compo #social-links ul li a span:hover {
+  background: #D8261C;
+  color: #FFFFFF;
+}
+
 #cheers-blogview .title-section span {
   font-size: 14px;
   opacity: 0.8;
@@ -3188,6 +3246,18 @@ a:focus {
   }
   #cheers-blogview {
     padding: 70px 0px;
+  }
+  #cheers-blogview .left-info {
+    margin-bottom: 10px;
+  }
+  #cheers-blogview .right-info {
+    margin-bottom: 10px;
+  }
+  #cheers-blogview .right-info .compo {
+    float: left !important;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
