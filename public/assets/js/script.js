@@ -15,7 +15,7 @@ $(document).ready(function () {
     });
 
     new Date().getFullYear();
-    document.getElementById("year").innerHTML = new Date().getFullYear();
+    $("#year").innerHTML = new Date().getFullYear();
 
     $(window).scroll(function () {
         if ($(this).scrollTop() > 70) {
@@ -61,28 +61,30 @@ $(document).ready(function () {
     let startX;
     let scrollLeft;
 
-    slider.addEventListener('mousedown', (e) => {
-        isDown = true;
-        slider.classList.add('active');
-        startX = e.pageX - slider.offsetLeft;
-        scrollLeft = slider.scrollLeft;
-    });
-    slider.addEventListener('mouseleave', () => {
-        isDown = false;
-        slider.classList.remove('active');
-    });
-    slider.addEventListener('mouseup', () => {
-        isDown = false;
-        slider.classList.remove('active');
-    });
-    slider.addEventListener('mousemove', (e) => {
-        if (!isDown) return;
-        e.preventDefault();
-        const x = e.pageX - slider.offsetLeft;
-        const walk = (x - startX) * 3; //scroll-fast
-        slider.scrollLeft = scrollLeft - walk;
-        // console.log(walk);
-    });
+    if(slider){
+        slider.addEventListener('mousedown', (e) => {
+            isDown = true;
+            slider.classList.add('active');
+            startX = e.pageX - slider.offsetLeft;
+            scrollLeft = slider.scrollLeft;
+        });
+        slider.addEventListener('mouseleave', () => {
+            isDown = false;
+            slider.classList.remove('active');
+        });
+        slider.addEventListener('mouseup', () => {
+            isDown = false;
+            slider.classList.remove('active');
+        });
+        slider.addEventListener('mousemove', (e) => {
+            if (!isDown) return;
+            e.preventDefault();
+            const x = e.pageX - slider.offsetLeft;
+            const walk = (x - startX) * 3; //scroll-fast
+            slider.scrollLeft = scrollLeft - walk;
+            // console.log(walk);
+        });
+    }
 });
 
 jQuery(document).ready(function ($) {
@@ -110,6 +112,12 @@ jQuery(document).ready(function ($) {
         loop: false,
         dots: true
     });
+    
+    var containerEl = document.querySelector('#cheers-faq .accordion .container');
+    var mixer;
 
-    var mixer = mixitup('#cheers-faq .accordion .container');
+    if (containerEl) {
+        mixer = mixitup(containerEl);
+    }
+    
 });

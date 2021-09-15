@@ -156,17 +156,18 @@ class BlogController extends Controller
         foreach ($data as $seod) {
             $title = $seod['title_id'];
             $description = $seod['content_id'];
+            $stripedText = strip_tags(htmlspecialchars_decode($description));
             $keyword = $seod['keyword'];
             $img = $seod['image'];
 
             $testim = $assetURLimg.$img;
 
             SEOMeta::setTitle($title);
-            SEOMeta::setDescription($description);
+            SEOMeta::setDescription($stripedText);
             SEOMeta::addKeyword($keyword);
             
             OpenGraph::setTitle($title);
-            OpenGraph::setDescription($description);
+            OpenGraph::setDescription($stripedText);
             OpenGraph::setUrl('https://www.saycheers.com/blog/view/'.$uri2.'/'.$slug);
             OpenGraph::addProperty('type', 'articles');
             OpenGraph::addImage($testim);
@@ -177,7 +178,7 @@ class BlogController extends Controller
             TwitterCard::setSite('@CheersWater');
 
             JsonLd::setTitle($title);
-            JsonLd::setDescription($description);
+            JsonLd::setDescription($stripedText);
             JsonLd::addImage($testim);
 
             $shareButtons = \Share::page('https://www.saycheers.com/blog/view/'.$uri2.'/'.$slug,$title)

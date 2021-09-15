@@ -3324,425 +3324,142 @@ a:focus {
 /* Large devices (laptops/desktops, 992px and up) */
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 /* Extra large devices (large laptops and desktops, 1400px and up) */
-#cheers-login {
-  padding: 0rem 0;
-  width: 100%;
+.row-height {
   height: 100vh;
+}
+
+@media (max-width: 991px) {
+  .row-height {
+    height: auto;
+  }
+}
+
+.content-left {
+  padding: 0;
   background-color: #FFFFFF;
   background: url("../img/SVG/login_2.svg") no-repeat center;
   background-size: cover;
   background-position: left 0px top 0px;
-  padding: 25px 0px;
 }
 
-#cheers-login .socmed {
+.content-left-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  height: 100%;
+  min-height: 100%;
+  padding: 60px 90px 35px 90px;
+  background: url("../img/loginbg2.png") no-repeat center;
+  color: #fff;
+  text-align: center;
   position: relative;
-  padding: 0px 20px;
-  bottom: 0px;
-  margin: 20px auto;
-  text-align: center;
+}
+
+@media (max-width: 991px) {
+  .content-left-wrapper {
+    height: auto;
+    padding: 95px 30px 35px 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .content-left-wrapper {
+    padding: 95px 15px 35px 15px;
+  }
+}
+
+@media (max-width: 991px) {
+  .content-left-wrapper figure img {
+    height: 150px;
+  }
+}
+
+.content-right {
+  padding: 60px;
+  height: 100%;
+  min-height: 100%;
+  overflow-y: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
 }
 
-#cheers-login .socmed a {
-  margin: 10px 10px;
-  font-size: 14px;
-  font-weight: 600;
-  text-align: center;
-  color: #151515;
+.content-right #wrapped {
+  width: 75%;
+  margin-top: 100px;
 }
 
-#cheers-login .socmed a:hover {
-  color: #A22523;
+.content-right #wrapped .form-label {
+  margin-bottom: 0px;
 }
 
-#cheers-login .bg-imgHero {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-item-align: center;
-      align-self: center;
-}
-
-#cheers-login .bg-imgHero .hero-login {
-  width: 80%;
-  margin: 10px auto 0px auto;
-  padding: 30px 80px;
-}
-
-#cheers-login .bg-imgHero .hero-login img {
+.content-right #wrapped img {
   width: 200px;
   height: auto;
   margin-bottom: 20px;
   display: none;
 }
 
-#cheers-login .bg-imgHero .hero-login p {
+.content-right #wrapped p {
   text-align: left;
 }
 
-#cheers-login .bg-imgHero .hero-login .form-label {
-  margin-bottom: 0px;
-}
-
-#cheers-login .bg-imgHero .hero-login .intern-link {
+.content-right #wrapped .intern-link {
   margin: 20px 0;
   padding: 0 10px;
 }
 
-#cheers-login .bg-imgHero .hero-login .intern-link a {
+.content-right #wrapped .intern-link a {
   color: #525252;
 }
 
-#cheers-login .bg-imgHero .hero-login hr {
+.content-right #wrapped hr {
   margin: 0 auto;
   margin-bottom: 30px;
 }
 
-#cheers-login .bg-imgHero .hero-login .input-subs {
+.content-right #wrapped .input-subs {
   width: 100%;
-  height: 40px;
   font-size: 16px;
   color: #151515;
-  padding: 0 10px;
   background: transparent;
   border-radius: 0px;
   border: none;
   border-bottom: 2px solid #A22523;
-  margin: 0 auto;
 }
 
-#cheers-login .bg-imgHero .hero-login .input-subs::-webkit-input-placeholder {
-  color: #151515;
-  opacity: 0.6;
+.content-right #wrapped .input-subs:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
-#cheers-login .bg-imgHero .hero-login .input-subs:-ms-input-placeholder {
-  color: #151515;
-  opacity: 0.6;
-}
-
-#cheers-login .bg-imgHero .hero-login .input-subs::-ms-input-placeholder {
-  color: #151515;
-  opacity: 0.6;
-}
-
-#cheers-login .bg-imgHero .hero-login .input-subs::placeholder {
-  color: #151515;
-  opacity: 0.6;
-}
-
-#cheers-login .bg-imgHero .hero-login .btn-cheerslight {
+.content-right #wrapped .btn-cheerslight {
   width: 100%;
   margin: 10px auto;
   display: block;
   color: #F7F7F7;
 }
 
-#cheers-login .img-login {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
-
-#cheers-login .img-login img {
-  width: 74%;
-  height: 74%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  margin: 0 auto;
-  display: block;
-}
-
-#cheers-registration {
-  padding: 0rem 0;
-  width: 100%;
-  height: 100vh;
-  background-color: #FFFFFF;
-  background: url("../img/SVG/login_2.svg") no-repeat center;
-  background-size: cover;
-  background-position: left 0px top 0px;
-  padding: 25px 0px;
-}
-
-#cheers-registration .socmed {
-  position: relative;
-  padding: 0px 20px;
-  bottom: 0px;
-  margin: 20px auto 0 auto;
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-#cheers-registration .socmed a {
-  margin: 10px 10px;
-  font-size: 14px;
-  font-weight: 600;
-  text-align: center;
-  color: #151515;
-}
-
-#cheers-registration .socmed a:hover {
-  color: #A22523;
-}
-
-#cheers-registration .bg-imgHero {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-item-align: center;
-      align-self: center;
-}
-
-#cheers-registration .bg-imgHero .hero-login {
-  width: 80%;
-  margin: 10px auto 0px auto;
-  padding: 30px 80px;
-}
-
-#cheers-registration .bg-imgHero .hero-login .form-label {
-  margin-bottom: 0px;
-}
-
-#cheers-registration .bg-imgHero .hero-login img {
-  width: 200px;
-  height: auto;
-  margin-bottom: 20px;
-  display: none;
-}
-
-#cheers-registration .bg-imgHero .hero-login p {
-  text-align: left;
-}
-
-#cheers-registration .bg-imgHero .hero-login .intern-link {
-  margin: 20px 0;
-  padding: 0 10px;
-}
-
-#cheers-registration .bg-imgHero .hero-login .intern-link a {
-  color: #525252;
-}
-
-#cheers-registration .bg-imgHero .hero-login hr {
-  margin: 0 auto;
-  margin-bottom: 30px;
-}
-
-#cheers-registration .bg-imgHero .hero-login .input-subs {
-  width: 100%;
-  height: 40px;
-  font-size: 16px;
-  color: #151515;
-  padding: 0 10px;
-  background: transparent;
-  border-radius: 0px;
-  border: none;
-  border-bottom: 2px solid #A22523;
-  margin: 0 auto;
-}
-
-#cheers-registration .bg-imgHero .hero-login .input-subs::-webkit-input-placeholder {
-  color: #151515;
-  opacity: 0.6;
-}
-
-#cheers-registration .bg-imgHero .hero-login .input-subs:-ms-input-placeholder {
-  color: #151515;
-  opacity: 0.6;
-}
-
-#cheers-registration .bg-imgHero .hero-login .input-subs::-ms-input-placeholder {
-  color: #151515;
-  opacity: 0.6;
-}
-
-#cheers-registration .bg-imgHero .hero-login .input-subs::placeholder {
-  color: #151515;
-  opacity: 0.6;
-}
-
-#cheers-registration .bg-imgHero .hero-login .btn-cheerslight {
-  width: 100%;
-  margin: 10px auto;
-  display: block;
-  color: #F7F7F7;
-}
-
-#cheers-registration .img-login img {
-  width: 74%;
-  height: 74%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  margin: 0 auto;
-  display: block;
-}
-
-/* Extra small devices (phones, 576px and down) */
-@media only screen and (max-width: 575.98px) {
-  #cheers-login {
-    background: none;
-    background-size: cover;
-    background-position: left 0px top 0px;
-  }
-  #cheers-login .bg-imgHero .hero-login {
-    width: 100%;
-    margin: 30px auto 0px auto;
-    padding: 30px;
-  }
-  #cheers-login .bg-imgHero img {
-    width: 70%;
-  }
-  #cheers-login .img-login {
-    display: none;
-  }
-  #cheers-login .socmed {
-    display: none;
-  }
-  #cheers-registration {
-    background: none;
-    background-size: 180%;
-    background-position: left 0px top 0px;
-  }
-  #cheers-registration .bg-imgHero .hero-login {
-    width: 100%;
-    margin: 30px auto 0px auto;
-    padding: 30px;
-  }
-  #cheers-registration .bg-imgHero img {
-    width: 70%;
-  }
-  #cheers-registration .img-login {
-    display: none;
-  }
-  #cheers-registration .socmed {
-    display: none;
+@media (max-width: 991px) {
+  .content-right {
+    height: auto;
+    padding: 30px 15px;
   }
 }
 
-/* Small devices (portrait tablets and large phones, 576px and up) */
-@media only screen and (min-width: 576px) {
-  #cheers-login {
-    background: none;
-    background-size: 180%;
-    background-position: left 0px top 0px;
-  }
-  #cheers-login .bg-imgHero .hero-login {
-    width: 100%;
-    margin: 30px auto 0px auto;
-    padding: 30px;
-  }
-  #cheers-login .bg-imgHero img {
-    width: 70%;
-  }
-  #cheers-login .img-login {
-    display: none;
-  }
-  #cheers-registration {
-    background: none;
-    background-size: 180%;
-    background-position: left 0px top 0px;
-  }
-  #cheers-registration .bg-imgHero .hero-login {
-    width: 100%;
-    margin: 30px auto 0px auto;
-    padding: 30px;
-  }
-  #cheers-registration .bg-imgHero img {
-    width: 70%;
-  }
-  #cheers-registration .img-login {
-    display: none;
-  }
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  #cheers-login {
-    background-color: #FFFFFF;
-    background: url("../img/SVG/login_2.svg") no-repeat center;
-    background-size: cover;
-    background-position: left 0px top 0px;
-  }
-  #cheers-login .bg-imgHero .hero-login {
-    width: 100%;
-    margin: 30px auto 0px auto;
-    padding: 30px;
-  }
-  #cheers-login .bg-imgHero img {
-    width: 70%;
-  }
-  #cheers-login .bg-imgHero img {
-    width: 70%;
-  }
-  #cheers-login .img-login {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  #cheers-registration {
-    background-color: #FFFFFF;
-    background: url("../img/SVG/login_2.svg") no-repeat center;
-    background-size: cover;
-    background-position: left 0px top 0px;
-  }
-  #cheers-registration .bg-imgHero .hero-login {
-    width: 100%;
-    margin: 10px auto 0px auto;
-    padding: 30px;
-  }
-  #cheers-registration .bg-imgHero img {
-    width: 70%;
-  }
-  #cheers-registration .img-login {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  #cheers-login {
-    background-color: #FFFFFF;
-    background: url("../img/SVG/login_2.svg") no-repeat center;
-    background-size: cover;
-    background-position: left 0px top 0px;
-  }
-  #cheers-login .bg-imgHero .hero-login {
-    width: 80%;
-    margin: 10px auto 0px auto;
-    padding: 30px 80px;
-  }
-  #cheers-login .img-login {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  #cheers-registration {
-    background-color: #FFFFFF;
-    background: url("../img/SVG/login_2.svg") no-repeat center;
-    background-size: cover;
-    background-position: left 0px top 0px;
-  }
-  #cheers-registration .bg-imgHero .hero-login {
-    width: 80%;
-    margin: 10px auto 0px auto;
-    padding: 30px 80px;
-  }
-  #cheers-registration .img-login {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-/* Extra large devices (large laptops and desktops, 1400px and up) */
 footer {
   background: url("../img/footer.png") no-repeat;
   background-size: cover;

@@ -212,7 +212,7 @@
                         </div>
                         <div class="blog-info">
                             <h5><a href="{{ url('blog/view/'.$blg['url'].'/'.$blg['slug']) }}">{{ $blg['title_'.$locale] }}</a></h5>
-                            <p>{!!  substr($blg['content_'.$locale], 0, 140).'...' !!}</p>
+                            <p>{!! strip_tags(htmlspecialchars_decode(substr($blg['content_'.$locale], 0, 140))).'...' !!}</p>
                             <div class="btn-bar">
                                 <a href="{{ url('blog/view/'.$blg['url'].'/'.$blg['slug']) }}" class="px-btn-arrow">
                                     <span>@lang('welcome.homeBlogCta')</span>

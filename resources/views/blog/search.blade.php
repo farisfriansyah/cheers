@@ -36,7 +36,7 @@
                                     <span class="metablog"><i class="fad fa-calendar-day"></i> {{ strftime("%d %B %Y", strtotime($gr['created_at'])) }}</span> 
                                     <span class="metablog"><i class="fad fa-user"></i> Admin</span>
                                     <span class="metablog"><i class="fad fa-hourglass"></i> {{ $gr['duration'] }}min read</span>
-                                    <div class="need-normal">{!! substr($gr['content_'.$locale], 0, 250).'...' !!}</div> 
+                                    <div class="need-normal">{!! strip_tags(htmlspecialchars_decode(substr($gr['content_'.$locale], 0, 250))).'...' !!}</div> 
                                 </div>
                             </div>
                             

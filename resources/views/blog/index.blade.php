@@ -21,7 +21,7 @@
                             <span class="metablog"><i class="fad fa-user"></i> Admin</span>
                             <span class="metablog"><i class="fad fa-hourglass"></i> {{ $gra['duration'] }} min read</span>
                             <hr class="cheers-separator">
-                            <div>{!! substr($gra['content_'.$locale], 0, 200).'...' !!}</div> 
+                            <div>{!! strip_tags(htmlspecialchars_decode(substr($gra['content_'.$locale], 0, 200))).'...' !!}</div>
 
                             <a href="{{ url('blog/view/'.$gra['url'].'/'.$gra['slug']) }}">Read More</a>
                         </div>
@@ -69,7 +69,7 @@
                                     <span class="metablog"><i class="fad fa-calendar-day"></i> {{ strftime("%d %B %Y", strtotime($gr['created_at'])) }}</span> 
                                     <span class="metablog"><i class="fad fa-user"></i> Admin</span>
                                     <span class="metablog"><i class="fad fa-hourglass"></i> {{ $gr['duration'] }}min read</span>
-                                    <div class="need-normal">{!! substr($gr['content_'.$locale], 0, 250).'...' !!}</div> 
+                                    <div class="need-normal">{!! strip_tags(htmlspecialchars_decode(substr($gr['content_'.$locale], 0, 250))).'...' !!}</div> 
                                 </div>
                             </div>
                             

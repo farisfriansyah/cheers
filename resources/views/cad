@@ -1,0 +1,52 @@
+<main id="cheers-registration">
+    <div class="row d-flex g-0">
+        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 order-md-2 bg-imgHero">
+
+            <div class="hero-login">
+                <hr class="cheers-separator">
+
+                <form action="">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control input-subs" id="ch-username" placeholder="Username" required="required">
+                        <label for="ch-username">Username</label>
+                    </div>
+                    
+                    <div class="form-floating mb-3">
+                        <input type="password" class="form-control input-subs" id="ch-password" name="ch-password" placeholder="Password" required="required">
+                        <label for="ch-password">Password</label>
+                    </div>
+
+                    <div class="form-floating">
+                        <input type="password" class="form-control input-subs" id="ch-Confirmpassword" name="ch-confirmpassword" placeholder="Retype Password" required="required">
+                        <label for="ch-Confirmpassword">Retype Password</label>
+                    </div>
+
+                    <p id="divCheckPassword" class="form-text"></p>
+
+                    <div class="d-flex justify-content-between intern-link">
+                        <a href="{{ url('/login') }}" class="">
+                            Sign In
+                        </a>
+
+                        <a href="#" class="">
+                            Forgot password?
+                        </a>
+                    </div>
+
+                    <button type="submit" href="#" id="btn-register" class="btn btn-danger btn-cheerslight text-center">Continue ></button>
+                </form>
+
+                <!-- <div class="socmed justify-content-between">
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Youtube</a>
+                    <a href="#">Instagram</a>
+                </div> -->
+            </div>
+        </div>
+        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 order-md-1 align-self-center img-login">
+            <img src="{{ asset('public/assets/img/loginbg2.png')}}" alt="cheers-alkaline">
+        </div>
+        
+    </div>
+</main>
