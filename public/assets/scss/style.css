@@ -3334,7 +3334,7 @@ a:focus {
   }
 }
 
-.content-left {
+.bg-content-left {
   padding: 0;
   background-color: #FFFFFF;
   background: url("../img/SVG/login_2.svg") no-repeat center;
@@ -3444,6 +3444,11 @@ a:focus {
 .content-right #wrapped .input-subs:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+.content-right #wrapped .form-check .form-check-input:checked {
+  background-color: #D8261C;
+  border-color: #A22523;
 }
 
 .content-right #wrapped .btn-cheerslight {

@@ -85,6 +85,10 @@ $(document).ready(function () {
             // console.log(walk);
         });
     }
+
+    $('.regi-datepicker').datepicker({
+        format: 'dd M yyyy'
+    });
 });
 
 jQuery(document).ready(function ($) {

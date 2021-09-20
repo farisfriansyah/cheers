@@ -15,6 +15,7 @@
 <link rel="stylesheet" href="{{ asset('public/assets/vendor/fontawesome-pro/css/all.min.css')}}">
 <link rel="stylesheet" href="{{ asset('public/assets/vendor/aos/dist/aos.css')}}">
 <link rel="stylesheet" href="{{ asset('public/assets/vendor/fullcalendar/main.css')}}">
+<link rel="stylesheet" href="{{ asset('public/assets/vendor/datepicker/css/bootstrap-datepicker3.min.css')}}">
 <link rel="stylesheet" href="{{ asset('public/assets/vendor/owlcarousel/dist/assets/owl.carousel.min.css')}}">
 <link rel="stylesheet" href="{{ asset('public/assets/vendor/owlcarousel/dist/assets/owl.theme.default.min.css')}}">
 <link rel="stylesheet" href="{{ asset('public/assets/scss/style.css')}}">

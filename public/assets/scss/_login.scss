@@ -7,7 +7,7 @@
     }
 }
 
-.content-left {
+.bg-content-left {
     padding: 0;
     background-color: $fore-color;
     background: url("../img/SVG/login_2.svg") no-repeat center;
@@ -100,6 +100,15 @@
                 border-bottom: 2px solid $cheers-dark;
                 &:focus{
                     box-shadow: none;
+                }
+            }
+
+            .form-check{
+                .form-check-input{
+                    &:checked{
+                        background-color: $cheers-light;
+                        border-color: $cheers-dark;
+                    }
                 }
             }
     
