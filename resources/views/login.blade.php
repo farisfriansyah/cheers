@@ -15,18 +15,23 @@
         <!-- /content-left -->
 
         <div class="col-lg-6 content-right">
-            <form id="wrapped" method="POST">
+            <form id="wrapped" method="POST" action="{{ url('login/do') }}" onsubmit="return checkLogin()">
                 <div class="d-block">
                     <h3 class="text-center"><span style="font-weight: 500;">Welcome</span> Back</h3>
                     <hr class="cheers-separator">
                 </div>
+
+                <div class="alert alert-danger" role="alert">
+                    <p id="login_error"></p>
+                </div>
+                @csrf
                 <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="ch-username" placeholder="Username" required="required">
+                    <input type="text" class="form-control" id="ch-username" placeholder="Username" required="required" name="id">
                     <label for="ch-username">Username</label>
                 </div>
                 
                 <div class="form-floating mb-3">
-                    <input type="password" class="form-control" id="ch-password" name="ch-password" placeholder="Password" required="required">
+                    <input type="password" class="form-control" id="ch-password" name="password" placeholder="Password" required="required">
                     <label for="ch-password">Password</label>
                 </div>
 

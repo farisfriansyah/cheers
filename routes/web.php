@@ -53,7 +53,11 @@ Route::get('/faq', [FaqController::class,'index']);
 
 Route::get('/contact', [ContactController::class,'index']);
 
-Route::get('/login', [LoginController::class,'index']);
+Route::group(['prefix' => 'login'], function(){
+    Route::get('/', [LoginController::class,'index']);
+    Route::post('check',[LoginController::class,'check_login']);
+    Route::post('do', [LoginController::class,'do_login']);
+});
 
 Route::get('/registration', [RegistrationController::class,'index']);
 

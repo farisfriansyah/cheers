@@ -1,6 +1,68 @@
-$(document).ready(function () {
+var CSRF_TOKEN =  $('meta[name="csrf-token"]').attr('content');
+var URL  = $('meta[name="url"]').attr('content');
 
-    $('#btn-register').prop('disabled', true);
+$(document).ready(function () {
+    
+    $('.alert').hide();
+
+    $('#ch-username').on("input", function() {
+        var isi     = $(this).val();
+        $.ajax({
+            type: "POST",
+            url: URL+"/reg/check_unique",
+            dataType: "json",
+            data: {_token: CSRF_TOKEN,'where':'id','value':isi}
+        }).done(function(msg){
+            if(msg==1){
+                $("#divCheckUsername").html("Username is exists!").addClass('text-danger').removeClass('text-success');
+                $('#btn-register').prop('disabled', true);
+            }
+            else{
+                $("#divCheckUsername").html("").addClass('text-success').removeClass('text-danger');
+                $('#btn-register').prop('disabled', false);
+            }
+        
+        });
+
+    });
+
+    function isEmail(email) {
+        var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+        return regex.test(email);
+    }
+
+    $('#ch-email').on("input", function() {
+        let isi = $(this).val();
+        let validasi = isEmail(isi);
+        if(!validasi){
+            $("#divCheckEmail").html("Email is invalid").addClass('text-danger').removeClass('text-success');
+            $('#btn-register').prop('disabled', true);
+        }
+        else{
+            $("#divCheckEmail").html("").addClass('text-success').removeClass('text-danger');
+
+            $.ajax({
+                type: "POST",
+                url: URL+"/reg/check_unique",
+                dataType: "json",
+                data: {_token: CSRF_TOKEN,'where':'email','value':isi}
+            }).done(function(msg){
+                if(msg==1){
+                    $("#divCheckEmail").html("Email is exists!").addClass('text-danger').removeClass('text-success');
+                    $('#btn-register').prop('disabled', true);
+                }
+                else{
+                    $("#divCheckEmail").html("").addClass('text-success').removeClass('text-danger');
+                    $('#btn-register').prop('disabled', false);
+                }
+            
+            });
+
+        }
+    });
+
+
+    // $('#btn-register').prop('disabled', true);
     $('#ch-Confirmpassword').on('keyup', function () {
         var password = $("#ch-password").val();
         var confirmPassword = $("#ch-Confirmpassword").val();
@@ -13,6 +75,16 @@ $(document).ready(function () {
             $('#btn-register').prop('disabled', false);
         }
     });
+
+
+    /** LOGIN **/
+    // $('.alert-danger').delay(1000).fadeOut("slow");
+    // $('#frm_login').on('submit', function(){
+    //    
+
+    // });
+
+   
 
     new Date().getFullYear();
     $("#year").innerHTML = new Date().getFullYear();
@@ -125,3 +197,31 @@ jQuery(document).ready(function ($) {
     }
     
 });
+
+function checkLogin()
+{
+    $status = true;
+
+    let id   = $('#ch-username').val();
+    let pass = $('#ch-password').val();
+    
+    $.ajax({
+        type: "POST",
+        url: URL+"/login/check",
+        dataType: "json",
+        data: {_token: CSRF_TOKEN,'id':id,'password':pass}
+    }).done(function(msg){
+        if(msg[0] == false){
+            $('.alert').show();
+            $('#login_error').html(msg[1]).addClass('text-danger');
+            $status = false;
+        }
+        else{
+            $('.alert').hide();
+            $('#login_error').html('');
+            // window.location.href = "{{ route('login/do/"+id+"')}}";
+        }
+    });
+
+    return $status;
+}
