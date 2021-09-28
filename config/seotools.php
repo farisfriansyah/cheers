@@ -13,7 +13,7 @@ return [
             'titleBefore'  => false, // Put defaults.title before page title, like 'It's Over 9000! - Dashboard'
             'description'  => 'Produk CHEERS diambil dari sumber mata air terlindungi, yang telah melalui seleksi dan penelitian bertahun-tahun oleh para ahli, sehingga terjaga kualitas dan kesegarannya. Diproduksi dengan teknologi modern dan higienis tanpa bahan kimia tambahan.', // set false to total remove
             'separator'    => ' - ',
-            'keywords'     => ['Cheers','Saycheers','saycheers.com','cheers','alkaline','natural','air minum', 'air minum cheers'],
+            'keywords'     => ['Cheers','Saycheers','saycheers.com','cheers','alkaline','air minum','air mineral','air minum ph tinggi','air minum cheers'],
             'canonical'    => false, // Set null for using Url::current(), set false to total remove
             'robots'       => false, // Set to 'all', 'none' or any combination of index/noindex and follow/nofollow
         ],
