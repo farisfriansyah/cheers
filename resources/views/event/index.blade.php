@@ -53,7 +53,7 @@
         <div class="row mb-5">
             @foreach ($promos as $pr)
             <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 order-md-2 promo-part">
-                <a href="#">
+                <a type="button" data-bs-toggle="modal" data-bs-target="#promo-modal-{{ $pr['id'] }}">
                     <div class="card card-promo">
                         <div class="row g-0">
                             <div class="col-md-5">
@@ -68,7 +68,7 @@
                             <div class="col-md-7">
                                 <div class="card-body">
                                     <h6 class="card-title">{{ $pr['name'] }}</h6>
-                                    <p class="card-text">{!! $pr['description'] !!}</p>
+                                    <div class="card-text">{!! strip_tags(htmlspecialchars_decode(substr($pr['description'], 0, 250))).'...' !!}</div>
                                 </div>
                             </div>
                         </div>
@@ -79,6 +79,35 @@
         </div>
     </div>
 </section>
+
+@foreach ($promos as $pr)
+<!-- Modal -->
+<div class="modal fade" id="promo-modal-{{ $pr['id'] }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">{{ $pr['name'] }}</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="row">
+                <div class="col-md-4 d-flex ms-auto justify-content-center">
+                    <img src="{{ $baseurl.$pr['image'] }}" class="promo-img rounded" style="width: 170px; height: auto;" alt="...">
+                </div>
+                <div class="col-md-8 ms-auto">
+                    <div class="card-text">{!! $pr['description'] !!}</div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+</div>
+@endforeach
+
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script>
     document.addEventListener('DOMContentLoaded', function() {

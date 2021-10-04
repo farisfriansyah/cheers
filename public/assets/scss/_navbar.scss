@@ -10,7 +10,7 @@
 
         .navbar-brand{
             img{
-                width: 120px;
+                width: 80px;
                 height: auto;
             }
         }
@@ -29,6 +29,7 @@
                 .nav-link{
                     font-weight: 500; 
                     padding: 0px;
+                    font-size: 15px;
                     &:hover{
                         color: $cheers-dark !important;  
                     }
@@ -77,6 +78,38 @@
                 }
                 .dropdown-menu{ 
                     margin-top:0; 
+                }
+            }
+        }
+
+        .socmed-head{
+            display: flex;
+            margin: 0px 5px;
+            position: relative;
+            padding: 0px 0px;
+
+            a{
+                margin-right: 10px;
+
+                .rounded{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    width: 20px;
+                    height: 20px;
+                    padding: 0px;
+                    text-decoration: none;
+                    text-align: center;
+                    // border: 1px solid $cheers-light;
+                    // background: rgba(216,38,28,0.3);
+                    // color: $cheers-light;
+                    font-size: 12px;
+                    font-weight: normal;
+                    line-height: 2em;
+                    border-radius: 100px;
+                    -moz-border-radius: 100px;
+                    -webkit-border-radius: 100px;
                 }
             }
         }
@@ -151,6 +184,16 @@
             }
         }
 
+        .socmed-head{
+            a{
+                .rounded{
+                    background: rgba(216,38,28,0.3);
+                    color: $cheers-light;
+                    font-size: 12px;
+                }
+            }
+        }
+
         .btn-lgn {
             color: $nav-login;
             background-color: transparent;
@@ -221,6 +264,17 @@
                 }
             }
         }
+
+        .socmed-head{
+            a{
+                .rounded{
+                    background: rgba(216,38,28,0.3);
+                    color: $cheers-light;
+                    font-size: 12px;
+                }
+            }
+        }
+
         .btn-lgn {
             color: $base-color;
             background-color: transparent;
@@ -262,6 +316,16 @@
                             }
                         }
                     }
+                }
+            }
+        }
+
+        .socmed-head{
+            a{
+                .rounded{
+                    background: rgba(216,38,28,0.3);
+                    color: $cheers-light;
+                    font-size: 12px;
                 }
             }
         }
@@ -336,6 +400,16 @@
             }
         }
 
+        .socmed-head{
+            a{
+                .rounded{
+                    background: rgba(216,38,28,0.3);
+                    color: $cheers-light;
+                    font-size: 12px;
+                }
+            }
+        }
+
         .btn-lgn {
             color: $nav-login;
             background-color: transparent;
@@ -358,8 +432,6 @@
             padding: 0px 10px;
         }
     }
-
-
     
     .navbar.nav-default {
         background-color: $fore-color;
@@ -383,6 +455,7 @@
             }
             .navbar-nav{
                 .nav-item{
+                    padding: 15px 0px;
     
                     &:hover{
                         background-image: -webkit-gradient(linear,left bottom,left top,color-stop(.3em, $cheers-dark),color-stop(.3em,transparent));
@@ -414,7 +487,6 @@
                     }
                 }
     
-    
                 .dropdown{
                     .dropdown-menu{ 
                         display: none; 
@@ -433,6 +505,39 @@
 
             .multilang{
                 margin-left: 10px;
+            }
+
+            .socmed-head{
+                display: flex;
+                margin: 10px 30px;
+                position: relative;
+                padding: 0px 0px;
+                // bottom: 0px;
+
+                a{
+                    margin-right: 10px;
+
+                    .rounded{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: relative;
+                        width: 40px;
+                        height: 40px;
+                        padding: 0px;
+                        text-decoration: none;
+                        text-align: center;
+                        // border: 1px solid $cheers-light;
+                        background: rgba(216,38,28,0.3);
+                        color: $cheers-light;
+                        font-size: 20px;
+                        font-weight: normal;
+                        line-height: 2em;
+                        border-radius: 100px;
+                        -moz-border-radius: 100px;
+                        -webkit-border-radius: 100px;
+                    }
+                }
             }
 
             .btn-lgn {
