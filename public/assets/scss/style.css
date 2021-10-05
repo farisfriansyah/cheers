@@ -657,6 +657,12 @@ a:focus {
   transition: background-color 0.5s ease 0s;
 }
 
+.navbar.bg-white .mynavpad .main-nav {
+  display: block !important;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .navbar.bg-white .mynavpad .navbar-brand img {
   width: 80px;
   height: auto;
@@ -666,11 +672,6 @@ a:focus {
 
 .navbar.bg-white .mynavpad .navbar-toggler i {
   color: #151515 !important;
-}
-
-.navbar.bg-white .mynavpad .main-nav {
-  -ms-flex-wrap: initial;
-      flex-wrap: initial;
 }
 
 .navbar.bg-white .mynavpad .navbar-nav .nav-item:hover {
@@ -792,7 +793,7 @@ a:focus {
     display: flex;
   }
   .navbar .mynavpad .main-nav {
-    display: block;
+    display: block !important;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
@@ -808,14 +809,6 @@ a:focus {
     display: -ms-flexbox;
     display: flex;
   }
-  .navbar.nav-default {
-    background-color: #FFFFFF;
-  }
-  .navbar.nav-default .main-nav {
-    display: block !important;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
   .navbar-collapse.collapse {
     width: 100%;
     background-color: #FFFFFF;
@@ -826,6 +819,16 @@ a:focus {
   }
   .navbar.nav-product {
     background-color: transparent;
+  }
+  .navbar.nav-product .main-nav {
+    display: block !important;
+    -ms-flex-wrap: wrap !important;
+        flex-wrap: wrap !important;
+  }
+  .navbar.nav-product .mynavpad .main-nav {
+    display: block !important;
+    -ms-flex-wrap: wrap !important;
+        flex-wrap: wrap !important;
   }
   .navbar.nav-product .mynavpad .top-navbar .contact-us {
     color: #FFFFFF;
@@ -906,7 +909,7 @@ a:focus {
     border: 1px solid rgba(0, 0, 0, 0.15);
   }
   .navbar.nav-product.natural .mynavpad .navbar-nav .nav-item .dropdown-menu li a:hover {
-    background-color: #A22523;
+    background-color: #02b196;
   }
   .navbar.nav-product.natural .mynavpad .btn-lgn {
     color: #151515;
@@ -914,12 +917,20 @@ a:focus {
     border: 2px solid #151515;
   }
   .navbar.nav-product.natural .mynavpad .btn-lgn:hover {
-    background-color: #A22523;
+    background-color: #02b196;
     color: #F7F7F7;
-    border: 2px solid #D8261C;
+    border: 2px solid #71bf44;
+  }
+  .navbar.bg-white {
+    background-color: #FFFFFF;
+  }
+  .navbar.bg-white .mynavpad .main-nav {
+    display: block !important;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .navbar.nav-default {
-    background-color: transparent;
+    background-color: #FFFFFF;
   }
   .navbar.nav-default .mynavpad .navbar-toggler i {
     color: #151515;
@@ -1019,6 +1030,11 @@ a:focus {
     padding: 10px;
     border-radius: 10px;
   }
+  .navbar.bg-white .mynavpad .main-nav {
+    display: block !important;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -1047,6 +1063,9 @@ a:focus {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .navbar .mynavpad .top-navbar .multilang a {
+    color: #151515;
   }
   .navbar .mynavpad .top-navbar .socmed-head {
     display: -webkit-box;
@@ -1084,16 +1103,12 @@ a:focus {
   }
   .navbar .mynavpad .navbar-nav .nav-item {
     margin: 0px 10px;
-    padding: 20px 0px;
+    padding: 15px 0px;
   }
   .navbar .mynavpad .navbar-nav .nav-item.only-mbl {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  }
-  .navbar.nav-default .main-nav {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
   }
   .navbar-collapse.collapse {
     width: 100%;
@@ -1102,6 +1117,137 @@ a:focus {
     transition: color .1s ease-in-out, background-color .1s ease-in-out,border-color .1s ease-in-out;
     padding: 10px;
     border-radius: 10px;
+  }
+  .navbar.nav-product {
+    background-color: transparent;
+  }
+  .navbar.nav-product .mynavpad .main-nav {
+    display: block !important;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .navbar.nav-product .mynavpad .top-navbar .contact-us {
+    color: #FFFFFF;
+  }
+  .navbar.nav-product .mynavpad .top-navbar .multilang a {
+    color: #151515;
+  }
+  .navbar.nav-product .mynavpad .top-navbar .socmed-head a .rounded {
+    color: #D8261C;
+    background: #FFFFFF;
+  }
+  .navbar.nav-product .mynavpad .navbar-toggler i {
+    color: #FFFFFF;
+  }
+  .navbar.nav-product .mynavpad .navbar-nav .nav-item:hover {
+    background-image: linear-gradient(1turn, #A22523 0.3em, transparent 0);
+    border-bottom-color: transparent;
+    color: #A22523;
+  }
+  .navbar.nav-product .mynavpad .navbar-nav .nav-item .nav-link {
+    color: #151515;
+    -webkit-transition: color .15s ease-in-out, background-color .15s ease-in-out,border-color .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out,border-color .15s ease-in-out;
+  }
+  .navbar.nav-product .mynavpad .navbar-nav .nav-item .nav-link:hover {
+    color: #A22523 !important;
+  }
+  .navbar.nav-product .mynavpad .navbar-nav .nav-item .dropdown-menu {
+    color: #212529;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+  }
+  .navbar.nav-product .mynavpad .navbar-nav .nav-item .dropdown-menu li a:hover {
+    background-color: #A22523;
+  }
+  .navbar.nav-product .mynavpad .btn-lgn {
+    color: #151515;
+    background-color: transparent;
+    border: 2px solid #151515;
+  }
+  .navbar.nav-product .mynavpad .btn-lgn:hover {
+    background-color: #A22523;
+    color: #F7F7F7;
+    border: 2px solid #D8261C;
+  }
+  .navbar.nav-product.natural {
+    background-color: transparent;
+  }
+  .navbar.nav-product.natural .mynavpad .top-navbar .contact-us {
+    color: #FFFFFF;
+  }
+  .navbar.nav-product.natural .mynavpad .top-navbar .multilang a {
+    color: #151515;
+  }
+  .navbar.nav-product.natural .mynavpad .top-navbar .socmed-head a .rounded {
+    color: #71bf44;
+    background: #FFFFFF;
+  }
+  .navbar.nav-product.natural .mynavpad .navbar-toggler i {
+    color: #FFFFFF;
+  }
+  .navbar.nav-product.natural .mynavpad .navbar-nav .nav-item:hover {
+    background-image: linear-gradient(1turn, #A22523 0.3em, transparent 0);
+    border-bottom-color: transparent;
+    color: #A22523;
+  }
+  .navbar.nav-product.natural .mynavpad .navbar-nav .nav-item .nav-link {
+    color: #151515;
+    -webkit-transition: color .15s ease-in-out, background-color .15s ease-in-out,border-color .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out,border-color .15s ease-in-out;
+  }
+  .navbar.nav-product.natural .mynavpad .navbar-nav .nav-item .nav-link:hover {
+    color: #A22523 !important;
+  }
+  .navbar.nav-product.natural .mynavpad .navbar-nav .nav-item .dropdown-menu {
+    color: #212529;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+  }
+  .navbar.nav-product.natural .mynavpad .navbar-nav .nav-item .dropdown-menu li a:hover {
+    background-color: #02b196;
+  }
+  .navbar.nav-product.natural .mynavpad .btn-lgn {
+    color: #151515;
+    background-color: transparent;
+    border: 2px solid #151515;
+  }
+  .navbar.nav-product.natural .mynavpad .btn-lgn:hover {
+    background-color: #02b196;
+    color: #F7F7F7;
+    border: 2px solid #71bf44;
+  }
+  .navbar.bg-white .mynavpad .main-nav {
+    display: block !important;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .navbar.bg-white .main-nav {
+    display: block !important;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .navbar.nav-default {
+    background-color: #FFFFFF;
+  }
+  .navbar.nav-default .main-nav {
+    display: block !important;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .navbar.nav-default .mynavpad .navbar-toggler i {
+    color: #151515;
+  }
+  .navbar.nav-default .mynavpad .main-nav {
+    display: block !important;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .navbar.nav-default .mynavpad .multilang {
+    margin-left: 10px;
+  }
+  .navbar.nav-default .mynavpad .btn-lgn {
+    margin: 10px 0px 20px 0px;
   }
 }
 
@@ -1354,10 +1500,6 @@ a:focus {
   .navbar.bg-white .mynavpad .navbar-toggler i {
     color: #151515 !important;
   }
-  .navbar.bg-white .mynavpad .main-nav {
-    -ms-flex-wrap: initial;
-        flex-wrap: initial;
-  }
   .navbar.bg-white .mynavpad .navbar-nav .nav-item:hover {
     background-image: linear-gradient(1turn, #A22523 0.3em, transparent 0);
     border-bottom-color: transparent;
@@ -1486,10 +1628,6 @@ a:focus {
   }
   .navbar.bg-white .mynavpad .navbar-toggler i {
     color: #151515 !important;
-  }
-  .navbar.bg-white .mynavpad .main-nav {
-    -ms-flex-wrap: initial;
-        flex-wrap: initial;
   }
   .navbar.bg-white .mynavpad .navbar-nav .nav-item:hover {
     background-image: linear-gradient(1turn, #A22523 0.3em, transparent 0);

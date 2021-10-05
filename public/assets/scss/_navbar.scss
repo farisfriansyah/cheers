@@ -467,6 +467,11 @@
     transition: background-color 0.5s ease 0s;
 
     .mynavpad{
+
+        .main-nav{
+            display: block !important;
+            flex-wrap: wrap;
+        }
         .navbar-brand{
             img{
                 width: 80px;
@@ -479,11 +484,6 @@
                 color: $primary-color !important;
             }
         }
-
-        // .main-nav{
-        //     flex-wrap: initial;
-        // }
-
         .navbar-nav{
             .nav-item{
 
@@ -640,14 +640,13 @@
 
         .main-nav{
             display: block !important;
-            flex-wrap: wrap;
+            flex-wrap: wrap !important;
         }
         
         .mynavpad{
-
             .main-nav{
                 display: block !important;
-                flex-wrap: wrap;
+                flex-wrap: wrap !important;
             }
             
             .top-navbar{
@@ -786,7 +785,7 @@
                         li{
                             a{  
                                 &:hover{
-                                    background-color: $cheers-naturaldark;
+                                    background-color: $cheers-natural-dark;
                                 }
                             }
                         }
@@ -806,8 +805,9 @@
             }
         }
     }
-    
+
     .navbar.bg-white{
+        background-color: $fore-color;
         .mynavpad{
             .main-nav{
                 display: block !important;
@@ -818,10 +818,7 @@
     
     .navbar.nav-default{
         background-color: $fore-color;
-        .main-nav{
-            display: block !important;
-            flex-wrap: wrap;
-        }
+
     
         .mynavpad{
             .navbar-toggler{
@@ -923,6 +920,12 @@
         transition: color .1s ease-in-out, background-color .1s ease-in-out,border-color .1s ease-in-out;
         padding: 10px;
         border-radius: 10px;
+    }
+
+    .navbar.bg-white .mynavpad .main-nav {
+        display: block !important;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     }
 
 }
@@ -1152,7 +1155,7 @@
                         li{
                             a{  
                                 &:hover{
-                                    background-color: $cheers-naturaldark;
+                                    background-color: $cheers-natural-dark;
                                 }
                             }
                         }
@@ -1171,6 +1174,12 @@
                 }
             }
         }
+    }
+
+    .navbar.bg-white .mynavpad .main-nav {
+        display: block !important;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     }
     
     .navbar.bg-white{
@@ -1498,10 +1507,6 @@
                 }
             }
     
-            // .main-nav{
-            //     flex-wrap: initial;
-            // }
-    
             .navbar-nav{
                 .nav-item{
     
@@ -1657,10 +1662,7 @@
                     color: $primary-color !important;
                 }
             }
-    
-            // .main-nav{
-            //     flex-wrap: initial;
-            // }
+
     
             .navbar-nav{
                 .nav-item{
