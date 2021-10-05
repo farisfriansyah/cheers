@@ -84,17 +84,17 @@ $(document).ready(function () {
 
     // });
 
-   
-
     new Date().getFullYear();
     $("#year").innerHTML = new Date().getFullYear();
 
     $(window).scroll(function () {
         if ($(this).scrollTop() > 70) {
             $('.navbar').addClass('bg-white', 2000, 'fade');
+            $('.navbar .top-navbar').addClass('hidenavtop', 5000, 'slideUp');
             $('.fixed-cta').addClass('show', 2000, 'fade');
         } else {
             $('.navbar').removeClass('bg-white', 2000, 'fade');
+            $('.navbar .top-navbar').removeClass('hidenavtop', 5000, 'slideDown');
             $('.fixed-cta').removeClass('show', 2000, 'fade');
         }
     });
