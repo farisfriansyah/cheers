@@ -4,6 +4,9 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\WhyController;
 use App\Http\Controllers\EventController;
+use App\Http\Controllers\SustainabilityController;
+use App\Http\Controllers\BrandController;
+use App\Http\Controllers\EmailController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\AlkalineController;
 use App\Http\Controllers\NaturalController;
@@ -48,6 +51,9 @@ Route::group(['prefix' => 'blog'], function(){
     });
 });
 
+Route::get('/sustainability', [SustainabilityController::class,'index']);
+
+Route::get('/brand-story', [BrandController::class,'index']);
 
 Route::get('/faq', [FaqController::class,'index']);
 
@@ -62,3 +68,5 @@ Route::group(['prefix' => 'login'], function(){
 Route::get('/registration', [RegistrationController::class,'index']);
 
 Route::get('lang/{language}', [LocalizationController::class,'switch'])->name('localization.switch');
+
+Route::post('send_email',[EmailController::class,'index']);

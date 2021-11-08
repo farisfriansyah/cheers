@@ -350,10 +350,374 @@ footer{
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+    $sm-font: 14px;
+    $normal-font: 16px;
+    $l-font: 18px;
+    $xl-font: 22px;
+    $xxl-font: 25px;
+    $xxxl-font: 32px;
+
+    footer{
+        padding: 120px 0px 10px 0px;
+    
+        .footer-content{
+            padding: 0px 70px ;
+    
+            .footer-top{
+                padding: 20px 0px;
+    
+                .info-cheers{
+                    img{
+                        width: 140px;
+                        height: auto;
+                    }
+                }
+                .internal-link{
+                    h6{
+                        font-size: $l-font;
+                    }
+                    ul{
+                        li{
+                            a{
+                                font-size: $normal-font;
+                            }
+                        }
+                    }
+                }
+                .contact-info{
+                    .infocontact-section{
+
+                        h6{
+                            font-size: $l-font;
+                        }
+    
+                        i{
+                            font-size: $l-font;
+                        }
+    
+                        p{
+                            font-size: $normal-font;
+                        }
+                    }
+                }
+            }
+            .footer-bottom{
+                p{
+                    font-size: $normal-font;
+                }
+                a{
+                    font-size: $normal-font;
+                }
+            }
+        } 
+    }
+    
+    .fixed-cta{
+        width: auto;
+        height: auto;
+        
+        .wacta{
+            width: 100%;
+            height: auto;
+    
+            .icon-cta{
+                width: 50px;
+                height: 50px;
+                padding: 9px 11px;
+    
+                i{
+                    color: $fore-color;
+                }
+            }
+    
+            h6{
+                font-size: $normal-font;
+            }
+        }
+    }
 
 }
 
 /* Extra large devices (large laptops and desktops, 1400px and up) */
 @media only screen and (min-width: 1400px) {
+    $sm-font: 14px;
+    $normal-font: 16px;
+    $l-font: 20px;
+    $xl-font: 24px;
+    $xxl-font: 28px;
+    $xxxl-font: 36px;
 
+    footer{
+        padding: 120px 0px 10px 0px;
+    
+        .footer-content{
+            padding: 0px 70px ;
+    
+            .footer-top{
+                padding: 20px 0px;
+    
+                .info-cheers{
+                    img{
+                        width: 140px;
+                        height: auto;
+                    }
+                }
+                .internal-link{
+                    h6{
+                        font-size: $l-font;
+                    }
+                    ul{
+                        li{
+                            a{
+                                font-size: $normal-font;
+                            }
+                        }
+                    }
+                }
+                .contact-info{
+                    .infocontact-section{
+
+                        h6{
+                            font-size: $l-font;
+                        }
+    
+                        i{
+                            font-size: $l-font;
+                        }
+    
+                        p{
+                            font-size: $normal-font;
+                        }
+                    }
+                }
+            }
+            .footer-bottom{
+                p{
+                    font-size: $normal-font;
+                }
+                a{
+                    font-size: $normal-font;
+                }
+            }
+        } 
+    }
+    
+    .fixed-cta{
+        width: auto;
+        height: auto;
+        
+        .wacta{
+            width: 100%;
+            height: auto;
+    
+            .icon-cta{
+                width: 50px;
+                height: 50px;
+                padding: 9px 11px;
+    
+                i{
+                    color: $fore-color;
+                    // font-size: $normal-font;
+                }
+            }
+    
+            h6{
+                font-size: $normal-font;
+            }
+        }
+    }
+}
+
+/* Large screen, retina, stuff to override above media query */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 1900px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 1900px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 1900px),
+only screen and (        min-device-pixel-ratio: 2)      and (min-width: 1900px),
+only screen and (                min-resolution: 192dpi) and (min-width: 1900px),
+only screen and (                min-resolution: 2dppx)  and (min-width: 1900px) { 
+    $sm-font: 20px;
+    $normal-font: 25px;
+    $l-font: 28px;
+    $xl-font: 32px;
+    $xxl-font: 36px;
+    $xxxl-font: 50px;
+
+    footer{
+        padding: 120px 0px 10px 0px;
+    
+        .footer-content{
+            padding: 0px 70px ;
+    
+            .footer-top{
+                padding: 20px 0px;
+    
+                .info-cheers{
+                    img{
+                        width: 220px;
+                        height: auto;
+                    }
+                }
+                .internal-link{
+                    h6{
+                        font-size: $l-font;
+                    }
+                    ul{
+                        li{
+                            a{
+                                font-size: $normal-font;
+                            }
+                        }
+                    }
+                }
+                .contact-info{
+                    .infocontact-section{
+
+    
+                        h6{
+                            font-size: $l-font;
+                        }
+    
+                        i{
+                            font-size: $l-font;
+                        }
+    
+                        p{
+                            font-size: $normal-font;
+                        }
+                    }
+                }
+            }
+            .footer-bottom{
+                p{
+                    font-size: $normal-font;
+                }
+                a{
+                    font-size: $normal-font;
+                }
+            }
+        } 
+    }
+    
+    .fixed-cta{
+        width: auto;
+        height: auto;
+        
+        .wacta{
+            width: 100%;
+            height: auto;
+    
+            .icon-cta{
+                width: 50px;
+                height: 50px;
+                padding: 9px 11px;
+    
+                i{
+                    color: $fore-color;
+                    // font-size: $normal-font;
+                }
+            }
+    
+            h6{
+                font-size: $normal-font;
+            }
+        }
+    }
+}
+
+/* Large screen, retina, stuff to override above media query */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 2500px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 2500px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 2500px),
+only screen and (        min-device-pixel-ratio: 2)      and (min-width: 2500px),
+only screen and (                min-resolution: 192dpi) and (min-width: 2500px),
+only screen and (                min-resolution: 2dppx)  and (min-width: 2500px) { 
+    $sm-font: 25px;
+    $normal-font: 28px;
+    $l-font: 32px;
+    $xl-font: 36px;
+    $xxl-font: 40px;
+    $xxxl-font: 60px;
+
+    footer{
+        padding: 120px 0px 10px 0px;
+    
+        .footer-content{
+            padding: 0px 70px ;
+    
+            .footer-top{
+                padding: 20px 0px;
+    
+                .info-cheers{
+                    img{
+                        width: 220px;
+                        height: auto;
+                    }
+                }
+                .internal-link{
+                    h6{
+                        font-size: $l-font;
+                    }
+                    ul{
+                        li{
+                            a{
+                                font-size: $normal-font;
+                            }
+                        }
+                    }
+                }
+                .contact-info{
+                    .infocontact-section{
+
+    
+                        h6{
+                            font-size: $l-font;
+                        }
+    
+                        i{
+                            font-size: $l-font;
+                        }
+    
+                        p{
+                            font-size: $normal-font;
+                        }
+                    }
+                }
+            }
+            .footer-bottom{
+                p{
+                    font-size: $normal-font;
+                }
+                a{
+                    font-size: $normal-font;
+                }
+            }
+        } 
+    }
+    
+    .fixed-cta{
+        width: auto;
+        height: auto;
+        
+        .wacta{
+            width: 100%;
+            height: auto;
+    
+            .icon-cta{
+                width: 50px;
+                height: 50px;
+                padding: 9px 11px;
+    
+                i{
+                    color: $fore-color;
+                    // font-size: $normal-font;
+                }
+            }
+    
+            h6{
+                font-size: $normal-font;
+            }
+        }
+    }
 }

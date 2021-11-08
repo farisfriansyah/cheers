@@ -28,6 +28,8 @@ class CheersProvider extends ServiceProvider
             'includes.header',
             'includes.footer',
             'welcome',
+            'sustainability',
+            'brand-story',
             'cheers-alkaline','cheers-natural',
             'includes.alkalineheader','includes.naturalheader',
             'event.index','event.view',

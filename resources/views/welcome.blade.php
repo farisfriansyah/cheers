@@ -12,7 +12,7 @@
                 <img src="{{ asset('public/assets/img/cheers-logo.png')}}" alt="">
                 <h3 class="h3-display">Cheers Healthy</h3><h1>Drinking Water</h1>
                 <hr class="cheers-separator">
-                <p class="lead">@lang('welcome.heroSubtitle')</p>
+                <p>@lang('welcome.heroSubtitle')</p>
                 <a href="{{ url('/cheers-alkaline') }}" class="btn btn-danger btn-cheerslight">@lang('welcome.heroBtn')</a>
             </div>
 
@@ -44,9 +44,9 @@
 
 <section id="cheers-about">
     <div class="container">
-        <div class="row g-0">
+        <div class="row align-items-center g-0">
             <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 about-img">
-                <img src="{{ asset('public/assets/img/about-home.png')}}" alt="" style="width: 340px;">
+                <img src="{{ asset('public/assets/img/about-home.png')}}" alt="">
             </div>
             <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-6 col-sm-12">
                 <div class="container">
@@ -208,7 +208,6 @@
         </div>
         <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
         </div>
       </div>
     </div>
@@ -225,7 +224,7 @@
         <div class="container-fluid">
             <div class="row">
                 @foreach ($data['blogs'] as $blg)
-                <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-12 blog-part">
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 blog-part">
                     <div class="blog-grid">
                         <div class="blog-img">
                             <div class="date">
@@ -238,7 +237,7 @@
                         </div>
                         <div class="blog-info">
                             <h5><a href="{{ url('blog/view/'.$blg['url'].'/'.$blg['slug']) }}">{{ $blg['title_'.$locale] }}</a></h5>
-                            <p>{!! strip_tags(htmlspecialchars_decode(substr($blg['content_'.$locale], 0, 140))).'...' !!}</p>
+                            <p>{!! strip_tags(htmlspecialchars_decode(substr($blg['content_'.$locale], 0, 180))).'...' !!}</p>
                             <div class="btn-bar">
                                 <a href="{{ url('blog/view/'.$blg['url'].'/'.$blg['slug']) }}" class="px-btn-arrow">
                                     <span>@lang('welcome.homeBlogCta')</span>

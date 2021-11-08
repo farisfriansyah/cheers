@@ -332,6 +332,10 @@
                 }
             }
 
+            .card-text{
+                font-family: $font-secondary;
+            }
+
             p{
                 text-overflow: ellipsis;
                 word-wrap: break-word;
@@ -548,6 +552,11 @@
 #cheers-find{
     padding: 70px 0px;
     background-color: $fore-color;
+    .title-section-ct{
+        span{
+            font-family: $font-secondary;
+        }
+    }
 
     .find-product{
         a{
@@ -675,6 +684,11 @@
 
     #cheers-event {
         padding: 20px 0px;
+        .title-part{
+            .title-section{
+                padding: 20px 10px;
+            }
+        }
     }
 }
 
@@ -709,6 +723,13 @@
             }
         }
     }
+    #cheers-event{
+        .title-part{
+            .title-section{
+                padding: 20px 10px;
+            }
+        }
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -719,6 +740,7 @@
     }
 
     #cheers-hero {
+        margin-top: 50px;
         background-size: 100%;
         background-position: right 0px top 10px;
 
@@ -742,6 +764,14 @@
             }
         }
     }
+
+    #cheers-event{
+        .title-part{
+            .title-section{
+                padding: 20px 10px;
+            }
+        }
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -752,12 +782,15 @@
     }
 
     #cheers-hero {
+        margin-top: 70px;
+        display: flex;
+        align-items: center;
         background-size: cover;
         background-position: left 0px bottom 10px;
 
         .hero-title {
             padding: 40px 80px;
-            margin-top: -80px;
+            margin-top: 0px;
         }
 
         .bg-imgHero img {
@@ -779,12 +812,16 @@
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+    
     .title-section-ct {
         width: 1000px;
         padding: 30px 40px;
     }
 
     #cheers-hero {
+        margin-top: 0px;
+        display: flex;
+        align-items: center;
         background-size: cover;
         background-position: left 0px bottom 10px;
 
@@ -794,8 +831,8 @@
         }
 
         .bg-imgHero img {
-            width: 700px;
-            padding: 60px 0px 60px 0px;
+            width: 600px;
+            padding: 100px 0px 60px 0px;
         }
     }
 
@@ -805,7 +842,7 @@
 
         .about-img{
             img{
-                width: 400px;
+                width: 380px;
                 height: auto;
             }
         }
@@ -820,6 +857,7 @@
     }
 
     #cheers-hero {
+        margin-top: 80px;
         background-size: cover;
         background-position: left 0px bottom 10px;
 
@@ -841,6 +879,534 @@
             img{
                 width: 400px;
                 height: auto;
+            }
+        }
+    }
+}
+
+/* Large screen, retina, stuff to override above media query */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 1400px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 1400px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 1400px),
+only screen and (        min-device-pixel-ratio: 2)      and (min-width: 1400px),
+only screen and (                min-resolution: 192dpi) and (min-width: 1400px),
+only screen and (                min-resolution: 2dppx)  and (min-width: 1400px) { 
+    $sm-font: 16px;
+    $normal-font: 18px;
+    $l-font: 20px;
+    $xl-font: 24px;
+    $xxl-font: 28px;
+    $xxxl-font: 36px;
+
+    .title-section-ct {
+        width: 800px;
+        padding: 30px 40px;
+    }
+
+    #cheers-hero {
+        margin-top: 80px;
+        background-size: cover;
+        background-position: left 0px bottom 10px;
+
+        .hero-title {
+            padding: 40px 80px;
+            margin-top: -80px;
+        }
+
+        .bg-imgHero img {
+            width: 475px;
+        }
+    }
+
+    #cheers-about {
+        background-size: contain;
+        background-position: left 0px bottom 0px;
+
+        .about-img{
+            img{
+                width: 400px;
+                height: auto;
+            }
+        }
+    }
+}
+
+/* FHD screen, retina, stuff to override above media query */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 1900px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 1900px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 1900px),
+only screen and (        min-device-pixel-ratio: 2)      and (min-width: 1900px),
+only screen and (                min-resolution: 192dpi) and (min-width: 1900px),
+only screen and (                min-resolution: 2dppx)  and (min-width: 1900px) { 
+    $sm-font: 20px;
+    $normal-font: 25px;
+    $l-font: 28px;
+    $xl-font: 32px;
+    $xxl-font: 36px;
+    $xxxl-font: 50px;
+
+    .title-section-ct {
+        width: 800px;
+        padding: 30px 40px;
+        h3{
+            font-size: $xxl-font;
+            span{
+                font-size: $sm-font !important;
+            }
+        }
+    }
+
+    .title-section{
+        h3{
+            font-size: $xxl-font;
+            span{
+                font-size: $sm-font !important;
+            }
+        }
+        p{
+            font-size: $normal-font;
+        }
+        .btn-outcheerslight{
+            font-size: $normal-font;
+        }
+        .btn-cheerslight{
+            font-size: $normal-font;
+        }
+        .btn-link{
+            font-size: $normal-font;
+        }
+    }
+
+    #cheers-hero {
+        margin-top: 80px;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        background-size: cover;
+        background-position: left 0px bottom 10px;
+
+        .hero-title {
+            padding: 40px 80px;
+            margin-top: 0px;
+
+            h3{
+                font-size: $l-font;
+            }
+
+            h1{
+                font-size: $xxxl-font;
+            }
+
+            p{
+                font-size: $normal-font;
+            }
+
+            .btn-cheerslight{
+                margin-top: 20px;
+                font-size: 20px;
+            }
+        }
+
+        .bg-imgHero img {
+            width: 800px;
+        }
+    }
+
+    #cheers-about {
+        height: 100vh;
+        background-size: contain;
+        background-position: left 0px bottom 0px;
+        .container{
+            max-width: 95%;
+            .about-img{
+                img{
+                    width: 600px;
+                    height: auto;
+                }
+            }
+        }
+    }
+
+    #cheers-event{
+        margin-top: 70px;
+        .container{
+            max-width: 95%;
+            .text-left{
+                h3{
+                    font-size: 40px;
+                }
+            }
+            .promo-part{
+                .card-promo{
+                    .card-body{
+                        .card-title{
+                            font-size: $l-font;
+                        }
+                        .card-text{
+                            font-size: $normal-font;
+                        }
+                    }
+                }
+            }
+            .event-part{
+                .no-event{
+                    .banner-noevent{
+                        width: 600px;
+                        height: auto;
+                    }
+                    .card-body{
+                        h6{
+                            font-size: $normal-font;
+                        }
+                        h4{
+                            font-size: $l-font;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #cheers-blog{
+        .container{
+            max-width: 95%;
+            .blog-part{
+                .blog-grid {
+                    .blog-img {
+                        img{
+                            width: 100%;
+                            height: 400px;
+                        }
+                        .date {
+                            padding: 15px 15px;
+                        }
+                        .date span {
+                            font-size: $l-font;
+                        }
+                        .date label {
+                            font-size: $sm-font;
+                        }
+                    }
+                    
+                    .blog-info {
+                        h5 {
+                            font-size: $xl-font;
+                        }
+                        p {
+                            font-size: $normal-font;
+                        }
+                        .btn-bar {
+                            font-size: $normal-font;
+        
+                            span{
+                                font-size: $normal-font;
+                            }
+                        }
+                    }  
+                } 
+            }
+        }
+    }
+
+    #cheers-campaign {
+        .img-campaign{
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+    }
+
+    #cheers-subscribe{
+        .overlay{
+            .container{
+                max-width: 95%;
+                .subs-form{
+                    .subs-text{
+                        width: 100%;
+                        h3{
+                            font-size: $xxl-font;
+                        }
+        
+                        p{
+                            font-size: $normal-font;
+                        }
+                    }
+        
+                    .form-label{
+                        font-size: $sm-font;
+                    }
+        
+                    .input-subs{
+                        font-size: $normal-font;
+                    }
+        
+                    button{
+                        font-size: $normal-font;
+                        font-weight: normal;
+                    }
+                }
+            }
+        }
+    }
+    #cheers-find{
+        h3{
+            font-size: $xxl-font;
+            span{
+                font-size: $xxl-font !important;
+            }
+        }
+        span{
+            font-size: $normal-font;
+        }
+    
+        .find-product{
+            a{  
+                img{
+                    max-height: 140px; 
+                    width: auto;
+                }
+            }
+        }
+    }
+}
+
+/* Large screen, retina, stuff to override above media query */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 2500px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 2500px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 2500px),
+only screen and (        min-device-pixel-ratio: 2)      and (min-width: 2500px),
+only screen and (                min-resolution: 192dpi) and (min-width: 2500px),
+only screen and (                min-resolution: 2dppx)  and (min-width: 2500px) { 
+    $sm-font: 25px;
+    $normal-font: 28px;
+    $l-font: 32px;
+    $xl-font: 36px;
+    $xxl-font: 40px;
+    $xxxl-font: 60px;
+
+    .title-section-ct {
+        width: 800px;
+        padding: 30px 40px;
+        h3{
+            font-size: $xxl-font;
+            span{
+                font-size: $sm-font !important;
+            }
+        }
+    }
+
+    .title-section{
+        h3{
+            font-size: $xxl-font;
+            span{
+                font-size: $sm-font !important;
+            }
+        }
+        p{
+            font-size: $normal-font;
+        }
+        .btn-outcheerslight{
+            font-size: $normal-font;
+        }
+        .btn-cheerslight{
+            font-size: $normal-font;
+        }
+        .btn-link{
+            font-size: $normal-font;
+        }
+    }
+
+    #cheers-hero {
+        margin-top: 80px;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        background-size: cover;
+        background-position: left 0px bottom 10px;
+
+        .hero-title {
+            padding: 40px 80px;
+            margin-top: 0px;
+
+            h3{
+                font-size: $l-font;
+            }
+
+            h1{
+                font-size: $xxxl-font;
+            }
+
+            p{
+                font-size: $normal-font;
+            }
+
+            .btn-cheerslight{
+                margin-top: 20px;
+                font-size: 20px;
+            }
+        }
+
+        .bg-imgHero img {
+            width: 1100px;
+        }
+    }
+
+    #cheers-about {
+        height: 100vh;
+        background-size: contain;
+        background-position: left 0px bottom 0px;
+        .container{
+            max-width: 95%;
+            .about-img{
+                img{
+                    width: 700px;
+                    height: auto;
+                }
+            }
+        }
+    }
+
+    #cheers-event{
+        margin-top: 70px;
+        .container{
+            max-width: 95%;
+            .text-left{
+                h3{
+                    font-size: 40px;
+                }
+            }
+            .promo-part{
+                .card-promo{
+                    .card-body{
+                        .card-title{
+                            font-size: $l-font;
+                        }
+                        .card-text{
+                            font-size: $normal-font;
+                        }
+                    }
+                }
+            }
+            .event-part{
+                .no-event{
+                    .banner-noevent{
+                        width: 800px;
+                        height: auto;
+                    }
+                    .card-body{
+                        h6{
+                            font-size: $normal-font;
+                        }
+                        h4{
+                            font-size: $l-font;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #cheers-blog{
+        .container{
+            max-width: 95%;
+            .blog-part{
+                .blog-grid {
+                    .blog-img {
+                        img{
+                            width: 100%;
+                            height: 400px;
+                        }
+                        .date {
+                            padding: 15px 15px;
+                        }
+                        .date span {
+                            font-size: $l-font;
+                        }
+                        .date label {
+                            font-size: $sm-font;
+                        }
+                    }
+                    
+                    .blog-info {
+                        h5 {
+                            font-size: $xl-font;
+                        }
+                        p {
+                            font-size: $normal-font;
+                        }
+                        .btn-bar {
+                            font-size: $normal-font;
+        
+                            span{
+                                font-size: $normal-font;
+                            }
+                        }
+                    }  
+                } 
+            }
+        }
+    }
+
+    #cheers-campaign {
+        .img-campaign{
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+    }
+
+    #cheers-subscribe{
+        .overlay{
+            .container{
+                max-width: 95%;
+                .subs-form{
+                    .subs-text{
+                        width: 100%;
+                        h3{
+                            font-size: $xxl-font;
+                        }
+        
+                        p{
+                            font-size: $normal-font;
+                        }
+                    }
+        
+                    .form-label{
+                        font-size: $sm-font;
+                    }
+        
+                    .input-subs{
+                        font-size: $normal-font;
+                    }
+        
+                    button{
+                        font-size: $normal-font;
+                        font-weight: normal;
+                    }
+                }
+            }
+        }
+    }
+    #cheers-find{
+        h3{
+            font-size: $xxl-font;
+            span{
+                font-size: $xxl-font !important;
+            }
+        }
+        span{
+            font-size: $normal-font;
+        }
+    
+        .find-product{
+            a{  
+                img{
+                    max-height: 140px; 
+                    width: auto;
+                }
             }
         }
     }

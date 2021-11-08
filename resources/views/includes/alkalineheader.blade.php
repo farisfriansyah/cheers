@@ -62,7 +62,6 @@
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                   <li><a class="dropdown-item" href="{{ url('/event') }}">Event & Promo</a></li>
-                  <li><a class="dropdown-item" href="https://recycheers.saycheers.com/">#Campaign</a></li>
                   <li><a class="dropdown-item" href="{{ url('/blog') }}">Blog</a></li>
                   <li><a class="dropdown-item" href="#">On Media</a></li>
                 </ul>
@@ -71,6 +70,15 @@
               <li class="nav-item">
                 <a class="nav-link" href="">SUSTAINABILITY</a>
               </li>
+
+              {{-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+                  SUSTAINABILITY
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="https://recycheers.saycheers.com/">#Campaign</a></li>
+                </ul>
+              </li> --}}
 
               <li class="nav-item">
                 <a class="nav-link" href="">CAREER</a>
@@ -82,7 +90,7 @@
             </ul>
           </div>
           <div>
-            <a href="https://membership.saycheers.com/" class="btn btn-danger btn-lgn d-flex" type="submit">MEMBERSHIP</a>
+            <a href="https://membership.saycheers.com/" class="btn btn-danger btn-lgn" type="submit">MEMBERSHIP</a>
           </div>
         </div>
     </div>
