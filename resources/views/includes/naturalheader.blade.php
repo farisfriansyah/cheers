@@ -42,7 +42,7 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#">BRAND STORY</a>
+                <a class="nav-link" href="{{ url('/brand-story') }}">BRAND STORY</a>
               </li>
 
               <li class="nav-item dropdown">
@@ -63,12 +63,13 @@
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                   <li><a class="dropdown-item" href="{{ url('/event') }}">Event & Promo</a></li>
                   <li><a class="dropdown-item" href="{{ url('/blog') }}">Blog</a></li>
+                  <li><a class="dropdown-item" href="{{ url('/campaign') }}">Campaign</a></li>
                   <li><a class="dropdown-item" href="#">On Media</a></li>
                 </ul>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="">SUSTAINABILITY</a>
+                <a class="nav-link" href="{{ url('/sustainability') }}">SUSTAINABILITY</a>
               </li>
 
               {{-- <li class="nav-item dropdown">
@@ -85,7 +86,7 @@
               </li>
 
               <li class="nav-item only-mbl">
-                <a class="nav-link" href="">CONTACT</a>
+                <a class="nav-link" href="{{ url('/contact') }}">CONTACT</a>
               </li>
             </ul>
           </div>

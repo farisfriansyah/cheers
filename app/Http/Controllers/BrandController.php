@@ -28,6 +28,6 @@ class BrandController extends Controller
         JsonLd::setTitle($title);
         JsonLd::setDescription($description);
 
-        return view('sustainability');
+        return view('brand-story');
     }
 }

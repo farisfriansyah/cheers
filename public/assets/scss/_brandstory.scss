@@ -1,0 +1,105 @@
+.cheers-brand{
+    position: relative;
+    display: flex;
+    padding: 0rem 0;
+    background-color: $fore-color;
+    background-size: cover !important;
+    background-position: top !important;
+    height: 70vh;
+    width: 100%;
+    
+    .img-overlay {
+        background: $fore-color;
+        height: 100%;
+        width: 100%;
+        background: -webkit-linear-gradient(#818181 0%, #656565 83.33%, #272727 100%);
+        background: linear-gradient(#818181 0%, #656565 83.33%, #272727 100%);
+        opacity: 0.5;
+    } 
+
+    .heropro-type{
+        z-index: 1;
+        position: absolute;
+        bottom: 0; 
+        width: 100%;
+        height: auto;
+
+        .title-box{
+            position: relative;
+            width: 100%;
+            height: auto;
+            padding: 20px;
+            background: transparent;
+            border-radius: 0px;
+            overflow: hidden;
+            
+            h3{
+                color: $fore-color;
+            }
+            h6{
+                color: $fore-color;
+            }
+            p{
+                color: $fore-color;
+            }
+
+        }
+    } 
+}
+
+.cheers-story{
+    min-height: 270px;
+    display: flex;
+    align-items: center;
+
+    p{
+        margin-bottom: 0px;
+    }
+}
+
+.story-img{
+    padding: 0px;
+    background-color: $fore-color;
+    height: 270px;
+    width: 100%;
+}
+
+.story-img.imgstr-1{
+    background: url('../img/cropsubs.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.story-img.imgstr-2{
+    background: url('../img/cropsubs.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.story-img.imgstr-3{
+    background: url('../img/cropsubs.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.story-img.imgstr-4{
+    background: url('../img/cropsubs.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.story-img.imgstr-5{
+    background: url('../img/cropsubs.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

@@ -20,10 +20,7 @@
         <button class="btn btn-danger btn-outcheerslight" type="button" data-filter=".cheers">Tentang Cheers</button>
     </div>
     
-
     <div class="container">
-        
-
         <div class="accordion accordion-flush" id="accordionExample">
             <div class="container">
                 <div class="accordion-item mix ph">

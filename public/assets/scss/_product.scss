@@ -356,12 +356,12 @@
                            width: 100%;
                            height: auto;
                            margin-right: 0px;
-                           align-self: center;
-                           
+                           display: flex;
+                           justify-content: center;
+                
                             img{
                                 height: 200px;
-                                width: auto;
-                                
+                                width: auto;                
                             }
                         }
                     }
@@ -475,7 +475,6 @@
     
             .pro-leftsection{
                 height: 100%;
-                width: 100%;
                 position: initial;
                 display: flex;
     
@@ -517,7 +516,8 @@
                            width: 100%;
                            height: auto;
                            margin-right: 0px;
-                           align-self: center;
+                           display: flex;
+                           justify-content: center;
                            
                             img{
                                 height: 200px;
@@ -632,7 +632,6 @@
     
             .pro-leftsection{
                 height: 100%;
-                width: 100%;
                 position: initial;
                 display: flex;
     
@@ -674,7 +673,8 @@
                            width: 100%;
                            height: auto;
                            margin-right: 0px;
-                           align-self: center;
+                           display: flex;
+                           justify-content: center;
                            
                             img{
                                 height: 200px;
@@ -861,11 +861,11 @@
             z-index: 1;
             position: absolute;
             top: unset; 
-            bottom: 0; 
+            bottom: 0;
+            width: 100%;
     
             .pro-leftsection{
                 height: 100%;
-                width: auto;
                 position: initial;
                 display: flex;
     
@@ -957,11 +957,11 @@
             flex-wrap: nowrap;
             position: absolute;
             z-index: 1;
-            left: unset;
             bottom: 20px;
-            right: 20px;
+            left: 50%;
             padding-bottom: 10px;
-            max-width: 645px;
+            width: 480px;
+            max-width: 480px;
     
             .card-cheersproduct{
                 width: 130px;

@@ -42,7 +42,7 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#">BRAND STORY</a>
+                <a class="nav-link" href="{{ url('/brand-story') }}">BRAND STORY</a>
               </li>
 
               <li class="nav-item dropdown">
@@ -69,7 +69,7 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="">SUSTAINABILITY</a>
+                <a class="nav-link" href="{{ url('/brand-story') }}">SUSTAINABILITY</a>
               </li>
 
               {{-- <li class="nav-item dropdown">
@@ -86,7 +86,7 @@
               </li>
 
               <li class="nav-item only-mbl">
-                <a class="nav-link" href="">CONTACT</a>
+                <a class="nav-link" href="{{ url('/contact') }}">CONTACT</a>
               </li>
             </ul>
           </div>
