@@ -24,8 +24,28 @@ $wh-burst-size: 30px;
 $wh-burst-sm: 20px;
 $wh-burst-radius: 3px;
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: $darkw-color;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $cheers-light;
+    border-radius: 50px;
+    border: 3px solid transparent;
+    background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: $cheers-dark;
+}
+
 body {
   font-family: $font-stack;
+  scrollbar-width: thin;
   color: $primary-color;
 }
 

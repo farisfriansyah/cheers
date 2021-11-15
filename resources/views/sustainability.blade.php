@@ -13,10 +13,10 @@
 
                     </div>
                     <div class="col-md-6">
-                        <h3>Our Pledge</h3>
+                        <h3>@lang('sustainability.sustainability-title')</h3>
                         <figure>
                             <blockquote class="blockquote">
-                              <p><em>"I am only one, but still I am one. I cannot do everything, but still I can do something. And because I can’t do everything, I will not refuse to do something that I can do."</em></p>
+                              <p><em>"@lang('sustainability.sustainability-quotes')"</em></p>
                             </blockquote>
                             <figcaption class="blockquote-footer">
                                 <cite title="Source Title">Edward Everett Hale </cite>
@@ -34,8 +34,8 @@
         <div class="row justify-content-center">
             <div class="col-xxl-9 col-xl-9 col-lg-9 col-md-12 col-sm-12">
                 <div class="title-section text-center">
-                    <h3>@lang('brandstory.brand-title')</h3>
-                    <p class="text-left">@lang('brandstory.brand-midtext')</p>
+                    <h3>@lang('sustainability.sustainability-greenprotit')</h3>
+                    <p class="text-left">@lang('sustainability.sustainability-greenprotext1')</p>
                 </div>
                 
             </div>
@@ -54,8 +54,8 @@
                     <div class="container-fluid mb-5">
                         <div class="subs-text text-center">
                             <img src="{{ asset('public/assets/img/sustainability/recycheers.png')}}" >
-                            <p>@lang('welcome.homeMemberSub')</p>
-                            <a href="btn btn-cheerlight">View More</a>
+                            <p>@lang('sustainability.sustainability-introText')</p>
+                            <a href="btn btn-cheerlight">@lang('sustainability.sustainability-introButton')</a>
                         </div>
                     </div>
                 </div>
@@ -71,9 +71,9 @@
                 <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 align-self-center campaign-info">
                     <div class="container">
                         <div class="title-section text-left">
-                            <h3>One - Roof System Production</h3>
+                            <h3>@lang('sustainability.sustainability-tit1')</h3>
                             
-                            <p>@lang('welcome.homeRecycheersSub')</p>
+                            <p>@lang('sustainability.sustainability-text1')</p>
                             {{-- <a href="https://recycheers.saycheers.com/" class="btn btn-danger btn-cheerslight">@lang('welcome.homeRecycheersBtnRegis')</a> --}}
                         </div>
                     </div>
@@ -91,9 +91,10 @@
                 <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 align-self-center campaign-info">
                     <div class="container">
                         <div class="title-section text-left">
-                            <h3>Solar Energy </h3>
+                            <h3>@lang('sustainability.sustainability-tit2') </h3>
                             
-                            <p>@lang('welcome.homeRecycheersSub')</p>
+                            <p>@lang('sustainability.sustainability-text2')</p>
+                            <p>@lang('sustainability.sustainability-text21')</p>
                             {{-- <a href="https://recycheers.saycheers.com/" class="btn btn-danger btn-cheerslight">@lang('welcome.homeRecycheersBtnRegis')</a> --}}
                         </div>
                     </div>
@@ -111,9 +112,10 @@
                 <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 align-self-center campaign-info">
                     <div class="container">
                         <div class="title-section text-left">
-                            <h3>Reforestation</h3>
+                            <h3>@lang('sustainability.sustainability-tit3')</h3>
                             
-                            <p>@lang('welcome.homeRecycheersSub')</p>
+                            <p>@lang('sustainability.sustainability-text3')</p>
+                            <p>@lang('sustainability.sustainability-text31')</p>
                             {{-- <a href="https://recycheers.saycheers.com/" class="btn btn-danger btn-cheerslight">@lang('welcome.homeRecycheersBtnRegis')</a> --}}
                         </div>
                     </div>

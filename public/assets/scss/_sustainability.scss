@@ -121,6 +121,25 @@
         .sorted-area{
             .title-section{
                 padding: 30px 10px;
+
+                div{
+                    font-family: $font-secondary;
+                    max-height: 250px;
+                    overflow-y: auto;
+                    text-align: left;
+                    word-wrap: break-word;
+                    white-space:pre-wrap;
+                }
+
+                p{
+                    text-align: left;
+                    word-wrap: break-word;
+                    white-space:pre-wrap;
+                }
+
+                .btn{
+                    margin-top: 20px;
+                }
             }
             .campaign-image{
                 img{

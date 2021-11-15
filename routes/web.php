@@ -5,6 +5,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\WhyController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\SustainabilityController;
+use App\Http\Controllers\CampaignController;
 use App\Http\Controllers\BrandController;
 use App\Http\Controllers\EmailController;
 use App\Http\Controllers\BlogController;
@@ -54,6 +55,8 @@ Route::group(['prefix' => 'blog'], function(){
 Route::get('/sustainability', [SustainabilityController::class,'index']);
 
 Route::get('/brand-story', [BrandController::class,'index']);
+
+Route::get('/campaign', [CampaignController::class,'index']);
 
 Route::get('/faq', [FaqController::class,'index']);
 

@@ -1,6 +1,26 @@
 @charset "UTF-8";
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F3F3F3;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #D8261C;
+  border-radius: 50px;
+  border: 3px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #A22523;
+}
+
 body {
   font-family: "Poppins", sans-serif;
+  scrollbar-width: thin;
   color: #151515;
 }
 
@@ -3800,6 +3820,7 @@ a:focus {
     position: absolute;
     top: unset;
     bottom: 0;
+    width: 100%;
   }
   .cheers-product .heropro-type .pro-leftsection {
     height: 100%;
@@ -3883,7 +3904,8 @@ a:focus {
     bottom: 20px;
     left: 50%;
     padding-bottom: 10px;
-    max-width: 700px;
+    width: 480px;
+    max-width: 480px;
   }
   .cheers-product .card-listproduct .card-cheersproduct {
     width: 130px;
@@ -4571,6 +4593,230 @@ a:focus {
 /* Large devices (laptops/desktops, 992px and up) */
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 /* Extra large devices (large laptops and desktops, 1400px and up) */
+.cheers-brand {
+  position: relative;
+  display: flex;
+  padding: 0rem 0;
+  background-color: #FFFFFF;
+  background-size: cover !important;
+  background-position: top !important;
+  height: 70vh;
+  width: 100%;
+}
+.cheers-brand .img-overlay {
+  background: #FFFFFF;
+  height: 100%;
+  width: 100%;
+  background: -webkit-linear-gradient(#818181 0%, #656565 83.33%, #272727 100%);
+  background: linear-gradient(#818181 0%, #656565 83.33%, #272727 100%);
+  opacity: 0.5;
+}
+.cheers-brand .heropro-type {
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+}
+.cheers-brand .heropro-type .title-box {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  background: transparent;
+  border-radius: 0px;
+  overflow: hidden;
+}
+.cheers-brand .heropro-type .title-box h3 {
+  color: #FFFFFF;
+}
+.cheers-brand .heropro-type .title-box h6 {
+  color: #FFFFFF;
+}
+.cheers-brand .heropro-type .title-box p {
+  color: #FFFFFF;
+}
+
+.cheers-story {
+  min-height: 270px;
+  display: flex;
+  align-items: center;
+}
+.cheers-story p {
+  margin-bottom: 0px;
+}
+
+.story-img {
+  padding: 0px;
+  background-color: #FFFFFF;
+  height: 270px;
+  width: 100%;
+}
+
+.story-img.imgstr-1 {
+  background: url("../img/story/img1.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.story-img.imgstr-2 {
+  background: url("../img/story/img2.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.story-img.imgstr-3 {
+  background: url("../img/story/img3.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.story-img.imgstr-4 {
+  background: url("../img/story/img4.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.story-img.imgstr-5 {
+  background: url("../img/story/img5.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cheers-sustainability {
+  position: relative;
+  display: flex;
+  padding: 0rem 0;
+  background-color: #FFFFFF;
+  background-size: cover !important;
+  background-position: top !important;
+  height: 75vh;
+  width: 100%;
+}
+.cheers-sustainability .img-overlay {
+  background: #FFFFFF;
+  height: 100%;
+  width: 100%;
+  background: -webkit-linear-gradient(#818181 0%, #656565 83.33%, #272727 100%);
+  background: linear-gradient(#818181 0%, #656565 83.33%, #272727 100%);
+  opacity: 0.5;
+}
+.cheers-sustainability .heropro-type {
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+}
+.cheers-sustainability .heropro-type .title-box {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  background: transparent;
+  border-radius: 0px;
+  overflow: hidden;
+}
+.cheers-sustainability .heropro-type .title-box h3 {
+  color: #FFFFFF;
+}
+.cheers-sustainability .heropro-type .title-box figure .blockquote p {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+}
+.cheers-sustainability .heropro-type .title-box figure .blockquote-footer {
+  margin-top: 15px;
+  color: #FFFFFF;
+}
+.cheers-sustainability .heropro-type .title-box h6 {
+  color: #FFFFFF;
+}
+.cheers-sustainability .heropro-type .title-box p {
+  color: #FFFFFF;
+}
+
+.cheers-introsustain {
+  margin: 30px 0px;
+}
+.cheers-introsustain img {
+  width: 100%;
+  max-height: 450px;
+  object-fit: cover;
+}
+
+#sustainability-recycheers {
+  padding: 0px;
+  background-color: #FFFFFF;
+  background: url("../img/assetbg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+#sustainability-recycheers .overlay {
+  padding: 70px 0px;
+  background-color: rgba(0, 0, 0, 0);
+  width: 100%;
+  height: 100%;
+}
+#sustainability-recycheers .overlay .subs-form {
+  display: block;
+  margin: auto 0;
+}
+#sustainability-recycheers .overlay .subs-form .subs-text {
+  width: 100%;
+}
+#sustainability-recycheers .overlay .subs-form .subs-text img {
+  width: 250px;
+  height: auto;
+}
+#sustainability-recycheers .overlay .subs-form .subs-text p {
+  color: #151515;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.cheers-contentofsustain {
+  background-color: #FFFFFF;
+  background: url("../img/sustainability/bg-sustain.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 70px 0px;
+}
+.cheers-contentofsustain .cheers-sustaincontent {
+  margin: 70px 0px;
+}
+.cheers-contentofsustain .cheers-sustaincontent .sorted-area .title-section {
+  padding: 30px 10px;
+}
+.cheers-contentofsustain .cheers-sustaincontent .sorted-area .title-section p {
+  max-height: 250px;
+  overflow-y: auto;
+  text-align: left;
+}
+.cheers-contentofsustain .cheers-sustaincontent .sorted-area .campaign-image img {
+  max-height: 450px;
+  width: 100%;
+  object-fit: cover;
+}
+.cheers-contentofsustain .cheers-sustaincontent:nth-child(odd) .sorted-area {
+  flex-direction: row-reverse;
+}
+.cheers-contentofsustain .cheers-sustaincontent:nth-child(even) .sorted-area {
+  flex-direction: row;
+}
+
 #cheers-faq {
   padding: 70px 0px;
 }

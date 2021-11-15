@@ -1,5 +1,25 @@
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F3F3F3;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #D8261C;
+  border-radius: 50px;
+  border: 3px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #A22523;
+}
+
 body {
   font-family: "Poppins", sans-serif;
+  scrollbar-width: thin;
   color: #151515;
 }
 
@@ -4431,6 +4451,215 @@ a:focus {
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .cheers-product {
+    padding: 0rem 0;
+  }
+  .cheers-product .img-overlay {
+    height: 100vh;
+    width: 100%;
+  }
+  .cheers-product .img-overlay .cheers-bg-product {
+    width: 100%;
+    height: 100%;
+    background-position: right 0px center !important;
+    opacity: 0.6;
+  }
+  .cheers-product .heropro-type {
+    z-index: 1;
+    position: absolute;
+    top: unset;
+    bottom: 0;
+    width: 100%;
+  }
+  .cheers-product .heropro-type .pro-leftsection {
+    height: 100%;
+    position: initial;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .cheers-product .heropro-type .pro-leftsection .bg-imgHero {
+    background: rgba(113, 191, 68, 0.7);
+    top: unset;
+    -ms-flex-item-align: unset;
+        align-self: unset;
+    width: 40%;
+    padding-top: 10px;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+    bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+  }
+  .cheers-product .heropro-type .pro-leftsection .bg-imgHero .content-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    bottom: -20px;
+  }
+  .cheers-product .heropro-type .pro-leftsection .bg-imgHero .content-left .content-text {
+    padding: 20px 20px 50px 20px;
+    width: auto;
+  }
+  .cheers-product .heropro-type .pro-leftsection .bg-imgHero .content-left .content-text h3 {
+    color: #FFFFFF;
+    padding: 10px 0px;
+    font-family: "Amatic SC", cursive;
+    font-weight: 600;
+  }
+  .cheers-product .heropro-type .pro-leftsection .bg-imgHero .content-left .content-text p {
+    color: #F7F7F7;
+    width: 100%;
+    font-family: "Amatic SC", cursive;
+    font-size: 23px;
+  }
+  .cheers-product .heropro-type .pro-leftsection .bg-imgHero .content-left .content-img {
+    width: 100%;
+    height: auto;
+    margin-right: -70px;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  .cheers-product .heropro-type .pro-leftsection .bg-imgHero .content-left .content-img img {
+    height: auto;
+    width: auto;
+  }
+  .cheers-product .heropro-type .pro-rightsection {
+    height: 100vh;
+  }
+  .cheers-product .heropro-type .pro-rightsection .content-right {
+    padding: 0 10px;
+    bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    position: relative;
+  }
+  .cheers-product .heropro-type .pro-rightsection .content-right .content-point {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    bottom: 0;
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .cheers-product .heropro-type .pro-rightsection .content-right .content-point .title-product {
+    position: relative;
+  }
+  .cheers-product .heropro-type .pro-rightsection .content-right .content-point .title-product h3 {
+    color: #F7F7F7;
+  }
+  .cheers-product .heropro-type .pro-rightsection .content-right .content-point .title-product p {
+    color: #F7F7F7;
+  }
+  .cheers-product .card-listproduct {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    position: absolute;
+    z-index: 1;
+    bottom: 20px;
+    left: 50%;
+    padding-bottom: 10px;
+    width: 550px;
+    max-width: 550px;
+  }
+  .cheers-product .card-listproduct .card-cheersproduct {
+    width: 130px;
+    height: 150px;
+  }
+  .cheers-product .card-listproduct .card-cheersproduct .overlay-card {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  .cheers-product .card-listproduct .card-cheersproduct .textpro-card {
+    width: 100%;
+    height: auto;
+  }
+  .cheers-product .card-listproduct .card-cheersproduct .textpro-card .textpro-left h5 {
+    font-size: 16px;
+    text-align: left;
+  }
+  .cheers-product .card-listproduct .card-cheersproduct .textpro-card .textpro-left h6 {
+    font-size: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .cheers-product .card-listproduct .card-cheersproduct .textpro-card .textpro-left p {
+    font-size: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .cheers-product .card-listproduct .card-cheersproduct .textpro-card .textpro-right {
+    text-align: right;
+  }
+  .cheers-product .card-listproduct .card-cheersproduct .textpro-card .textpro-right img {
+    margin-left: 5px;
+    width: auto;
+    height: 40px;
+  }
+  #cheers-alkaline.cheers-product .heropro-type .pro-leftsection .bg-imgHero {
+    background: rgba(216, 38, 28, 0.7);
+  }
+  #cheers-alkaline.cheers-product .heropro-type .pro-leftsection .bg-imgHero .content-left .content-text h3 {
+    font-family: "Amatic SC", cursive;
+  }
+  #cheers-alkaline.cheers-product .heropro-type .pro-leftsection .bg-imgHero .content-left .content-text p {
+    font-family: "Amatic SC", cursive;
+  }
+  #cheers-alkaline.cheers-product .card-listproduct::-webkit-scrollbar-thumb {
+    background-color: #D8261C;
+    margin-top: 10px;
+  }
+  #cheers-alkaline.cheers-product .card-listproduct .card-cheersproduct .overlay-card {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.15)), to(rgba(216, 38, 28, 0.8)));
+    background: linear-gradient(rgba(0, 0, 0, 0.15) 0%, rgba(216, 38, 28, 0.8) 100%);
+  }
+  #cheers-alkaline.cheers-product .card-listproduct .card-cheersproduct.active {
+    border: 3px solid #D8261C;
+  }
+  #cheers-natural.cheers-product .heropro-type .pro-leftsection .bg-imgHero {
+    background: rgba(113, 191, 68, 0.7);
+  }
+  #cheers-natural.cheers-product .heropro-type .pro-leftsection .bg-imgHero .content-left .content-text h3 {
+    font-family: "Amatic SC", cursive;
+  }
+  #cheers-natural.cheers-product .heropro-type .pro-leftsection .bg-imgHero .content-left .content-text p {
+    font-family: "Amatic SC", cursive;
+  }
+  #cheers-natural.cheers-product .card-listproduct::-webkit-scrollbar-thumb {
+    background-color: #71bf44;
+    margin-top: 10px;
+  }
+  #cheers-natural.cheers-product .card-listproduct .card-cheersproduct .overlay-card {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.15)), to(rgba(113, 190, 68, 0.8)));
+    background: linear-gradient(rgba(0, 0, 0, 0.15) 0%, rgba(113, 190, 68, 0.8) 100%);
+  }
+  #cheers-natural.cheers-product .card-listproduct .card-cheersproduct.active {
+    border: 3px solid #71bf44;
+  }
+}
+
 /* Extra large devices (large laptops and desktops, 1400px and up) */
 #cheers-whycheers {
   padding: 70px 0px;
@@ -5214,7 +5443,7 @@ a:focus {
 }
 
 .story-img.imgstr-1 {
-  background: url("../img/cropsubs.jpg");
+  background: url("../img/story/img1.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -5222,7 +5451,7 @@ a:focus {
 }
 
 .story-img.imgstr-2 {
-  background: url("../img/cropsubs.jpg");
+  background: url("../img/story/img2.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -5230,7 +5459,7 @@ a:focus {
 }
 
 .story-img.imgstr-3 {
-  background: url("../img/cropsubs.jpg");
+  background: url("../img/story/img3.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -5238,7 +5467,7 @@ a:focus {
 }
 
 .story-img.imgstr-4 {
-  background: url("../img/cropsubs.jpg");
+  background: url("../img/story/img4.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -5246,7 +5475,7 @@ a:focus {
 }
 
 .story-img.imgstr-5 {
-  background: url("../img/cropsubs.jpg");
+  background: url("../img/story/img5.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -5378,6 +5607,25 @@ a:focus {
 
 .cheers-contentofsustain .cheers-sustaincontent .sorted-area .title-section {
   padding: 30px 10px;
+}
+
+.cheers-contentofsustain .cheers-sustaincontent .sorted-area .title-section div {
+  font-family: "Roboto", sans-serif;
+  max-height: 250px;
+  overflow-y: auto;
+  text-align: left;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+.cheers-contentofsustain .cheers-sustaincontent .sorted-area .title-section p {
+  text-align: left;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+.cheers-contentofsustain .cheers-sustaincontent .sorted-area .title-section .btn {
+  margin-top: 20px;
 }
 
 .cheers-contentofsustain .cheers-sustaincontent .sorted-area .campaign-image img {
