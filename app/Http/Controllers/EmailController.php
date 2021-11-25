@@ -24,16 +24,16 @@ class EmailController extends Controller
       'comment'=>'required'
      ]);
 
-        $data = array(
-            'firstname'      =>  $request->firstname,
-            'lastname'      =>  $request->lastname,
-            'email'      =>  $request->email,
-            'usertype'      =>  $request->usertype,
-            'questiontype'      =>  $request->questiontype,
-            'comment'   =>   $request->comment
-        );
+    $data = array(
+        'firstname'      =>  $request->firstname,
+        'lastname'      =>  $request->lastname,
+        'email'      =>  $request->email,
+        'usertype'      =>  $request->usertype,
+        'questiontype'      =>  $request->questiontype,
+        'comment'   =>   $request->comment
+    );
 
-        Mail::to('faris.f@mikatasa.com')->send(new contactMail($data));
-        return back()->with('success', 'Thanks for contacting us!');
+    Mail::to('faris.f@mikatasa.com')->send(new contactMail($data));
+    return back()->with('success', 'Thanks for contacting us!');
     }
 }
