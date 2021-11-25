@@ -3982,6 +3982,186 @@ a:focus {
   }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .cheers-product {
+    padding: 0rem 0;
+  }
+  .cheers-product .img-overlay {
+    height: 100vh;
+    width: 100%;
+  }
+  .cheers-product .img-overlay .cheers-bg-product {
+    width: 100%;
+    height: 100%;
+    background-position: right 0px center !important;
+    opacity: 0.6;
+  }
+  .cheers-product .heropro-type {
+    z-index: 1;
+    position: absolute;
+    top: unset;
+    bottom: 0;
+    width: 100%;
+  }
+  .cheers-product .heropro-type .pro-leftsection {
+    height: 100%;
+    position: initial;
+    display: flex;
+  }
+  .cheers-product .heropro-type .pro-leftsection .bg-imgHero {
+    background: rgba(113, 191, 68, 0.7);
+    top: unset;
+    align-self: unset;
+    width: 40%;
+    padding-top: 10px;
+    height: min-content;
+    bottom: 0;
+    display: flex;
+    position: absolute;
+  }
+  .cheers-product .heropro-type .pro-leftsection .bg-imgHero .content-left {
+    display: flex;
+    width: 100%;
+    height: max-content;
+    bottom: -20px;
+  }
+  .cheers-product .heropro-type .pro-leftsection .bg-imgHero .content-left .content-text {
+    padding: 20px 20px 50px 20px;
+    width: auto;
+  }
+  .cheers-product .heropro-type .pro-leftsection .bg-imgHero .content-left .content-text h3 {
+    color: #FFFFFF;
+    padding: 10px 0px;
+    font-family: "Amatic SC", cursive;
+    font-weight: 600;
+  }
+  .cheers-product .heropro-type .pro-leftsection .bg-imgHero .content-left .content-text p {
+    color: #F7F7F7;
+    width: 100%;
+    font-family: "Amatic SC", cursive;
+    font-size: 23px;
+  }
+  .cheers-product .heropro-type .pro-leftsection .bg-imgHero .content-left .content-img {
+    width: 100%;
+    height: auto;
+    margin-right: -70px;
+    align-self: flex-end;
+  }
+  .cheers-product .heropro-type .pro-leftsection .bg-imgHero .content-left .content-img img {
+    height: auto;
+    width: auto;
+  }
+  .cheers-product .heropro-type .pro-rightsection {
+    height: 100vh;
+  }
+  .cheers-product .heropro-type .pro-rightsection .content-right {
+    padding: 0 10px;
+    bottom: 0;
+    display: flex;
+    height: 100%;
+    align-items: flex-end;
+    position: relative;
+  }
+  .cheers-product .heropro-type .pro-rightsection .content-right .content-point {
+    display: flex;
+    bottom: 0;
+    position: relative;
+    flex-direction: column;
+  }
+  .cheers-product .heropro-type .pro-rightsection .content-right .content-point .title-product {
+    position: relative;
+  }
+  .cheers-product .heropro-type .pro-rightsection .content-right .content-point .title-product h3 {
+    color: #F7F7F7;
+  }
+  .cheers-product .heropro-type .pro-rightsection .content-right .content-point .title-product p {
+    color: #F7F7F7;
+  }
+  .cheers-product .card-listproduct {
+    display: flex;
+    flex-wrap: nowrap;
+    position: absolute;
+    z-index: 1;
+    bottom: 20px;
+    left: 50%;
+    padding-bottom: 10px;
+    width: 550px;
+    max-width: 550px;
+  }
+  .cheers-product .card-listproduct .card-cheersproduct {
+    width: 130px;
+    height: 150px;
+  }
+  .cheers-product .card-listproduct .card-cheersproduct .overlay-card {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  .cheers-product .card-listproduct .card-cheersproduct .textpro-card {
+    width: 100%;
+    height: auto;
+  }
+  .cheers-product .card-listproduct .card-cheersproduct .textpro-card .textpro-left h5 {
+    font-size: 16px;
+    text-align: left;
+  }
+  .cheers-product .card-listproduct .card-cheersproduct .textpro-card .textpro-left h6 {
+    font-size: 12px;
+    display: flex;
+  }
+  .cheers-product .card-listproduct .card-cheersproduct .textpro-card .textpro-left p {
+    font-size: 12px;
+    display: flex;
+  }
+  .cheers-product .card-listproduct .card-cheersproduct .textpro-card .textpro-right {
+    text-align: right;
+  }
+  .cheers-product .card-listproduct .card-cheersproduct .textpro-card .textpro-right img {
+    margin-left: 5px;
+    width: auto;
+    height: 40px;
+  }
+
+  #cheers-alkaline.cheers-product .heropro-type .pro-leftsection .bg-imgHero {
+    background: rgba(216, 38, 28, 0.7);
+  }
+  #cheers-alkaline.cheers-product .heropro-type .pro-leftsection .bg-imgHero .content-left .content-text h3 {
+    font-family: "Amatic SC", cursive;
+  }
+  #cheers-alkaline.cheers-product .heropro-type .pro-leftsection .bg-imgHero .content-left .content-text p {
+    font-family: "Amatic SC", cursive;
+  }
+  #cheers-alkaline.cheers-product .card-listproduct::-webkit-scrollbar-thumb {
+    background-color: #D8261C;
+    margin-top: 10px;
+  }
+  #cheers-alkaline.cheers-product .card-listproduct .card-cheersproduct .overlay-card {
+    background: linear-gradient(rgba(0, 0, 0, 0.15) 0%, rgba(216, 38, 28, 0.8) 100%);
+  }
+  #cheers-alkaline.cheers-product .card-listproduct .card-cheersproduct.active {
+    border: 3px solid #D8261C;
+  }
+
+  #cheers-natural.cheers-product .heropro-type .pro-leftsection .bg-imgHero {
+    background: rgba(113, 191, 68, 0.7);
+  }
+  #cheers-natural.cheers-product .heropro-type .pro-leftsection .bg-imgHero .content-left .content-text h3 {
+    font-family: "Amatic SC", cursive;
+  }
+  #cheers-natural.cheers-product .heropro-type .pro-leftsection .bg-imgHero .content-left .content-text p {
+    font-family: "Amatic SC", cursive;
+  }
+  #cheers-natural.cheers-product .card-listproduct::-webkit-scrollbar-thumb {
+    background-color: #71bf44;
+    margin-top: 10px;
+  }
+  #cheers-natural.cheers-product .card-listproduct .card-cheersproduct .overlay-card {
+    background: linear-gradient(rgba(0, 0, 0, 0.15) 0%, rgba(113, 190, 68, 0.8) 100%);
+  }
+  #cheers-natural.cheers-product .card-listproduct .card-cheersproduct.active {
+    border: 3px solid #71bf44;
+  }
+}
 /* Extra large devices (large laptops and desktops, 1400px and up) */
 #cheers-whycheers {
   padding: 70px 0px;
@@ -4693,6 +4873,142 @@ a:focus {
   background-size: cover;
 }
 
+.cheers-campaign {
+  position: relative;
+  display: flex;
+  padding: 0rem 0;
+  background-color: #FFFFFF;
+  background-size: cover !important;
+  background-position: top !important;
+  height: 75vh;
+  width: 100%;
+}
+.cheers-campaign .img-overlay {
+  background: #FFFFFF;
+  height: 100%;
+  width: 100%;
+  background: -webkit-linear-gradient(#818181 0%, #656565 83.33%, #272727 100%);
+  background: linear-gradient(#818181 0%, #656565 83.33%, #272727 100%);
+  opacity: 0.5;
+}
+.cheers-campaign .heropro-type {
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+}
+.cheers-campaign .heropro-type .title-box {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  background: transparent;
+  border-radius: 0px;
+  overflow: hidden;
+}
+.cheers-campaign .heropro-type .title-box h3 {
+  color: #FFFFFF;
+  font-size: 50px;
+}
+.cheers-campaign .heropro-type .title-box figure .blockquote p {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+}
+.cheers-campaign .heropro-type .title-box figure .blockquote-footer {
+  margin-top: 15px;
+  color: #FFFFFF;
+}
+.cheers-campaign .heropro-type .title-box h6 {
+  color: #FFFFFF;
+}
+.cheers-campaign .heropro-type .title-box p {
+  color: #FFFFFF;
+}
+
+.cheers-introcampaign {
+  margin: 30px 0px;
+}
+.cheers-introcampaign img {
+  width: 100%;
+  max-height: 450px;
+  object-fit: cover;
+}
+
+#campaign-recycheers {
+  padding: 0px;
+  background-color: #FFFFFF;
+  background: url("../img/assetbg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+#campaign-recycheers .overlay {
+  padding: 70px 0px;
+  background-color: rgba(0, 0, 0, 0);
+  width: 100%;
+  height: 100%;
+}
+#campaign-recycheers .overlay .subs-form {
+  display: block;
+  margin: auto 0;
+}
+#campaign-recycheers .overlay .subs-form .subs-text {
+  width: 100%;
+}
+#campaign-recycheers .overlay .subs-form .subs-text img {
+  width: 250px;
+  height: auto;
+}
+#campaign-recycheers .overlay .subs-form .subs-text p {
+  color: #151515;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.cheers-contentofcampaign {
+  background-color: #FFFFFF;
+  background: url("../img/sustainability/bg-sustain.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 70px 0px;
+}
+.cheers-contentofcampaign .cheers-campaigncontent {
+  margin: 70px 0px;
+}
+.cheers-contentofcampaign .cheers-campaigncontent .sorted-area .title-section {
+  padding: 30px 10px;
+}
+.cheers-contentofcampaign .cheers-campaigncontent .sorted-area .title-section div {
+  font-family: "Roboto", sans-serif;
+  max-height: 250px;
+  overflow-y: auto;
+  text-align: left;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+.cheers-contentofcampaign .cheers-campaigncontent .sorted-area .title-section p {
+  text-align: left;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+.cheers-contentofcampaign .cheers-campaigncontent .sorted-area .title-section .btn {
+  margin-top: 20px;
+}
+.cheers-contentofcampaign .cheers-campaigncontent .sorted-area .campaign-image img {
+  max-height: 450px;
+  width: 100%;
+  object-fit: cover;
+}
+.cheers-contentofcampaign .cheers-campaigncontent:nth-child(odd) .sorted-area {
+  flex-direction: row-reverse;
+}
+.cheers-contentofcampaign .cheers-campaigncontent:nth-child(even) .sorted-area {
+  flex-direction: row;
+}
+
 .cheers-sustainability {
   position: relative;
   display: flex;
@@ -4800,10 +5116,21 @@ a:focus {
 .cheers-contentofsustain .cheers-sustaincontent .sorted-area .title-section {
   padding: 30px 10px;
 }
-.cheers-contentofsustain .cheers-sustaincontent .sorted-area .title-section p {
+.cheers-contentofsustain .cheers-sustaincontent .sorted-area .title-section div {
+  font-family: "Roboto", sans-serif;
   max-height: 250px;
   overflow-y: auto;
   text-align: left;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+.cheers-contentofsustain .cheers-sustaincontent .sorted-area .title-section p {
+  text-align: left;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+.cheers-contentofsustain .cheers-sustaincontent .sorted-area .title-section .btn {
+  margin-top: 20px;
 }
 .cheers-contentofsustain .cheers-sustaincontent .sorted-area .campaign-image img {
   max-height: 450px;

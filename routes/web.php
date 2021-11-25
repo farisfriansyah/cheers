@@ -72,4 +72,5 @@ Route::get('/registration', [RegistrationController::class,'index']);
 
 Route::get('lang/{language}', [LocalizationController::class,'switch'])->name('localization.switch');
 
-Route::post('send_email',[EmailController::class,'index']);
+Route::get('/sendemail', [EmailController::class,'index']);
+Route::post('/sendemail/send', [EmailController::class,'send']);

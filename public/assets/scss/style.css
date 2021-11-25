@@ -4663,6 +4663,7 @@ a:focus {
 /* Extra large devices (large laptops and desktops, 1400px and up) */
 #cheers-whycheers {
   padding: 70px 0px;
+  margin-top: 40px;
 }
 
 #cheers-whycheers img {
@@ -4815,7 +4816,7 @@ a:focus {
 /* Extra large devices (large laptops and desktops, 1400px and up) */
 #cheers-event {
   padding: 40px 0;
-  margin-top: 30px;
+  margin-top: 80px;
 }
 
 #cheers-event .event-leftsection {
@@ -5482,6 +5483,174 @@ a:focus {
   background-size: cover;
 }
 
+.cheers-campaign {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0rem 0;
+  background-color: #FFFFFF;
+  background-size: cover !important;
+  background-position: top !important;
+  height: 75vh;
+  width: 100%;
+}
+
+.cheers-campaign .img-overlay {
+  background: #FFFFFF;
+  height: 100%;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#818181), color-stop(83.33%, #656565), to(#272727));
+  background: linear-gradient(#818181 0%, #656565 83.33%, #272727 100%);
+  opacity: 0.5;
+}
+
+.cheers-campaign .heropro-type {
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+}
+
+.cheers-campaign .heropro-type .title-box {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  background: transparent;
+  border-radius: 0px;
+  overflow: hidden;
+}
+
+.cheers-campaign .heropro-type .title-box h3 {
+  color: #FFFFFF;
+  font-size: 50px;
+}
+
+.cheers-campaign .heropro-type .title-box figure .blockquote p {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+}
+
+.cheers-campaign .heropro-type .title-box figure .blockquote-footer {
+  margin-top: 15px;
+  color: #FFFFFF;
+}
+
+.cheers-campaign .heropro-type .title-box h6 {
+  color: #FFFFFF;
+}
+
+.cheers-campaign .heropro-type .title-box p {
+  color: #FFFFFF;
+}
+
+.cheers-introcampaign {
+  margin: 30px 0px;
+}
+
+.cheers-introcampaign img {
+  width: 100%;
+  max-height: 450px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#campaign-recycheers {
+  padding: 0px;
+  background-color: #FFFFFF;
+  background: url("../img/assetbg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+#campaign-recycheers .overlay {
+  padding: 70px 0px;
+  background-color: rgba(0, 0, 0, 0);
+  width: 100%;
+  height: 100%;
+}
+
+#campaign-recycheers .overlay .subs-form {
+  display: block;
+  margin: auto 0;
+}
+
+#campaign-recycheers .overlay .subs-form .subs-text {
+  width: 100%;
+}
+
+#campaign-recycheers .overlay .subs-form .subs-text img {
+  width: 250px;
+  height: auto;
+}
+
+#campaign-recycheers .overlay .subs-form .subs-text p {
+  color: #151515;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.cheers-contentofcampaign {
+  background-color: #FFFFFF;
+  background: url("../img/sustainability/bg-sustain.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 70px 0px;
+}
+
+.cheers-contentofcampaign .cheers-campaigncontent {
+  margin: 70px 0px;
+}
+
+.cheers-contentofcampaign .cheers-campaigncontent .sorted-area .title-section {
+  padding: 30px 10px;
+}
+
+.cheers-contentofcampaign .cheers-campaigncontent .sorted-area .title-section div {
+  font-family: "Roboto", sans-serif;
+  max-height: 250px;
+  overflow-y: auto;
+  text-align: left;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+.cheers-contentofcampaign .cheers-campaigncontent .sorted-area .title-section p {
+  text-align: left;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+.cheers-contentofcampaign .cheers-campaigncontent .sorted-area .title-section .btn {
+  margin-top: 20px;
+}
+
+.cheers-contentofcampaign .cheers-campaigncontent .sorted-area .campaign-image img {
+  max-height: 450px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.cheers-contentofcampaign .cheers-campaigncontent:nth-child(odd) .sorted-area {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.cheers-contentofcampaign .cheers-campaigncontent:nth-child(even) .sorted-area {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
 .cheers-sustainability {
   position: relative;
   display: -webkit-box;
@@ -5717,7 +5886,7 @@ a:focus {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 /* Extra large devices (large laptops and desktops, 1400px and up) */
 #cheers-blogheader {
-  margin-top: 70px;
+  margin-top: 80px;
   padding: 40px 0px;
   background-color: #fff;
   z-index: 2;

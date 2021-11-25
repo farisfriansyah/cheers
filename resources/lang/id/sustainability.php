@@ -3,7 +3,7 @@
 return [
 
 'sustainability-title' => "Ikrar Kami",
-'sustainability-quotes' => "Aku hanya satu, tapi aku tetaplah satu. Aku tidak bisa melakukan semuanya, tapi aku tetap bisa melakukan sesuatu. Dan karena aku tidak bisa melakukan semuanya, aku tidak akan menolak untuk melakukan sesuatu yang aku bisa kulakukan.",
+'sustainability-quotes' => "Aku hanya satu, tapi aku tetaplah satu. Aku tidak bisa melakukan semuanya, tapi aku tetap bisa melakukan sesuatu. Dan karena aku tidak bisa melakukan semuanya, aku tidak akan menolak untuk melakukan sesuatu yang bisa kulakukan.",
 
 'sustainability-greenprotit' => "Cheers Green Projects",
 'sustainability-greenprotext1' => "Sebagai bagian dari dedikasi jangka panjang untuk kelestarian bumi dan lingkungan sekitar, CHEERS mempunyai Sustainable Green Project yang saat ini sudah mulai kami jalankan guna ekosistem bumi yang lebih terjaga.",

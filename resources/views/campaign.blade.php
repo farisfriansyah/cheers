@@ -2,7 +2,7 @@
 
 @section('content')
 
-<header id="cheers-lighttheme" class="cheers-sustainability" style="background: url('{{ asset('public/assets/img/covercampaign.jpg')}}') no-repeat;">
+<header id="cheers-lighttheme" class="cheers-campaign" style="background: url('{{ asset('public/assets/img/covercampaign.jpg')}}') no-repeat;">
     <div class="img-overlay">
     </div>
     <div class="heropro-type">
@@ -14,7 +14,7 @@
                     </div>
                     <div class="col-md-6">
                         <h3>@lang('campaign.campaign-title')</h3>
-                        <p>@lang('campaign.campaign-text')</p>
+                        {{-- <p>@lang('campaign.campaign-text')</p> --}}
                     </div>
                 </div>
             </div>
@@ -24,10 +24,10 @@
 
 
 
-<section class="cheers-contentofsustain">
+<section class="cheers-contentofcampaign">
     @foreach ($campaigns as $cpg)
 
-    <div class="cheers-sustaincontent">
+    <div class="cheers-campaigncontent">
         <div class="container">
             <div class="row sorted-area">
                 <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 align-self-center campaign-info">

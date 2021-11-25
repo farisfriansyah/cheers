@@ -354,22 +354,22 @@
                         <table role="presentation" border="0" cellpadding="0" cellspacing="0">
                           <tbody>
                             <tr>
-                                <td>Nama Depan</td><td>: {{ $firstname }}</td>
+                                <td>Nama Depan</td><td>: {{ $data['firstname'] }}</td>
                             </tr>
                             <tr>
-                                <td>Nama Belakang</td><td>: {{ $lastname }}</td>
+                                <td>Nama Belakang</td><td>: {{ $data['lastname'] }} </td>
                             </tr>
                             <tr>
-                                <td>Email</td><td>: {{ $email }}</td>
+                                <td>Email</td><td>: {{ $data['email'] }}</td>
                             </tr>
                             <tr>
-                                <td>User Type</td><td>: {{ $usertype }}</td>
+                                <td>User Type</td><td>: {{ $data['usertype'] }}</td>
                             </tr>
                             <tr>
-                                <td>Pertanyaan Tentang</td><td>: {{ $questiontype }}</td>
+                                <td>Pertanyaan Tentang</td><td>: {{ $data['questiontype'] }}</td>
                             </tr>
                             <tr>
-                                <td>Isi Pesan</td><td>: {!! $comment !!}</td>
+                                <td>Isi Pesan</td><td>: {{ $data['comment'] }}</td>
                             </tr>
                           </tbody>
                         </table>

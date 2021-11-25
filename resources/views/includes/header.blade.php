@@ -69,7 +69,7 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="{{ url('/brand-story') }}">SUSTAINABILITY</a>
+                <a class="nav-link" href="{{ url('/sustainability') }}">SUSTAINABILITY</a>
               </li>
 
               {{-- <li class="nav-item dropdown">

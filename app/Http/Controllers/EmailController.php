@@ -1,46 +1,39 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Models\Email;
-use App\Http\Controllers\Controller;
-use Illuminate\Support\Facades\Mail;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\contactMail;
 
 class EmailController extends Controller
 {
-    public function index(Request $req)
+    public function index()
     {
-        $file = 'email';
-        $arr  = array(
-            'firstname'             => $req->input('chs-firstname'),
-            'lastname'              => $req->input('chs-lastname'),
-            'email'                 => $req->input('chs-email'),
-            'usertype'              => $req->input('chs-usertype'),
-            'questiontype'          => $req->input('chs-questiontype'),
-            'comment'               => $req->input('chs-comment')
-        );
-
-        // dd($arr);
-        $result = Self::send($file,$arr);
-        // echo json_encode($result);
-        return $result;
+        return view('email');
     }
 
-    public function send($file,$data)
+    function send(Request $request)
     {
-        try{
-            dd($data);
-            Mail::send($file, $data, function($message) use ($data) {
-                $message->subject($data['questiontype']);
-                $message->to($data['email'], $data['firstname']);
-                $message->from('a856e12178-e76b90@inbox.mailtrap.io','Cheers');
-             });
 
-            // return back()->with('alert-success','Berhasil Kirim Email');
-            return response (['status' => true,'errors' => 'Berhasil Kirim Email']);
-        }
-        catch (Exception $e){
-            return response (['status' => false,'errors' => $e->getMessage()]);
-        }
+     $this->validate($request, [
+      'firstname'=>'required',
+      'lastname' =>'required',
+      'email'=>'required|email',
+      'usertype'=>'required',
+      'questiontype'=>'required',
+      'comment'=>'required'
+     ]);
+
+        $data = array(
+            'firstname'      =>  $request->firstname,
+            'lastname'      =>  $request->lastname,
+            'email'      =>  $request->email,
+            'usertype'      =>  $request->usertype,
+            'questiontype'      =>  $request->questiontype,
+            'comment'   =>   $request->comment
+        );
+
+        Mail::to('faris.f@mikatasa.com')->send(new contactMail($data));
+        return back()->with('success', 'Thanks for contacting us!');
     }
 }
