@@ -6406,6 +6406,9 @@ a:focus {
     color: #D8261C;
     text-align: center;
   }
+  #cheers-contact .contact-rightsection {
+    padding: 10px;
+  }
   #cheers-contact .contact-rightsection img {
     width: 100%;
     height: auto;

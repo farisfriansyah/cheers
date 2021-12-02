@@ -28,6 +28,7 @@
                 <div class="send-form">
                     <form method="post" action="{{ url('sendemail/send') }}">
                         @csrf
+                        
                         <div class="row">
                             <div class="col-lg-6 col-md-6 col-sm-12">
                                 <div class="form-floating mb-3">
@@ -53,23 +54,23 @@
     
                         <div class="form-floating mb-3">
                             <select class="form-select" name="usertype" id="floatingSelect" aria-label="Floating label select example">
-                              <option value="consumer" selected>@lang('contact.cf-usertype-consumer')</option>
-                              <option value="horeca">@lang('contact.cf-usertype-horeca')</option>
-                              <option value="instansi">@lang('contact.cf-usertype-agency')</option>
-                              <option value="distributor">@lang('contact.cf-usertype-distributor')</option>
-                              <option value="other">@lang('contact.cf-usertype-other')</option>
+                            <option value="consumer" selected>@lang('contact.cf-usertype-consumer')</option>
+                            <option value="horeca">@lang('contact.cf-usertype-horeca')</option>
+                            <option value="instansi">@lang('contact.cf-usertype-agency')</option>
+                            <option value="distributor">@lang('contact.cf-usertype-distributor')</option>
+                            <option value="other">@lang('contact.cf-usertype-other')</option>
                             </select>
                             <label for="floatingSelect">@lang('contact.cf-usertypelabel')</label>
                         </div>
     
                         <div class="form-floating mb-3">
                             <select class="form-select" name="questiontype" id="floatingSelect" aria-label="Floating label select example">
-                              <option value="harga" selected>@lang('contact.cf-questiontype-price')</option>
-                              <option value="pengiriman">@lang('contact.cf-questiontype-delivery')</option>
-                              <option value="berlangganan">@lang('contact.cf-questiontype-subscribe')</option>
-                              <option value="distributor">@lang('contact.cf-questiontype-distributor')</option>
-                              <option value="dibelidi">@lang('contact.cf-questiontype-pk')</option>
-                              <option value="other">@lang('contact.cf-questiontype-other')</option>
+                            <option value="harga" selected>@lang('contact.cf-questiontype-price')</option>
+                            <option value="pengiriman">@lang('contact.cf-questiontype-delivery')</option>
+                            <option value="berlangganan">@lang('contact.cf-questiontype-subscribe')</option>
+                            <option value="distributor">@lang('contact.cf-questiontype-distributor')</option>
+                            <option value="dibelidi">@lang('contact.cf-questiontype-pk')</option>
+                            <option value="other">@lang('contact.cf-questiontype-other')</option>
                             </select>
                             <label for="floatingSelect">@lang('contact.cf-questiontypelabel')</label>
                         </div>
@@ -79,8 +80,11 @@
                                 style="height: 100px"></textarea>
                             <label for="chs-comment">@lang('contact.cf-comment')</label>
                         </div>
-    
-                        <button class="btn btn-danger btn-cheerslight" type="submit">@lang('contact.cf-submit')</button>
+
+                        <div id="CheersContact"></div>
+
+                        <button id="CCcontactSubmit" class="btn btn-danger btn-cheerslight g-recaptcha mt-3" type="submit" disabled="disabled">@lang('contact.cf-submit')</button>
+                        
                     </form>
                 </div>
                 

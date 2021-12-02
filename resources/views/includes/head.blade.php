@@ -22,4 +22,21 @@
 <link rel="stylesheet" href="{{ asset('public/assets/vendor/owlcarousel/dist/assets/owl.theme.default.min.css')}}">
 <link rel="stylesheet" href="{{ asset('public/assets/scss/style.css')}}">
 
-<title>Say Cheers</title>
+<script type="text/javascript">
+    var onSubmit = function(token) {
+            // console.log(token);
+            document.getElementById("CCcontactSubmit").disabled = false;
+    };
+    var offSubmit = function(token) {
+            // console.log(token);
+            document.getElementById("CCcontactSubmit").disabled = true;
+    };
+    var onloadCallback = function() {
+        grecaptcha.render('CheersContact', {
+          'sitekey' : '6LfcR3EdAAAAAKIO4VQUy8ru_lKJXJSWLfwm6Cnj',
+          'callback' : onSubmit,
+          'expired-callback' : offSubmit
+        });
+    };
+    
+</script>
