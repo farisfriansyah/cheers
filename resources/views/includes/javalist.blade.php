@@ -8,6 +8,7 @@
 <script src="{{ asset('public/assets/vendor/step/jquery.steps.min.js')}}"></script>
 <script src="{{ asset('public/assets/vendor/owlcarousel/dist/owl.carousel.min.js')}}"></script>
 <script src="{{ asset('public/js/share.js')}}"></script>
+<script src="{{ asset('public/assets/vendor/multicascade/selectFilter.min.js')}}"></script>
 <script src="{{ asset('public/assets/js/script.js')}}"></script>
 <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer>
 </script>

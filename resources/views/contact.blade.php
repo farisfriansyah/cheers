@@ -53,24 +53,24 @@
                         </div>
     
                         <div class="form-floating mb-3">
-                            <select class="form-select" name="usertype" id="floatingSelect" aria-label="Floating label select example">
-                            <option value="consumer" selected>@lang('contact.cf-usertype-consumer')</option>
-                            <option value="horeca">@lang('contact.cf-usertype-horeca')</option>
-                            <option value="instansi">@lang('contact.cf-usertype-agency')</option>
-                            <option value="distributor">@lang('contact.cf-usertype-distributor')</option>
-                            <option value="other">@lang('contact.cf-usertype-other')</option>
+                            <select class="form-select firstList selectFilter" data-target="secondList" name="usertype" id="floatingSelect" aria-label="Floating label select example" required="required">
+                            <option>-- @lang('contact.cf-usertypechoose')</option>
+                            <option data-ref="one" value="consumer">@lang('contact.cf-usertype-consumer')</option>
+                            <option data-ref="one" value="horeka">@lang('contact.cf-usertype-horeca')</option>
+                            <option data-ref="one" value="distributor">@lang('contact.cf-usertype-distributor')</option>
+                            <option data-ref="two" value="other">@lang('contact.cf-usertype-other')</option>
                             </select>
                             <label for="floatingSelect">@lang('contact.cf-usertypelabel')</label>
                         </div>
     
                         <div class="form-floating mb-3">
-                            <select class="form-select" name="questiontype" id="floatingSelect" aria-label="Floating label select example">
-                            <option value="harga" selected>@lang('contact.cf-questiontype-price')</option>
-                            <option value="pengiriman">@lang('contact.cf-questiontype-delivery')</option>
-                            <option value="berlangganan">@lang('contact.cf-questiontype-subscribe')</option>
-                            <option value="distributor">@lang('contact.cf-questiontype-distributor')</option>
-                            <option value="dibelidi">@lang('contact.cf-questiontype-pk')</option>
-                            <option value="other">@lang('contact.cf-questiontype-other')</option>
+                            <select class="form-select secondList selectFilter" name="questiontype" id="floatingSelect" aria-label="Floating label select example" required="required">
+                            <option>-- @lang('contact.cf-questiontypechoose')</option>
+                            <option data-belong="two" value="infoproduk">@lang('contact.cf-questiontype-info')</option>
+                            <option data-belong="two" value="langganan">@lang('contact.cf-questiontype-subscribe')</option>
+                            <option data-belong="one" value="customer_service">@lang('contact.cf-questiontype-cs')</option>
+                            <option data-belong="two" value="sponsorship">@lang('contact.cf-questiontype-sponsor')</option>
+                            <option data-belong="two" value="other">@lang('contact.cf-questiontype-other')</option>
                             </select>
                             <label for="floatingSelect">@lang('contact.cf-questiontypelabel')</label>
                         </div>
