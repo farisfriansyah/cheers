@@ -180,6 +180,10 @@ jQuery(document).ready(function ($) {
   if (containerEl) {
     mixer = mixitup(containerEl);
   }
+
+  $("#firstList").on('change', function () {
+    if ($(this).find('option:selected').val() == "-1") $("#secondList").attr('disabled', true);else $("#secondList").attr('disabled', false);
+  });
 });
 
 function checkLogin() {

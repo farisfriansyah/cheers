@@ -16,7 +16,7 @@ return [
     'cf-usertype-consumer' => "Konsumen Rumah Tangga",
     'cf-usertype-horeca' => "Horeka (Hotel, Restaurant, Kafe) & Kantor",
     'cf-usertype-distributor' => "Distributor",
-    'cf-usertype-other' => "Other",
+    'cf-usertype-other' => "Lainnya",
 'cf-questiontypelabel' => "Pertanyaan Tentang",
 'cf-questiontypechoose' => "Pilih salah satu",
     'cf-questiontype-info' => "Info Produk",

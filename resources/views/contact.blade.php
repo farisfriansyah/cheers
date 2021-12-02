@@ -53,24 +53,26 @@
                         </div>
     
                         <div class="form-floating mb-3">
-                            <select class="form-select firstList selectFilter" data-target="secondList" name="usertype" id="floatingSelect" aria-label="Floating label select example" required="required">
-                            <option>-- @lang('contact.cf-usertypechoose')</option>
-                            <option data-ref="one" value="consumer">@lang('contact.cf-usertype-consumer')</option>
+                            <select class="form-select firstList selectFilter" data-target="secondList" name="usertype" id="firstList" aria-label="Floating label select example" required="required">
+                            <option value="-1">-- @lang('contact.cf-usertypechoose')</option>
+                            <option data-ref="one" value="konsumen">@lang('contact.cf-usertype-consumer')</option>
                             <option data-ref="one" value="horeka">@lang('contact.cf-usertype-horeca')</option>
                             <option data-ref="one" value="distributor">@lang('contact.cf-usertype-distributor')</option>
-                            <option data-ref="two" value="other">@lang('contact.cf-usertype-other')</option>
+                            <option data-ref="two" value="Lainnya">@lang('contact.cf-usertype-other')</option>
                             </select>
                             <label for="floatingSelect">@lang('contact.cf-usertypelabel')</label>
                         </div>
     
                         <div class="form-floating mb-3">
-                            <select class="form-select secondList selectFilter" name="questiontype" id="floatingSelect" aria-label="Floating label select example" required="required">
-                            <option>-- @lang('contact.cf-questiontypechoose')</option>
+                            <select class="form-select secondList selectFilter" name="questiontype" id="secondList" aria-label="Floating label select example" required="required" disabled="disabled">
+                            <option value="-1">-- @lang('contact.cf-questiontypechoose')</option>
                             <option data-belong="two" value="infoproduk">@lang('contact.cf-questiontype-info')</option>
                             <option data-belong="two" value="langganan">@lang('contact.cf-questiontype-subscribe')</option>
                             <option data-belong="one" value="customer_service">@lang('contact.cf-questiontype-cs')</option>
+                            <option data-belong="one" value="sponsorship">@lang('contact.cf-questiontype-sponsor')</option>
+                            <option data-belong="one" value="Lainnya">@lang('contact.cf-questiontype-other')</option>
                             <option data-belong="two" value="sponsorship">@lang('contact.cf-questiontype-sponsor')</option>
-                            <option data-belong="two" value="other">@lang('contact.cf-questiontype-other')</option>
+                            <option data-belong="two" value="Lainnya">@lang('contact.cf-questiontype-other')</option>
                             </select>
                             <label for="floatingSelect">@lang('contact.cf-questiontypelabel')</label>
                         </div>

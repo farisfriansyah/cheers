@@ -33,7 +33,14 @@ class EmailController extends Controller
         'comment'   =>   $request->comment
     );
 
-    Mail::to('faris.f@mikatasa.com')->send(new contactMail($data));
+    if($request->questiontype == 'customer_service'){
+        $sendmail = 'cs@cheersindonesia.com';
+    }else{
+        $sendmail = 'info@cheersindonesia.com';
+    }
+    // dd($sendmail);
+
+    Mail::to($sendmail)->send(new contactMail($data));
     return back()->with('success', 'Thanks for contacting us!');
     }
 }
