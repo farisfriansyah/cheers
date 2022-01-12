@@ -48,6 +48,12 @@ return [
             'username' => env('MAIL_USERNAME'),
             'password' => env('MAIL_PASSWORD'),
 
+            'dkim_selector' => 'default', // for example: 'Selector123'
+            'dkim_domain' => 'saycheers.com', // for example: 'myblog.com'
+            'dkim_private_key' => '-----BEGIN RSA PRIVATE KEY-----
+            MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvtGr5E4hFbetcLm3iUHWT1R/8FYxwHBMRaKoDj/9g2UlMnFGMpaJmip6C1d+cGuw152hr0v5VCiWiQ6Y7moAoO+QX1E8bO6yu53bd3SleM1xfBgL43aNKFvTaxc7v/nJ6PvJSJyygpg2e1qRnRh/5CrcSkdQ0Mo5ykorKG1mWqmxwpqzXPP36D4+eP7YjyJU7" "ZnnkiJk5Vnz49T2fhNyk0ckSEzFAqcXTJes+q3Ux9dQdH1+wahIYTZDpANC41DwmFhFBDEQG0F811Ot+6wb/La9FVerckDa7eNwB5TJ/iQW+AP+GOwxuIVdt+Y2e+Xahu2I7fm81Zn3JAkJsGHz9QIDAQAB
+            -----END RSA PRIVATE KEY-----',
+
             'timeout' => null,
             'auth_mode' => null,
         ],

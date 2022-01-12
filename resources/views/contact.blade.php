@@ -119,7 +119,7 @@
                                 </div>
                                 <div class="col-11">
                                     <h6>@lang('contact.chs-email')</h6>
-                                    <p>info@saycheers.com</p>
+                                    <p>info@cheersindonesia.com</p>
                                 </div>
                             </div>
                         </div>

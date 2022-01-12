@@ -23,6 +23,7 @@ class EmailController extends Controller
       'questiontype'=>'required',
       'comment'=>'required'
      ]);
+     
 
     $data = array(
         'firstname'      =>  $request->firstname,
@@ -35,7 +36,11 @@ class EmailController extends Controller
 
     if($request->questiontype == 'customer_service'){
         $sendmail = 'cs@cheersindonesia.com';
-    }else{
+    }elseif($request->questiontype == 'sponsorship'){
+        $sendmail = 'promosi@cheersindonesia.com';
+        // $sendmail = 'farisfriansyah95@gmail.com';
+    }
+    else{
         $sendmail = 'info@cheersindonesia.com';
     }
     // dd($sendmail);

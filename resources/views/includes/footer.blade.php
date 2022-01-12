@@ -57,7 +57,7 @@
                         </div>
                         <div class="col-10">
                             <h6>E-Mail</h6>
-                            <p>info@saycheers.com</p>
+                            <p>info@cheersindonesia.com</p>
                         </div>
                     </div>
                 </div>
