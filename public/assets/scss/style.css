@@ -3707,6 +3707,25 @@ a:focus {
   height: auto;
 }
 
+#why-product .cheers-benefit h5 {
+  text-align: left;
+}
+
+#why-product .cheers-benefit li {
+  text-align: left;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#why-product .cheers-benefit li i {
+  color: #D8261C;
+  font-size: 14px;
+  line-height: 1.7;
+  margin-right: 5px;
+}
+
 #cheers-alkaline.cheers-product .heropro-type .pro-leftsection .bg-imgHero .content-left .content-text h3 {
   font-family: "Amatic SC", cursive;
 }

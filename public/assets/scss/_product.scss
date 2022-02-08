@@ -213,6 +213,23 @@
         width: 600px;
         height: auto;
     }
+
+    .cheers-benefit{
+        h5{
+            text-align: left;
+        }
+        li{
+            text-align: left;
+            list-style-type: none;
+            display: flex;
+            i{
+                color: $cheers-light;
+                font-size: 14px;
+                line-height: 1.7;
+                margin-right: 5px;
+            }
+        }
+    }
 }
 
 #cheers-alkaline.cheers-product{

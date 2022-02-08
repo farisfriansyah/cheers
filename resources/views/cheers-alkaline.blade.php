@@ -75,7 +75,22 @@
     </div>
 
     <div class="container text-center">
-        <img src="{{ asset('public/assets/img/ph-chart-eng.jpg')}}" class="img-fluid">
+        <div class="row">
+            <div class="col-md-8">
+                <img src="{{ asset('public/assets/img/ph-chart-eng.jpg')}}" class="img-fluid">
+            </div>
+            <div class="col-md-4">
+                <ul class="cheers-benefit"><h5>@lang('cheers-alkaline.alkaline-benefit')</h5>
+                    <li><i class="fas fa-check"></i> <p>@lang('cheers-alkaline.alkaline-benefit-1')</p></li>
+                    <li><i class="fas fa-check"></i> <p>@lang('cheers-alkaline.alkaline-benefit-2')</p></li>
+                    <li><i class="fas fa-check"></i> <p>@lang('cheers-alkaline.alkaline-benefit-3')</p></li>
+                    <li><i class="fas fa-check"></i> <p>@lang('cheers-alkaline.alkaline-benefit-4')</p></li>
+                    <li><i class="fas fa-check"></i> <p>@lang('cheers-alkaline.alkaline-benefit-5')</p></li>
+                    <li><i class="fas fa-check"></i> <p>@lang('cheers-alkaline.alkaline-benefit-6')</p></li>
+                </ul>
+            </div>
+        </div>
+        
     </div>
 </section>
 

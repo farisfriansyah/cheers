@@ -16,6 +16,16 @@ return [
 'alkaline-whyAlkaline' => "Kenapa Alkaline",
 'alkaline-whyText' => "Hidrasi, atau mempertahankan jumlah cairan di dalam tubuh, merupakan hal yang sangat penting. Hal ini bertujuan agar kadar pH dalam tubuh tetap seimbang atau netral. Kelebihan asupan makanan atau minuman yang bersifat asam (kopi, daging, soda, alkohol) akan menyebabkan pH tubuh juga asam. Kondisi tubuh dengan pH terlalu rendah menyebabkan gangguan kesehatan.  Cheers Alkaline Water dengan pH up to 8.5 membantu menetralkan pH tubuh sehingga daya taha tubuh lebih terjaga.",
 
+'alkaline-benefit' => "Manfaat",
+'alkaline-benefit-1' => "Meningkatkan metabolisme",
+'alkaline-benefit-2' => "Membantu menyeimbangkan pH tubuh agar imun terjaga",
+'alkaline-benefit-3' => "Sebagai antioksidan alami melawan radikal bebas",
+'alkaline-benefit-4' => "Membantu detoksifikasi",
+'alkaline-benefit-5' => "Mengoptimalkan penyerapan mineral untuk tubuh",
+'alkaline-benefit-6' => "Mengoptimalkan hidrasi tubuhmu",
+
+
+
 ];
 
 ?>
